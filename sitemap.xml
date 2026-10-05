@@ -1,7 +1,417 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://diffduo.com/</loc>
     <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/tr/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/es/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/pt/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/fr/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/de/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/it/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/nl/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/pl/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/ru/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/uk/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/ar/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/hi/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/id/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/vi/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/ja/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/ko/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/zh/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/"/>
   </url>
 </urlset>
