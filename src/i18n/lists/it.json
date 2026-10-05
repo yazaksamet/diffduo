@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "title": "Confrontare due liste – Trova i duplicati | DiffDuo",
+    "description": "Confronta due liste online gratis: trova gli elementi presenti in una sola lista, in entrambe o duplicati. Rimuovi i duplicati e unisci le liste all’istante.",
+    "ogTitle": "Confrontare due liste – Trova differenze e duplicati",
+    "ogDescription": "Incolla due liste e vedi subito cosa c’è solo in una, cosa c’è in entrambe e cosa è duplicato. Gratuito, veloce e privato.",
+    "twitterDescription": "Incolla due liste e vedi subito cosa c’è solo in una, in entrambe o cosa è duplicato. Gratuito e privato.",
+    "ogImageAlt": "DiffDuo confronta due liste mostrando gli elementi solo nella lista A, in entrambe le liste e solo nella lista B",
+    "appName": "DiffDuo – Confrontare due liste",
+    "appDescription": "Confronta due liste online: trova gli elementi solo nella lista A, solo nella lista B o in entrambe, elenca i duplicati e unisci le due liste senza duplicati. Funziona interamente nel tuo browser.",
+    "featureList": [
+      "Elementi solo nella lista A, solo nella lista B e in entrambe",
+      "Unisci due liste senza duplicati",
+      "Trova e rimuovi i duplicati",
+      "Separa gli elementi per nuova riga, virgola, punto e virgola o tabulazione",
+      "Ignora maiuscole e spazi in eccesso",
+      "Privato: le liste non lasciano mai il browser"
+    ]
+  },
+  "ui": {
+    "eyebrow": "Strumento gratuito per confrontare liste online",
+    "h1": "Confronta due liste e trova le <em>differenze</em>",
+    "heroText": "Incolla due liste per vedere quali elementi sono solo in una lista, quali sono in entrambe e quali sono duplicati. Rimuovi i duplicati, unisci le liste e copia qualsiasi risultato con un clic.",
+    "listA": "Lista A",
+    "listB": "Lista B",
+    "placeholderA": "Incolla qui la prima lista, un elemento per riga…",
+    "placeholderB": "Incolla qui la seconda lista, un elemento per riga…",
+    "separator": "Separa per",
+    "sepNewline": "Nuova riga",
+    "sepComma": "Virgola",
+    "sepSemicolon": "Punto e virgola",
+    "sepTab": "Tabulazione",
+    "order": "Ordine",
+    "orderOriginal": "Ordine originale",
+    "orderAz": "Dalla A alla Z",
+    "trim": "Rimuovi spazi extra",
+    "skipEmpty": "Salta righe vuote",
+    "onlyA": "Solo nella lista A",
+    "onlyB": "Solo nella lista B",
+    "both": "In entrambe le liste",
+    "union": "Tutti gli elementi unici",
+    "dupA": "Duplicati nella lista A",
+    "dupB": "Duplicati nella lista B",
+    "copyList": "Copia",
+    "downloadList": "Scarica come .txt",
+    "none": "Nessun elemento"
+  },
+  "content": {
+    "howTitle": "Come confrontare due liste",
+    "steps": [
+      { "title": "Incolla la prima lista", "text": "Inserisci una lista nel riquadro <em>Lista A</em>, un elemento per riga. Puoi anche aprire un file .txt o .csv." },
+      { "title": "Incolla la seconda lista", "text": "Inserisci l’altra lista nel riquadro <em>Lista B</em>. I risultati si aggiornano mentre scrivi." },
+      { "title": "Copia il risultato che ti serve", "text": "Vedi cosa c’è solo in una lista, in entrambe o cosa è duplicato, e copia o scarica qualsiasi risultato." }
+    ],
+    "featuresTitle": "Tutto ciò che serve per confrontare liste e trovare duplicati",
+    "features": [
+      { "title": "Differenze e corrispondenze", "text": "Vedi subito gli elementi presenti solo nella lista A, solo nella lista B e in entrambe le liste." },
+      { "title": "Trova e rimuovi i duplicati", "text": "Scopri quali elementi si ripetono in ciascuna lista e ottieni una lista unita in cui ogni elemento compare una sola volta." },
+      { "title": "Qualsiasi separatore", "text": "Separa gli elementi per nuova riga, virgola, punto e virgola o tabulazione, così puoi incollare colonne da Excel o da file CSV." },
+      { "title": "Ignora maiuscole e spazi", "text": "Considera “Mela” e “mela ” come lo stesso elemento quando maiuscole e spazi in eccesso non contano." },
+      { "title": "Veloce anche con liste enormi", "text": "Confronta liste con centinaia di migliaia di elementi in una frazione di secondo." },
+      { "title": "100% privato", "text": "Non viene caricato nulla. Liste di clienti, email e ID non lasciano mai il tuo dispositivo." }
+    ],
+    "usesTitle": "Per cosa si usa",
+    "uses": [
+      { "title": "Liste di email e clienti", "text": "Scopri quali contatti sono nuovi, quali si sono disiscritti e quali compaiono in entrambe le liste." },
+      { "title": "Colonne di Excel e fogli di calcolo", "text": "Incolla due colonne per vedere quali valori mancano nell’altra colonna, senza formule." },
+      { "title": "Inventario e codici prodotto", "text": "Confronta SKU, numeri d’ordine o ID provenienti da due sistemi per trovare ciò che non corrisponde." },
+      { "title": "Rimuovi i duplicati", "text": "Incolla una lista nella Lista A per vederne i duplicati e copia una lista pulita con ogni elemento una sola volta." },
+      { "title": "Nomi e presenze", "text": "Controlla chi si è iscritto ma non ha partecipato, o chi è in una lista di squadra ma non nell’altra." },
+      { "title": "URL e parole chiave", "text": "Confronta due liste di URL, parole chiave o domini per trovare lacune e sovrapposizioni." }
+    ],
+    "faqTitle": "Domande frequenti",
+    "faq": [
+      { "q": "Come confrontare due liste?", "a": "Incolla la prima lista nella Lista A e la seconda nella Lista B, un elemento per riga. DiffDuo mostra subito gli elementi solo nella lista A, solo nella lista B, in entrambe le liste e i duplicati di ciascuna." },
+      { "q": "Come trovare i duplicati tra due liste?", "a": "Gli elementi presenti in entrambe le liste compaiono sotto In entrambe le liste. Puoi copiarli con un clic o scaricarli come file .txt." },
+      { "q": "Come rimuovere i duplicati da una lista?", "a": "Incolla la lista nella Lista A e lascia vuota la Lista B. Tutti gli elementi unici mostra ogni elemento una sola volta, e Duplicati nella lista A mostra gli elementi che erano ripetuti." },
+      { "q": "Posso confrontare due colonne di Excel?", "a": "Sì. Copia una colonna da Excel o Google Sheets e incollala nella Lista A, poi incolla l’altra colonna nella Lista B. Ogni cella diventa un elemento." },
+      { "q": "Posso usare virgole o punti e virgola invece degli a capo?", "a": "Sì. Scegli virgola, punto e virgola o tabulazione in Separa per. Anche gli a capo separano sempre gli elementi." },
+      { "q": "Il confronto distingue tra maiuscole e minuscole?", "a": "Sì, per impostazione predefinita. Attiva Ignora maiuscole per trattare lettere maiuscole e minuscole allo stesso modo. Rimuovi spazi extra ignora gli spazi all’inizio e alla fine di ogni elemento." },
+      { "q": "Le mie liste vengono caricate da qualche parte?", "a": "No. Il confronto avviene interamente nel tuo browser, quindi le tue liste non lasciano mai il tuo dispositivo." }
+    ],
+    "navHow": "Come confrontare liste",
+    "navFeatures": "Funzionalità",
+    "navUses": "Casi d’uso",
+    "navFaq": "FAQ",
+    "footer": "DiffDuo: strumento online gratuito per confrontare due liste, trovare duplicati e rimuovere duplicati. Tutto funziona in locale nel tuo browser."
+  },
+  "js": {
+    "items": { "one": "{n} elemento", "many": "{n} elementi", "other": "{n} elementi" },
+    "unique": { "one": "{n} unico", "many": "{n} unici", "other": "{n} unici" },
+    "overlap": "{p} in comune",
+    "copiedItems": { "one": "{n} elemento copiato", "many": "{n} elementi copiati", "other": "{n} elementi copiati" },
+    "truncated": { "one": "Viene mostrato il primo elemento ({n}). Copia o scarica per ottenerli tutti.", "many": "Vengono mostrati i primi {n} elementi. Copia o scarica per ottenerli tutti.", "other": "Vengono mostrati i primi {n} elementi. Copia o scarica per ottenerli tutti." }
+  }
+}

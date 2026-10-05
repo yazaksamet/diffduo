@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "title": "JSON vergelijken – twee JSON-bestanden online | DiffDuo",
+    "description": "Gratis online JSON vergelijken en JSON diff. Vergelijk twee JSON-bestanden of API-responses en zie elke toegevoegde, verwijderde en gewijzigde waarde.",
+    "ogTitle": "JSON vergelijken – vind de verschillen tussen twee JSON-bestanden",
+    "ogDescription": "Vergelijk twee JSON-documenten in enkele seconden. Zie elke gewijzigde waarde per pad, ongeacht volgorde van keys en opmaak. Gratis, snel en privé.",
+    "twitterDescription": "Vergelijk twee JSON-documenten en zie elke wijziging per pad. Gratis, snel en privé.",
+    "ogImageAlt": "DiffDuo vergelijkt twee JSON-documenten met gemarkeerde gewijzigde waarden",
+    "appName": "DiffDuo – JSON vergelijken & JSON diff",
+    "appDescription": "Vergelijk twee JSON-bestanden of API-responses online. Toont elke toegevoegde, verwijderde en gewijzigde waarde met het JSON-pad en een diff naast elkaar, ongeacht de volgorde van keys en de opmaak. Draait volledig in je browser.",
+    "featureList": [
+      "Negeert de volgorde van keys en de opmaak",
+      "Toont elke wijziging per JSON-pad",
+      "Optioneel: negeer de volgorde van array-items",
+      "Diff naast elkaar en unified diff van de opgemaakte JSON",
+      "Vindt ongeldige JSON en toont regel en kolom",
+      "Privé: JSON verlaat de browser nooit"
+    ]
+  },
+  "ui": {
+    "eyebrow": "Gratis online JSON diff-tool",
+    "h1": "JSON vergelijken: zie wat er is <em>gewijzigd</em>",
+    "heroText": "Vergelijk twee JSON-bestanden, API-responses of configuraties en zie elke toegevoegde, verwijderde en gewijzigde waarde met het pad erbij. De volgorde van keys en de opmaak maken niet uit. Privé en gratis, gewoon in je browser.",
+    "original": "Originele JSON",
+    "changed": "Gewijzigde JSON",
+    "placeholderOriginal": "Plak hier de originele JSON of sleep een .json-bestand hierheen…",
+    "placeholderChanged": "Plak hier de gewijzigde JSON of sleep een .json-bestand hierheen…",
+    "format": "Opmaken",
+    "formatTitle": "Deze JSON opmaken en inspringen",
+    "ignoreArrayOrder": "Volgorde in arrays negeren"
+  },
+  "content": {
+    "howTitle": "Zo vergelijk je twee JSON-bestanden",
+    "steps": [
+      { "title": "Plak of open de originele JSON", "text": "Zet het eerste JSON-document in het vak <em>Originele JSON</em>. Je kunt het plakken, of een .json-bestand openen of erheen slepen." },
+      { "title": "Voeg de gewijzigde JSON toe", "text": "Zet het tweede document in het vak <em>Gewijzigde JSON</em>. Beide worden op fouten gecontroleerd en vergeleken terwijl je typt." },
+      { "title": "Bekijk de wijzigingen", "text": "Zie een lijst van elke gewijzigde, toegevoegde en verwijderde waarde met het pad erbij, plus een diff naast elkaar van beide documenten met gesorteerde keys." }
+    ],
+    "featuresTitle": "Een JSON diff die JSON begrijpt",
+    "features": [
+      { "title": "Volgorde van keys maakt niet uit", "text": "Objecten worden vergeleken op hun keys, dus dezelfde data in een andere volgorde geldt als gelijk." },
+      { "title": "Elke wijziging per pad", "text": "Elk verschil wordt getoond met de exacte locatie, zoals <code>$.user.roles[2]</code>, en de oude en nieuwe waarde." },
+      { "title": "Volgorde in arrays negeren", "text": "Zet dit aan als arrays verzamelingen zijn, zoals tags of ID's, en alleen toevoegingen en verwijderingen tellen." },
+      { "title": "Vindt ongeldige JSON", "text": "Als een document niet kan worden gelezen, zie je de regel en kolom van de fout, en Opmaken maakt geldige JSON netjes." },
+      { "title": "Kan grote bestanden aan", "text": "Vergelijkt JSON-bestanden met 100.000+ regels in een achtergrondthread, zodat de pagina soepel blijft reageren." },
+      { "title": "100% privé", "text": "Er wordt niets geüpload. API-responses, configuraties en data verlaten je apparaat nooit." }
+    ],
+    "usesTitle": "Wat je kunt vergelijken",
+    "uses": [
+      { "title": "API-responses", "text": "Vergelijk de response van twee API-versies of omgevingen om een gewijzigd veld of een ontbrekende waarde te vinden." },
+      { "title": "Configuratiebestanden", "text": "Vind het verschil tussen twee package.json-, tsconfig-, appsettings- of andere JSON-configuratiebestanden." },
+      { "title": "Testfixtures en snapshots", "text": "Zie precies waarom een verwacht en een werkelijk JSON-resultaat niet overeenkomen." },
+      { "title": "Data-exports", "text": "Vergelijk twee exports van dezelfde records om te zien wat er is toegevoegd, verwijderd of bewerkt." }
+    ],
+    "readTitle": "Zo lees je het resultaat",
+    "legend": [
+      "<b>Gewijzigde</b> waarden staan in beide documenten maar zijn verschillend. Eerst wordt de oude waarde getoond, dan de nieuwe.",
+      "<b>Toegevoegde</b> waarden staan alleen in de gewijzigde JSON.",
+      "<b>Verwijderde</b> waarden staan alleen in de originele JSON.",
+      "<b>Paden</b> zoals <code>$.settings.theme</code> beginnen bij de root van het document <code>$</code>; <code>[2]</code> is het derde item van een array."
+    ],
+    "faqTitle": "Veelgestelde vragen",
+    "faq": [
+      { "q": "Hoe vergelijk ik twee JSON-bestanden online?", "a": "Plak de originele JSON in het linkervak en de gewijzigde JSON in het rechtervak, of open de bestanden. DiffDuo toont elke gewijzigde, toegevoegde en verwijderde waarde met het pad erbij en een diff naast elkaar van beide documenten." },
+      { "q": "Maakt de volgorde van keys uit?", "a": "Nee. Objecten worden vergeleken op hun keys, dus twee documenten met dezelfde data in een andere volgorde van keys gelden als gelijk. Opmaak en witruimte worden ook genegeerd." },
+      { "q": "Kan ik de volgorde van items in arrays negeren?", "a": "Ja. Zet Volgorde in arrays negeren aan om arrays als verzamelingen te vergelijken. Items die in beide arrays staan, matchen waar ze ook staan, en alleen toegevoegde of verwijderde items worden gemeld." },
+      { "q": "Wat betekent een pad als $.user.roles[2]?", "a": "Het is de locatie van de waarde in het document: $ is de root, .user is de key user, .roles is daarbinnen de key roles en [2] is het derde item van die array." },
+      { "q": "Wat gebeurt er als mijn JSON ongeldig is?", "a": "DiffDuo toont welk document de fout bevat en op welke regel en kolom, zodat je die kunt herstellen. De knop Opmaken springt geldige JSON in, zodat die makkelijker te lezen is." },
+      { "q": "Wordt mijn JSON naar een server geüpload?", "a": "Nee. Alles draait in je browser, dus je JSON verlaat je apparaat nooit. Het is veilig voor API-sleutels, klantgegevens en interne configuratie." },
+      { "q": "Kan het grote JSON-bestanden vergelijken?", "a": "Ja. JSON-bestanden tot 50 MB kunnen worden geopend, en de diff naast elkaar draait in een achtergrondthread, zodat de pagina soepel blijft reageren." }
+    ],
+    "navHow": "Zo vergelijk je JSON",
+    "navFeatures": "Functies",
+    "navUses": "Wat je kunt vergelijken",
+    "navFaq": "FAQ",
+    "footer": "DiffDuo: gratis online JSON vergelijken en JSON diff. Alles draait lokaal, dus je data verlaat de browser nooit."
+  },
+  "js": {
+    "emptyText": "Plak JSON in beide vakken of open .json-bestanden. De vergelijking wordt bijgewerkt terwijl je typt.",
+    "identicalTitle": "De JSON-documenten zijn gelijk",
+    "identicalText": { "one": "{n} regel na opmaak, geen verschillen gevonden.", "other": "{n} regels na opmaak, geen verschillen gevonden." },
+    "identicalTextIgnoring": { "one": "{n} regel na opmaak, geen verschillen gevonden met de volgorde in arrays genegeerd.", "other": "{n} regels na opmaak, geen verschillen gevonden met de volgorde in arrays genegeerd." },
+    "invalidTitle": "Ongeldige JSON",
+    "invalid": "{side} is geen geldige JSON: er staat een fout op regel {line}, kolom {col}.",
+    "invalidAt": "Ongeldige JSON op regel {line}, kolom {col}",
+    "cannotFormat": "Kan niet opmaken: ongeldige JSON op regel {line}, kolom {col}",
+    "changesTitle": "Wijzigingen",
+    "changed": { "one": "{n} gewijzigd", "other": "{n} gewijzigd" },
+    "added": { "one": "{n} toegevoegd", "other": "{n} toegevoegd" },
+    "removed": { "one": "{n} verwijderd", "other": "{n} verwijderd" },
+    "moreChanges": { "one": "…en nog {n} wijziging", "other": "…en nog {n} wijzigingen" },
+    "changesSkipped": "De lijst met wijzigingen wordt overgeslagen bij zeer grote documenten. De diff naast elkaar hieronder toont elk verschil."
+  }
+}

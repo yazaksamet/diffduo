@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "title": "Zwei Listen vergleichen – Duplikate finden | DiffDuo",
+    "description": "Kostenlos zwei Listen online vergleichen und abgleichen: Einträge finden, die nur in einer, in beiden oder doppelt vorkommen. Duplikate sofort entfernen.",
+    "ogTitle": "Zwei Listen vergleichen – Unterschiede und Duplikate finden",
+    "ogDescription": "Füge zwei Listen ein und sieh sofort, was nur in einer steht, was in beiden steht und was doppelt vorkommt. Kostenlos, schnell und privat.",
+    "twitterDescription": "Füge zwei Listen ein und sieh sofort, was nur in einer, in beiden oder doppelt vorkommt. Kostenlos und privat.",
+    "ogImageAlt": "DiffDuo vergleicht zwei Listen und zeigt Einträge nur in Liste A, in beiden Listen und nur in Liste B",
+    "appName": "DiffDuo – Zwei Listen vergleichen",
+    "appDescription": "Zwei Listen online vergleichen: Finde Einträge, die nur in Liste A, nur in Liste B oder in beiden stehen, liste Duplikate auf und führe beide Listen ohne Duplikate zusammen. Läuft komplett in deinem Browser.",
+    "featureList": [
+      "Einträge nur in Liste A, nur in Liste B und in beiden",
+      "Zwei Listen ohne Duplikate zusammenführen",
+      "Duplikate finden und entfernen",
+      "Einträge nach Zeilenumbruch, Komma, Semikolon oder Tab trennen",
+      "Groß-/Kleinschreibung und überflüssige Leerzeichen ignorieren",
+      "Privat: Listen verlassen nie den Browser"
+    ]
+  },
+  "ui": {
+    "eyebrow": "Kostenloses Tool zum Listen abgleichen",
+    "h1": "Zwei Listen vergleichen und <em>Unterschiede</em> finden",
+    "heroText": "Füge zwei Listen ein und sieh, welche Einträge nur in einer Liste stehen, welche in beiden und welche doppelt vorkommen. Duplikate entfernen, Listen zusammenführen und jedes Ergebnis mit einem Klick kopieren.",
+    "listA": "Liste A",
+    "listB": "Liste B",
+    "placeholderA": "Erste Liste hier einfügen, ein Eintrag pro Zeile…",
+    "placeholderB": "Zweite Liste hier einfügen, ein Eintrag pro Zeile…",
+    "separator": "Trennen nach",
+    "sepNewline": "Zeilenumbruch",
+    "sepComma": "Komma",
+    "sepSemicolon": "Semikolon",
+    "sepTab": "Tab",
+    "order": "Reihenfolge",
+    "orderOriginal": "Ursprüngliche Reihenfolge",
+    "orderAz": "A bis Z",
+    "trim": "Leerzeichen trimmen",
+    "skipEmpty": "Leere Zeilen überspringen",
+    "onlyA": "Nur in Liste A",
+    "onlyB": "Nur in Liste B",
+    "both": "In beiden Listen",
+    "union": "Alle eindeutigen Einträge",
+    "dupA": "Duplikate in Liste A",
+    "dupB": "Duplikate in Liste B",
+    "copyList": "Kopieren",
+    "downloadList": "Als .txt herunterladen",
+    "none": "Keine Einträge"
+  },
+  "content": {
+    "howTitle": "So vergleichst du zwei Listen",
+    "steps": [
+      { "title": "Erste Liste einfügen", "text": "Gib eine Liste in das Feld <em>Liste A</em> ein, ein Eintrag pro Zeile. Du kannst auch eine .txt- oder .csv-Datei öffnen." },
+      { "title": "Zweite Liste einfügen", "text": "Gib die andere Liste in das Feld <em>Liste B</em> ein. Die Ergebnisse aktualisieren sich, während du tippst." },
+      { "title": "Gewünschtes Ergebnis kopieren", "text": "Sieh, was nur in einer Liste, in beiden oder doppelt vorkommt, und kopiere oder lade jedes Ergebnis herunter." }
+    ],
+    "featuresTitle": "Alles, was du zum Listen abgleichen brauchst",
+    "features": [
+      { "title": "Unterschiede und Übereinstimmungen", "text": "Sieh sofort die Einträge, die nur in Liste A, nur in Liste B und in beiden Listen stehen." },
+      { "title": "Duplikate finden und entfernen", "text": "Sieh, welche Einträge sich in jeder Liste wiederholen, und erhalte eine zusammengeführte Liste, in der jeder Eintrag genau einmal vorkommt." },
+      { "title": "Beliebiges Trennzeichen", "text": "Trenne Einträge nach Zeilenumbruch, Komma, Semikolon oder Tab, damit du Spalten aus Excel oder CSV-Dateien einfügen kannst." },
+      { "title": "Groß-/Kleinschreibung und Leerzeichen ignorieren", "text": "Behandle „Apfel“ und „apfel “ als denselben Eintrag, wenn Großschreibung und überflüssige Leerzeichen keine Rolle spielen." },
+      { "title": "Schnell auch bei riesigen Listen", "text": "Vergleicht Listen mit Hunderttausenden von Einträgen in einem Bruchteil einer Sekunde." },
+      { "title": "100 % privat", "text": "Es wird nichts hochgeladen. Kundenlisten, E-Mail-Adressen und IDs verlassen nie dein Gerät." }
+    ],
+    "usesTitle": "Wofür es genutzt wird",
+    "uses": [
+      { "title": "E-Mail- und Kundenlisten", "text": "Finde heraus, welche Kontakte neu sind, welche sich abgemeldet haben und welche in beiden Listen stehen." },
+      { "title": "Excel- und Tabellenspalten", "text": "Füge zwei Spalten ein und sieh, welche Werte in der anderen Spalte fehlen – ganz ohne Formeln." },
+      { "title": "Lagerbestand und Artikelnummern", "text": "Vergleiche SKUs, Bestellnummern oder IDs aus zwei Systemen, um zu finden, was nicht übereinstimmt." },
+      { "title": "Duplikate entfernen", "text": "Füge eine Liste in Liste A ein, um ihre Duplikate zu sehen, und kopiere eine bereinigte Liste, in der jeder Eintrag nur einmal vorkommt." },
+      { "title": "Namen und Teilnahme", "text": "Prüfe, wer sich angemeldet hat, aber nicht teilgenommen hat, oder wer auf einer Teamliste steht, aber nicht auf der anderen." },
+      { "title": "URLs und Keywords", "text": "Vergleiche zwei Listen mit URLs, Keywords oder Domains, um Lücken und Überschneidungen zu finden." }
+    ],
+    "faqTitle": "Häufig gestellte Fragen",
+    "faq": [
+      { "q": "Wie vergleiche ich zwei Listen?", "a": "Füge die erste Liste in Liste A und die zweite in Liste B ein, ein Eintrag pro Zeile. DiffDuo zeigt sofort die Einträge nur in Liste A, nur in Liste B, in beiden Listen sowie die Duplikate in jeder Liste." },
+      { "q": "Wie finde ich Duplikate zwischen zwei Listen?", "a": "Die Einträge, die in beiden Listen vorkommen, werden unter In beiden Listen angezeigt. Du kannst sie mit einem Klick kopieren oder als .txt-Datei herunterladen." },
+      { "q": "Wie entferne ich Duplikate aus einer Liste?", "a": "Füge die Liste in Liste A ein und lass Liste B leer. Alle eindeutigen Einträge zeigt jeden Eintrag genau einmal, und Duplikate in Liste A zeigt die Einträge, die mehrfach vorkamen." },
+      { "q": "Kann ich zwei Spalten aus Excel vergleichen?", "a": "Ja. Kopiere eine Spalte aus Excel oder Google Sheets und füge sie in Liste A ein, dann füge die andere Spalte in Liste B ein. Jede Zelle wird zu einem Eintrag." },
+      { "q": "Kann ich Kommas oder Semikolons statt Zeilenumbrüchen verwenden?", "a": "Ja. Wähle Komma, Semikolon oder Tab unter Trennen nach. Zeilenumbrüche trennen Einträge immer zusätzlich." },
+      { "q": "Wird beim Vergleich zwischen Groß- und Kleinschreibung unterschieden?", "a": "Standardmäßig ja. Schalte Groß-/Kleinschreibung ignorieren ein, um Groß- und Kleinbuchstaben gleich zu behandeln. Leerzeichen trimmen ignoriert Leerzeichen am Anfang und Ende jedes Eintrags." },
+      { "q": "Werden meine Listen irgendwohin hochgeladen?", "a": "Nein. Der Vergleich läuft komplett in deinem Browser, deine Listen verlassen also nie dein Gerät." }
+    ],
+    "navHow": "So vergleichst du Listen",
+    "navFeatures": "Funktionen",
+    "navUses": "Anwendungsfälle",
+    "navFaq": "FAQ",
+    "footer": "DiffDuo: kostenloses Online-Tool, um zwei Listen zu vergleichen, Duplikate zu finden und Duplikate zu entfernen. Alles läuft lokal in deinem Browser."
+  },
+  "js": {
+    "items": { "one": "{n} Eintrag", "other": "{n} Einträge" },
+    "unique": { "one": "{n} eindeutig", "other": "{n} eindeutig" },
+    "overlap": "{p} Überschneidung",
+    "copiedItems": { "one": "{n} Eintrag kopiert", "other": "{n} Einträge kopiert" },
+    "truncated": { "one": "Es wird der erste Eintrag ({n}) angezeigt. Kopiere oder lade herunter, um alle zu erhalten.", "other": "Es werden die ersten {n} Einträge angezeigt. Kopiere oder lade herunter, um alle zu erhalten." }
+  }
+}

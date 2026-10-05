@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "title": "Bandingkan JSON – Diff Dua File JSON Online | DiffDuo",
+    "description": "Alat bandingkan JSON dan JSON diff online gratis. Bandingkan dua file JSON atau respons API dan lihat setiap nilai yang ditambah, dihapus, dan diubah.",
+    "ogTitle": "Bandingkan JSON – Temukan Perbedaan Dua File JSON",
+    "ogDescription": "Bandingkan dua dokumen JSON dalam hitungan detik. Lihat setiap nilai yang berubah beserta path-nya, tanpa memedulikan urutan key dan format. Gratis, cepat, dan privat.",
+    "twitterDescription": "Bandingkan dua dokumen JSON dan lihat setiap perubahan beserta path-nya. Gratis, cepat, dan privat.",
+    "ogImageAlt": "DiffDuo membandingkan dua dokumen JSON dengan nilai yang berubah disorot",
+    "appName": "DiffDuo – Bandingkan JSON & JSON Diff",
+    "appDescription": "Bandingkan dua file JSON atau respons API secara online. Menampilkan setiap nilai yang ditambah, dihapus, dan diubah berdasarkan JSON path-nya, beserta diff berdampingan, tanpa memedulikan urutan key dan format. Berjalan sepenuhnya di browser Anda.",
+    "featureList": [
+      "Mengabaikan urutan key dan format",
+      "Menampilkan setiap perubahan berdasarkan JSON path",
+      "Opsional: abaikan urutan item array",
+      "Diff berdampingan dan terpadu dari JSON yang sudah diformat",
+      "Mendeteksi JSON tidak valid dan menunjukkan baris serta kolomnya",
+      "Privat: JSON tidak pernah meninggalkan browser"
+    ]
+  },
+  "ui": {
+    "eyebrow": "JSON diff online gratis",
+    "h1": "Bandingkan JSON: lihat apa yang <em>berubah</em>",
+    "heroText": "Bandingkan dua file JSON, respons API, atau konfigurasi dan lihat setiap nilai yang ditambah, dihapus, dan diubah beserta path-nya. Urutan key dan format tidak berpengaruh. Privat dan gratis, langsung di browser Anda.",
+    "original": "JSON asli",
+    "changed": "JSON yang diubah",
+    "placeholderOriginal": "Tempel JSON asli di sini, atau letakkan file .json…",
+    "placeholderChanged": "Tempel JSON yang diubah di sini, atau letakkan file .json…",
+    "format": "Format",
+    "formatTitle": "Format dan beri indentasi pada JSON ini",
+    "ignoreArrayOrder": "Abaikan urutan array"
+  },
+  "content": {
+    "howTitle": "Cara membandingkan dua file JSON",
+    "steps": [
+      { "title": "Tempel atau buka JSON asli", "text": "Masukkan dokumen JSON pertama ke kotak <em>JSON asli</em>. Anda bisa menempelkannya, atau membuka maupun menyeret dan melepaskan file .json." },
+      { "title": "Tambahkan JSON yang diubah", "text": "Masukkan dokumen kedua ke kotak <em>JSON yang diubah</em>. Keduanya diperiksa dari kesalahan dan dibandingkan saat Anda mengetik." },
+      { "title": "Tinjau perubahannya", "text": "Lihat daftar setiap nilai yang diubah, ditambah, dan dihapus beserta path-nya, ditambah diff berdampingan dari kedua dokumen dengan key yang sudah diurutkan." }
+    ],
+    "featuresTitle": "JSON diff yang benar-benar memahami JSON",
+    "features": [
+      { "title": "Urutan key tidak berpengaruh", "text": "Objek dibandingkan berdasarkan key-nya, sehingga data yang sama dengan urutan berbeda dianggap sama." },
+      { "title": "Setiap perubahan beserta path-nya", "text": "Setiap perbedaan ditampilkan dengan lokasi persisnya, misalnya <code>$.user.roles[2]</code>, beserta nilai lama dan nilai baru." },
+      { "title": "Abaikan urutan array", "text": "Aktifkan jika array berfungsi sebagai himpunan, seperti tag atau ID, dan hanya penambahan serta penghapusan yang penting." },
+      { "title": "Mendeteksi JSON tidak valid", "text": "Jika dokumen tidak bisa di-parse, Anda melihat baris dan kolom kesalahannya, dan Format merapikan JSON yang valid." },
+      { "title": "Mampu menangani file besar", "text": "Membandingkan file JSON dengan lebih dari 100.000 baris di thread latar belakang, sehingga halaman tetap responsif." },
+      { "title": "100% privat", "text": "Tidak ada yang diunggah. Respons API, konfigurasi, dan data tidak pernah meninggalkan perangkat Anda." }
+    ],
+    "usesTitle": "Apa saja yang bisa dibandingkan",
+    "uses": [
+      { "title": "Respons API", "text": "Bandingkan respons dari dua versi atau lingkungan API untuk menemukan field yang berubah atau nilai yang hilang." },
+      { "title": "File konfigurasi", "text": "Temukan perbedaan antara dua file package.json, tsconfig, appsettings, atau file konfigurasi JSON lainnya." },
+      { "title": "Test fixture dan snapshot", "text": "Lihat dengan tepat mengapa hasil JSON yang diharapkan dan yang sebenarnya tidak cocok." },
+      { "title": "Ekspor data", "text": "Bandingkan dua ekspor dari data yang sama untuk menemukan apa yang ditambah, dihapus, atau diedit." }
+    ],
+    "readTitle": "Cara membaca hasilnya",
+    "legend": [
+      "Nilai yang <b>diubah</b> ada di kedua dokumen tetapi berbeda. Nilai lama ditampilkan lebih dulu, lalu nilai baru.",
+      "Nilai yang <b>ditambah</b> hanya ada di JSON yang diubah.",
+      "Nilai yang <b>dihapus</b> hanya ada di JSON asli.",
+      "<b>Path</b> seperti <code>$.settings.theme</code> dimulai dari root dokumen <code>$</code>; <code>[2]</code> adalah item ketiga dari sebuah array."
+    ],
+    "faqTitle": "Pertanyaan yang sering diajukan",
+    "faq": [
+      { "q": "Bagaimana cara membandingkan dua file JSON secara online?", "a": "Tempel JSON asli ke kotak kiri dan JSON yang diubah ke kotak kanan, atau buka file-nya. DiffDuo menampilkan setiap nilai yang diubah, ditambah, dan dihapus beserta path-nya, serta diff berdampingan dari kedua dokumen." },
+      { "q": "Apakah urutan key berpengaruh?", "a": "Tidak. Objek dibandingkan berdasarkan key-nya, sehingga dua dokumen dengan data yang sama tetapi urutan key berbeda dianggap sama. Format dan spasi juga diabaikan." },
+      { "q": "Bisakah saya mengabaikan urutan item dalam array?", "a": "Bisa. Aktifkan Abaikan urutan array untuk membandingkan array sebagai himpunan. Item yang ada di kedua array dianggap cocok di mana pun posisinya, dan hanya item yang ditambah atau dihapus yang dilaporkan." },
+      { "q": "Apa arti path seperti $.user.roles[2]?", "a": "Itu adalah lokasi nilai di dalam dokumen: $ adalah root, .user adalah key user, .roles adalah key roles di dalamnya, dan [2] adalah item ketiga dari array tersebut." },
+      { "q": "Apa yang terjadi jika JSON saya tidak valid?", "a": "DiffDuo menunjukkan dokumen mana yang memiliki kesalahan beserta baris dan kolomnya, sehingga Anda bisa memperbaikinya. Tombol Format memberi indentasi pada JSON yang valid agar lebih mudah dibaca." },
+      { "q": "Apakah JSON saya diunggah ke server?", "a": "Tidak. Semuanya berjalan di browser Anda, sehingga JSON Anda tidak pernah meninggalkan perangkat Anda. Aman untuk API key, data pelanggan, dan konfigurasi internal." },
+      { "q": "Bisakah membandingkan file JSON berukuran besar?", "a": "Bisa. File JSON hingga 50 MB bisa dibuka, dan diff berdampingan berjalan di thread latar belakang sehingga halaman tetap responsif." }
+    ],
+    "navHow": "Cara membandingkan JSON",
+    "navFeatures": "Fitur",
+    "navUses": "Yang bisa dibandingkan",
+    "navFaq": "FAQ",
+    "footer": "DiffDuo: alat bandingkan JSON dan JSON diff online gratis. Semuanya berjalan secara lokal, sehingga data Anda tidak pernah meninggalkan browser."
+  },
+  "js": {
+    "emptyText": "Tempel JSON ke kedua kotak atau buka file .json. Perbandingan diperbarui saat Anda mengetik.",
+    "identicalTitle": "Kedua dokumen JSON sama",
+    "identicalText": { "other": "{n} baris setelah diformat, tidak ditemukan perbedaan." },
+    "identicalTextIgnoring": { "other": "{n} baris setelah diformat, tidak ditemukan perbedaan dengan urutan array diabaikan." },
+    "invalidTitle": "JSON tidak valid",
+    "invalid": "{side} bukan JSON yang valid: ada kesalahan di baris {line}, kolom {col}.",
+    "invalidAt": "JSON tidak valid di baris {line}, kolom {col}",
+    "cannotFormat": "Tidak bisa memformat: JSON tidak valid di baris {line}, kolom {col}",
+    "changesTitle": "Perubahan",
+    "changed": { "other": "{n} diubah" },
+    "added": { "other": "{n} ditambah" },
+    "removed": { "other": "{n} dihapus" },
+    "moreChanges": { "other": "…dan {n} perubahan lainnya" },
+    "changesSkipped": "Daftar perubahan dilewati untuk dokumen yang sangat besar. Diff berdampingan di bawah menampilkan setiap perbedaan."
+  }
+}

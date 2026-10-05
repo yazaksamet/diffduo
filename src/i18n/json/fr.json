@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "title": "Comparateur JSON – Comparer deux fichiers JSON | DiffDuo",
+    "description": "Comparateur JSON gratuit en ligne : comparez deux fichiers JSON ou réponses d’API et voyez chaque valeur ajoutée, supprimée ou modifiée. Ordre des clés ignoré.",
+    "ogTitle": "Comparer JSON – Trouvez les différences entre deux fichiers JSON",
+    "ogDescription": "Comparez deux documents JSON en quelques secondes. Chaque valeur modifiée est indiquée par son chemin, sans tenir compte de l’ordre des clés ni de la mise en forme. Gratuit, rapide et privé.",
+    "twitterDescription": "Comparez deux documents JSON et voyez chaque modification par son chemin. Gratuit, rapide et privé.",
+    "ogImageAlt": "DiffDuo comparant deux documents JSON, avec les valeurs modifiées surlignées",
+    "appName": "DiffDuo – Comparateur JSON et JSON diff",
+    "appDescription": "Comparez deux fichiers JSON ou réponses d’API en ligne. Liste chaque valeur ajoutée, supprimée ou modifiée avec son chemin JSON et affiche un diff côte à côte, sans tenir compte de l’ordre des clés ni de la mise en forme. Tout se passe dans votre navigateur.",
+    "featureList": [
+      "Ignore l’ordre des clés et la mise en forme",
+      "Liste chaque modification par chemin JSON",
+      "En option : ignorer l’ordre des éléments des tableaux",
+      "Diff côte à côte et unifié du JSON formaté",
+      "Détecte le JSON invalide et indique la ligne et la colonne",
+      "Confidentiel : le JSON ne quitte jamais le navigateur"
+    ]
+  },
+  "ui": {
+    "eyebrow": "Outil JSON diff gratuit en ligne",
+    "h1": "Comparer JSON : voyez ce qui a <em>changé</em>",
+    "heroText": "Comparez deux fichiers JSON, réponses d’API ou fichiers de configuration et voyez chaque valeur ajoutée, supprimée ou modifiée avec son chemin. L’ordre des clés et la mise en forme ne comptent pas. Gratuit et confidentiel, directement dans votre navigateur.",
+    "original": "JSON original",
+    "changed": "JSON modifié",
+    "placeholderOriginal": "Collez le JSON original ici, ou déposez un fichier .json…",
+    "placeholderChanged": "Collez le JSON modifié ici, ou déposez un fichier .json…",
+    "format": "Formater",
+    "formatTitle": "Formater et indenter ce JSON",
+    "ignoreArrayOrder": "Ignorer l’ordre des tableaux"
+  },
+  "content": {
+    "howTitle": "Comment comparer deux fichiers JSON",
+    "steps": [
+      { "title": "Collez ou ouvrez le JSON original", "text": "Placez le premier document JSON dans le champ <em>JSON original</em>. Vous pouvez le coller, ou ouvrir un fichier .json ou le glisser-déposer." },
+      { "title": "Ajoutez le JSON modifié", "text": "Placez le second document dans le champ <em>JSON modifié</em>. Les deux sont vérifiés et comparés pendant que vous tapez." },
+      { "title": "Examinez les modifications", "text": "Consultez la liste de chaque valeur modifiée, ajoutée ou supprimée avec son chemin, ainsi qu’un diff côte à côte des deux documents, clés triées." }
+    ],
+    "featuresTitle": "Un JSON diff qui comprend vraiment le JSON",
+    "features": [
+      { "title": "L’ordre des clés n’a pas d’importance", "text": "Les objets sont comparés clé par clé : les mêmes données dans un ordre différent sont considérées comme identiques." },
+      { "title": "Chaque modification avec son chemin", "text": "Chaque différence est indiquée avec son emplacement exact, par exemple <code>$.user.roles[2]</code>, ainsi que l’ancienne et la nouvelle valeur." },
+      { "title": "Ignorer l’ordre des tableaux", "text": "Activez cette option quand vos tableaux sont des ensembles, comme des tags ou des ID, et que seuls les ajouts et suppressions comptent." },
+      { "title": "Détecte le JSON invalide", "text": "Si un document ne peut pas être analysé, vous voyez la ligne et la colonne de l’erreur, et Formater remet en forme le JSON valide." },
+      { "title": "Gère les gros fichiers", "text": "Compare des fichiers JSON de plus de 100 000 lignes en arrière-plan, sans figer la page." },
+      { "title": "100 % confidentiel", "text": "Rien n’est envoyé. Réponses d’API, fichiers de configuration et données ne quittent jamais votre appareil." }
+    ],
+    "usesTitle": "Ce que vous pouvez comparer",
+    "uses": [
+      { "title": "Réponses d’API", "text": "Comparez la réponse de deux versions ou de deux environnements d’une API pour trouver un champ modifié ou une valeur manquante." },
+      { "title": "Fichiers de configuration", "text": "Trouvez les différences entre deux fichiers package.json, tsconfig, appsettings ou tout autre fichier de configuration JSON." },
+      { "title": "Fixtures de test et snapshots", "text": "Voyez exactement pourquoi un résultat JSON attendu et un résultat obtenu ne correspondent pas." },
+      { "title": "Exports de données", "text": "Comparez deux exports des mêmes enregistrements pour voir ce qui a été ajouté, supprimé ou modifié." }
+    ],
+    "readTitle": "Comment lire le résultat",
+    "legend": [
+      "Les valeurs <b>modifiées</b> existent dans les deux documents mais sont différentes. L’ancienne valeur est affichée en premier, puis la nouvelle.",
+      "Les valeurs <b>ajoutées</b> n’existent que dans le JSON modifié.",
+      "Les valeurs <b>supprimées</b> n’existent que dans le JSON original.",
+      "Les <b>chemins</b> comme <code>$.settings.theme</code> partent de la racine du document <code>$</code> ; <code>[2]</code> est le troisième élément d’un tableau."
+    ],
+    "faqTitle": "Questions fréquentes",
+    "faq": [
+      { "q": "Comment comparer deux fichiers JSON en ligne ?", "a": "Collez le JSON original dans le champ de gauche et le JSON modifié dans celui de droite, ou ouvrez les fichiers. DiffDuo liste chaque valeur modifiée, ajoutée ou supprimée avec son chemin et affiche un diff côte à côte des deux documents." },
+      { "q": "L’ordre des clés a-t-il de l’importance ?", "a": "Non. Les objets sont comparés clé par clé : deux documents contenant les mêmes données avec des clés dans un ordre différent sont considérés comme identiques. La mise en forme et les espaces sont aussi ignorés." },
+      { "q": "Puis-je ignorer l’ordre des éléments dans les tableaux ?", "a": "Oui. Activez Ignorer l’ordre des tableaux pour comparer les tableaux comme des ensembles. Les éléments présents dans les deux tableaux correspondent quelle que soit leur position, et seuls les éléments ajoutés ou supprimés sont signalés." },
+      { "q": "Que signifie un chemin comme $.user.roles[2] ?", "a": "C’est l’emplacement de la valeur dans le document : $ est la racine, .user est la clé user, .roles est sa clé roles et [2] est le troisième élément de ce tableau." },
+      { "q": "Que se passe-t-il si mon JSON est invalide ?", "a": "DiffDuo indique quel document contient l’erreur, ainsi que la ligne et la colonne où elle se trouve, pour que vous puissiez la corriger. Le bouton Formater indente le JSON valide pour le rendre plus lisible." },
+      { "q": "Mon JSON est-il envoyé sur un serveur ?", "a": "Non. Tout s’exécute dans votre navigateur, votre JSON ne quitte donc jamais votre appareil. Vous pouvez l’utiliser sans crainte pour des clés d’API, des données clients et des configurations internes." },
+      { "q": "Peut-il comparer de gros fichiers JSON ?", "a": "Oui. Vous pouvez ouvrir des fichiers JSON jusqu’à 50 MB, et le diff côte à côte s’exécute en arrière-plan pour que la page reste réactive." }
+    ],
+    "navHow": "Comment comparer du JSON",
+    "navFeatures": "Fonctionnalités",
+    "navUses": "Ce que vous pouvez comparer",
+    "navFaq": "FAQ",
+    "footer": "DiffDuo : comparateur JSON et outil JSON diff en ligne gratuit. Tout s’exécute en local, vos données ne quittent jamais le navigateur."
+  },
+  "js": {
+    "emptyText": "Collez du JSON dans les deux champs ou ouvrez des fichiers .json. La comparaison se met à jour pendant que vous tapez.",
+    "identicalTitle": "Les documents JSON sont identiques",
+    "identicalText": { "one": "{n} ligne après formatage, aucune différence trouvée.", "many": "{n} lignes après formatage, aucune différence trouvée.", "other": "{n} lignes après formatage, aucune différence trouvée." },
+    "identicalTextIgnoring": { "one": "{n} ligne après formatage, aucune différence trouvée en ignorant l’ordre des tableaux.", "many": "{n} lignes après formatage, aucune différence trouvée en ignorant l’ordre des tableaux.", "other": "{n} lignes après formatage, aucune différence trouvée en ignorant l’ordre des tableaux." },
+    "invalidTitle": "JSON invalide",
+    "invalid": "{side} n’est pas un JSON valide : erreur à la ligne {line}, colonne {col}.",
+    "invalidAt": "JSON invalide à la ligne {line}, colonne {col}",
+    "cannotFormat": "Impossible de formater : JSON invalide à la ligne {line}, colonne {col}",
+    "changesTitle": "Modifications",
+    "changed": { "one": "{n} modification", "many": "{n} modifications", "other": "{n} modifications" },
+    "added": { "one": "{n} ajout", "many": "{n} ajouts", "other": "{n} ajouts" },
+    "removed": { "one": "{n} suppression", "many": "{n} suppressions", "other": "{n} suppressions" },
+    "moreChanges": { "one": "…et {n} autre modification", "many": "…et {n} autres modifications", "other": "…et {n} autres modifications" },
+    "changesSkipped": "La liste des modifications n’est pas affichée pour les très gros documents. Le diff côte à côte ci-dessous montre chaque différence."
+  }
+}

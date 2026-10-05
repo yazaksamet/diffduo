@@ -1,0 +1,9 @@
+{
+  "toolsLabel": "Tools",
+  "moreTools": "Weitere kostenlose Vergleichstools",
+  "tools": {
+    "text": { "name": "Textvergleich", "desc": "Vergleiche zwei Texte, Dateien oder Code nebeneinander und sieh jede Änderung im Stil von git diff." },
+    "json": { "name": "JSON-Vergleich", "desc": "Vergleiche zwei JSON-Dokumente und sieh, was sich geändert hat – unabhängig von Schlüsselreihenfolge und Formatierung." },
+    "lists": { "name": "Listenvergleich", "desc": "Vergleiche zwei Listen, finde Einträge, die nur in einer, in beiden oder doppelt vorkommen, und entferne Duplikate." }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "title": "Porównaj JSON – porównanie plików JSON online | DiffDuo",
+    "description": "Darmowe porównanie JSON i JSON diff online. Porównaj dwa pliki JSON lub odpowiedzi API i zobacz każdą dodaną, usuniętą i zmienioną wartość. Bez wysyłania.",
+    "ogTitle": "Porównaj JSON – znajdź różnice między dwoma plikami JSON",
+    "ogDescription": "Porównaj dwa dokumenty JSON w kilka sekund. Zobacz każdą zmienioną wartość wraz ze ścieżką, bez względu na kolejność kluczy i formatowanie. Za darmo, szybko i prywatnie.",
+    "twitterDescription": "Porównaj dwa dokumenty JSON i zobacz każdą zmianę wraz ze ścieżką. Za darmo, szybko i prywatnie.",
+    "ogImageAlt": "DiffDuo porównujące dwa dokumenty JSON z podświetlonymi zmienionymi wartościami",
+    "appName": "DiffDuo – porównaj JSON i JSON diff",
+    "appDescription": "Porównaj dwa pliki JSON lub odpowiedzi API online. Wyświetla każdą dodaną, usuniętą i zmienioną wartość wraz z jej ścieżką JSON oraz diff obok siebie, bez względu na kolejność kluczy i formatowanie. Działa w całości w przeglądarce.",
+    "featureList": [
+      "Ignoruje kolejność kluczy i formatowanie",
+      "Wyświetla każdą zmianę wraz ze ścieżką JSON",
+      "Opcjonalnie: ignorowanie kolejności elementów tablic",
+      "Diff obok siebie i zunifikowany diff sformatowanego JSON",
+      "Wykrywa niepoprawny JSON i wskazuje linię i kolumnę",
+      "Prywatnie: JSON nigdy nie opuszcza przeglądarki"
+    ]
+  },
+  "ui": {
+    "eyebrow": "Darmowe narzędzie JSON diff online",
+    "h1": "Porównaj JSON i zobacz, co się <em>zmieniło</em>",
+    "heroText": "Porównaj dwa pliki JSON, odpowiedzi API lub konfiguracje i zobacz każdą dodaną, usuniętą i zmienioną wartość wraz z jej ścieżką. Kolejność kluczy i formatowanie nie mają znaczenia. Prywatnie i za darmo, prosto w przeglądarce.",
+    "original": "JSON oryginalny",
+    "changed": "JSON zmieniony",
+    "placeholderOriginal": "Wklej tutaj oryginalny JSON lub upuść plik .json…",
+    "placeholderChanged": "Wklej tutaj zmieniony JSON lub upuść plik .json…",
+    "format": "Formatuj",
+    "formatTitle": "Sformatuj ten JSON i dodaj wcięcia",
+    "ignoreArrayOrder": "Ignoruj kolejność w tablicach"
+  },
+  "content": {
+    "howTitle": "Jak porównać dwa pliki JSON",
+    "steps": [
+      { "title": "Wklej lub otwórz oryginalny JSON", "text": "Wstaw pierwszy dokument JSON w pole <em>JSON oryginalny</em>. Możesz go wkleić albo otworzyć lub przeciągnąć plik .json." },
+      { "title": "Dodaj zmieniony JSON", "text": "Wstaw drugi dokument w pole <em>JSON zmieniony</em>. Oba są sprawdzane pod kątem błędów i porównywane w trakcie pisania." },
+      { "title": "Przejrzyj zmiany", "text": "Zobacz listę wszystkich zmienionych, dodanych i usuniętych wartości wraz ze ścieżkami oraz diff obu dokumentów obok siebie z posortowanymi kluczami." }
+    ],
+    "featuresTitle": "JSON diff, który rozumie JSON",
+    "features": [
+      { "title": "Kolejność kluczy nie ma znaczenia", "text": "Obiekty są porównywane według kluczy, więc te same dane w innej kolejności są traktowane jako równe." },
+      { "title": "Każda zmiana ze ścieżką", "text": "Każda różnica jest wyświetlana z dokładną lokalizacją, np. <code>$.user.roles[2]</code>, oraz starą i nową wartością." },
+      { "title": "Ignoruj kolejność w tablicach", "text": "Włącz tę opcję, gdy tablice są zbiorami, np. tagów lub identyfikatorów, i liczą się tylko dodania i usunięcia." },
+      { "title": "Wykrywa niepoprawny JSON", "text": "Jeśli dokumentu nie da się sparsować, zobaczysz linię i kolumnę błędu, a Formatuj porządkuje poprawny JSON." },
+      { "title": "Radzi sobie z dużymi plikami", "text": "Porównuje pliki JSON ze 100 000+ linii w wątku w tle, dzięki czemu strona pozostaje responsywna." },
+      { "title": "100% prywatności", "text": "Nic nie jest wysyłane. Odpowiedzi API, konfiguracje i dane nigdy nie opuszczają twojego urządzenia." }
+    ],
+    "usesTitle": "Co możesz porównać",
+    "uses": [
+      { "title": "Odpowiedzi API", "text": "Porównaj odpowiedzi dwóch wersji API lub środowisk, aby znaleźć zmienione pole lub brakującą wartość." },
+      { "title": "Pliki konfiguracyjne", "text": "Znajdź różnice między dwoma plikami package.json, tsconfig, appsettings lub innymi plikami konfiguracyjnymi JSON." },
+      { "title": "Dane testowe i snapshoty", "text": "Zobacz dokładnie, dlaczego oczekiwany i rzeczywisty wynik JSON się nie zgadzają." },
+      { "title": "Eksporty danych", "text": "Porównaj dwa eksporty tych samych rekordów, aby sprawdzić, co dodano, usunięto lub zmieniono." }
+    ],
+    "readTitle": "Jak czytać wynik",
+    "legend": [
+      "<b>Zmienione</b> wartości występują w obu dokumentach, ale się różnią. Najpierw pokazywana jest stara wartość, potem nowa.",
+      "<b>Dodane</b> wartości występują tylko w zmienionym JSON.",
+      "<b>Usunięte</b> wartości występują tylko w oryginalnym JSON.",
+      "<b>Ścieżki</b> takie jak <code>$.settings.theme</code> zaczynają się od korzenia dokumentu <code>$</code>; <code>[2]</code> to trzeci element tablicy."
+    ],
+    "faqTitle": "Najczęściej zadawane pytania",
+    "faq": [
+      { "q": "Jak porównać dwa pliki JSON online?", "a": "Wklej oryginalny JSON w lewe pole, a zmieniony JSON w prawe albo otwórz pliki. DiffDuo wyświetla każdą zmienioną, dodaną i usuniętą wartość wraz ze ścieżką oraz diff obu dokumentów obok siebie." },
+      { "q": "Czy kolejność kluczy ma znaczenie?", "a": "Nie. Obiekty są porównywane według kluczy, więc dwa dokumenty z tymi samymi danymi w innej kolejności kluczy są traktowane jako równe. Formatowanie i białe znaki również są ignorowane." },
+      { "q": "Czy mogę ignorować kolejność elementów w tablicach?", "a": "Tak. Włącz Ignoruj kolejność w tablicach, aby porównywać tablice jak zbiory. Elementy obecne w obu tablicach są dopasowywane bez względu na pozycję, a zgłaszane są tylko elementy dodane lub usunięte." },
+      { "q": "Co oznacza ścieżka typu $.user.roles[2]?", "a": "To lokalizacja wartości w dokumencie: $ to korzeń, .user to klucz user, .roles to jego klucz roles, a [2] to trzeci element tej tablicy." },
+      { "q": "Co się stanie, jeśli mój JSON jest niepoprawny?", "a": "DiffDuo pokazuje, który dokument zawiera błąd oraz w której linii i kolumnie, dzięki czemu możesz go poprawić. Przycisk Formatuj dodaje wcięcia do poprawnego JSON, aby był czytelniejszy." },
+      { "q": "Czy mój JSON jest wysyłany na serwer?", "a": "Nie. Wszystko działa w przeglądarce, więc twój JSON nigdy nie opuszcza urządzenia. To bezpieczne dla kluczy API, danych klientów i wewnętrznej konfiguracji." },
+      { "q": "Czy można porównać duże pliki JSON?", "a": "Tak. Można otwierać pliki JSON do 50 MB, a diff obok siebie działa w wątku w tle, dzięki czemu strona pozostaje responsywna." }
+    ],
+    "navHow": "Jak porównać JSON",
+    "navFeatures": "Funkcje",
+    "navUses": "Co możesz porównać",
+    "navFaq": "FAQ",
+    "footer": "DiffDuo: darmowe porównanie JSON i JSON diff online. Wszystko działa lokalnie, więc twoje dane nigdy nie opuszczają przeglądarki."
+  },
+  "js": {
+    "emptyText": "Wklej JSON do obu pól lub otwórz pliki .json. Porównanie aktualizuje się w trakcie pisania.",
+    "identicalTitle": "Dokumenty JSON są równe",
+    "identicalText": { "one": "{n} linia po sformatowaniu, nie znaleziono różnic.", "few": "{n} linie po sformatowaniu, nie znaleziono różnic.", "many": "{n} linii po sformatowaniu, nie znaleziono różnic.", "other": "{n} linii po sformatowaniu, nie znaleziono różnic." },
+    "identicalTextIgnoring": { "one": "{n} linia po sformatowaniu, nie znaleziono różnic przy ignorowaniu kolejności w tablicach.", "few": "{n} linie po sformatowaniu, nie znaleziono różnic przy ignorowaniu kolejności w tablicach.", "many": "{n} linii po sformatowaniu, nie znaleziono różnic przy ignorowaniu kolejności w tablicach.", "other": "{n} linii po sformatowaniu, nie znaleziono różnic przy ignorowaniu kolejności w tablicach." },
+    "invalidTitle": "Niepoprawny JSON",
+    "invalid": "{side} nie jest poprawnym JSON: błąd w linii {line}, kolumnie {col}.",
+    "invalidAt": "Niepoprawny JSON w linii {line}, kolumnie {col}",
+    "cannotFormat": "Nie można sformatować: niepoprawny JSON w linii {line}, kolumnie {col}",
+    "changesTitle": "Zmiany",
+    "changed": { "one": "{n} zmieniona", "few": "{n} zmienione", "many": "{n} zmienionych", "other": "{n} zmienionej" },
+    "added": { "one": "{n} dodana", "few": "{n} dodane", "many": "{n} dodanych", "other": "{n} dodanej" },
+    "removed": { "one": "{n} usunięta", "few": "{n} usunięte", "many": "{n} usuniętych", "other": "{n} usuniętej" },
+    "moreChanges": { "one": "…i jeszcze {n} zmiana", "few": "…i jeszcze {n} zmiany", "many": "…i jeszcze {n} zmian", "other": "…i jeszcze {n} zmiany" },
+    "changesSkipped": "Lista zmian jest pomijana w przypadku bardzo dużych dokumentów. Diff obok siebie poniżej pokazuje każdą różnicę."
+  }
+}

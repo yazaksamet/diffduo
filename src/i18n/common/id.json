@@ -1,0 +1,9 @@
+{
+  "toolsLabel": "Alat",
+  "moreTools": "Alat perbandingan gratis lainnya",
+  "tools": {
+    "text": { "name": "Bandingkan teks", "desc": "Bandingkan dua teks, file, atau kode berdampingan dan lihat setiap perubahan, seperti git diff." },
+    "json": { "name": "Bandingkan JSON", "desc": "Bandingkan dua dokumen JSON dan lihat apa yang berubah, tanpa memedulikan urutan key dan format." },
+    "lists": { "name": "Bandingkan daftar", "desc": "Bandingkan dua daftar untuk menemukan item yang hanya ada di satu daftar, di keduanya, atau duplikat, lalu hapus duplikatnya." }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "title": "Twee lijsten vergelijken – dubbele waarden vinden | DiffDuo",
+    "description": "Gratis online twee lijsten vergelijken. Vind items die alleen in één lijst, in beide of dubbel voorkomen. Verwijder dubbele waarden en voeg lijsten samen.",
+    "ogTitle": "Twee lijsten vergelijken – vind verschillen en dubbele waarden",
+    "ogDescription": "Plak twee lijsten en zie meteen wat alleen in één lijst staat, wat in beide staat en wat dubbel voorkomt. Gratis, snel en privé.",
+    "twitterDescription": "Plak twee lijsten en zie meteen wat alleen in één, in beide of dubbel voorkomt. Gratis en privé.",
+    "ogImageAlt": "DiffDuo vergelijkt twee lijsten en toont items alleen in lijst A, in beide lijsten en alleen in lijst B",
+    "appName": "DiffDuo – Twee lijsten vergelijken",
+    "appDescription": "Vergelijk twee lijsten online: vind items die alleen in lijst A, alleen in lijst B of in beide staan, toon dubbele waarden en voeg beide lijsten samen zonder dubbele waarden. Draait volledig in je browser.",
+    "featureList": [
+      "Items alleen in lijst A, alleen in lijst B en in beide",
+      "Twee lijsten samenvoegen zonder dubbele waarden",
+      "Dubbele waarden vinden en verwijderen",
+      "Items splitsen op nieuwe regel, komma, puntkomma of tab",
+      "Hoofdletters en extra spaties negeren",
+      "Privé: lijsten verlaten de browser nooit"
+    ]
+  },
+  "ui": {
+    "eyebrow": "Gratis online tool om lijsten te vergelijken",
+    "h1": "Twee lijsten vergelijken en de <em>verschillen</em> vinden",
+    "heroText": "Plak twee lijsten om te zien welke items alleen in één lijst staan, welke in beide staan en welke dubbel voorkomen. Verwijder dubbele waarden, voeg lijsten samen en kopieer elk resultaat met één klik.",
+    "listA": "Lijst A",
+    "listB": "Lijst B",
+    "placeholderA": "Plak hier de eerste lijst, één item per regel…",
+    "placeholderB": "Plak hier de tweede lijst, één item per regel…",
+    "separator": "Splitsen op",
+    "sepNewline": "Nieuwe regel",
+    "sepComma": "Komma",
+    "sepSemicolon": "Puntkomma",
+    "sepTab": "Tab",
+    "order": "Volgorde",
+    "orderOriginal": "Oorspronkelijke volgorde",
+    "orderAz": "A tot Z",
+    "trim": "Spaties trimmen",
+    "skipEmpty": "Lege regels overslaan",
+    "onlyA": "Alleen in lijst A",
+    "onlyB": "Alleen in lijst B",
+    "both": "In beide lijsten",
+    "union": "Alle unieke items",
+    "dupA": "Dubbel in lijst A",
+    "dupB": "Dubbel in lijst B",
+    "copyList": "Kopiëren",
+    "downloadList": "Downloaden als .txt",
+    "none": "Niets te tonen"
+  },
+  "content": {
+    "howTitle": "Zo vergelijk je twee lijsten",
+    "steps": [
+      { "title": "Plak de eerste lijst", "text": "Zet één lijst in het vak <em>Lijst A</em>, één item per regel. Je kunt ook een .txt- of .csv-bestand openen." },
+      { "title": "Plak de tweede lijst", "text": "Zet de andere lijst in het vak <em>Lijst B</em>. De resultaten worden bijgewerkt terwijl je typt." },
+      { "title": "Kopieer het resultaat dat je nodig hebt", "text": "Zie wat alleen in één lijst staat, in beide staat of dubbel voorkomt, en kopieer of download elk resultaat." }
+    ],
+    "featuresTitle": "Alles om lijsten te vergelijken en dubbele waarden te vinden",
+    "features": [
+      { "title": "Verschillen en overeenkomsten", "text": "Zie meteen welke items alleen in lijst A, alleen in lijst B en in beide lijsten staan." },
+      { "title": "Dubbele waarden vinden en verwijderen", "text": "Zie welke items in elke lijst herhaald worden, en krijg een samengevoegde lijst met elk item precies één keer." },
+      { "title": "Elk scheidingsteken", "text": "Splits items op nieuwe regel, komma, puntkomma of tab, zodat je kolommen uit Excel of CSV-bestanden kunt plakken." },
+      { "title": "Hoofdletters en spaties negeren", "text": "Behandel “Apple” en “apple ” als hetzelfde item wanneer hoofdletters en extra spaties niet uitmaken." },
+      { "title": "Snel met enorme lijsten", "text": "Vergelijkt lijsten met honderdduizenden items in een fractie van een seconde." },
+      { "title": "100% privé", "text": "Er wordt niets geüpload. Klantenlijsten, e-mailadressen en ID's verlaten je apparaat nooit." }
+    ],
+    "usesTitle": "Waarvoor mensen het gebruiken",
+    "uses": [
+      { "title": "E-mail- en klantenlijsten", "text": "Zie welke contacten nieuw zijn, welke zich hebben afgemeld en welke in beide lijsten staan." },
+      { "title": "Excel- en spreadsheetkolommen", "text": "Plak twee kolommen om te zien welke waarden in de andere kolom ontbreken, zonder formules." },
+      { "title": "Voorraad en product-ID's", "text": "Vergelijk SKU's, ordernummers of ID's uit twee systemen om te vinden wat niet overeenkomt." },
+      { "title": "Dubbele waarden verwijderen", "text": "Plak één lijst in Lijst A om de dubbele waarden te zien en kopieer een schone lijst met elk item één keer." },
+      { "title": "Namen en aanwezigheid", "text": "Controleer wie zich heeft aangemeld maar niet aanwezig was, of wie op de ene teamlijst staat maar niet op de andere." },
+      { "title": "URL's en zoekwoorden", "text": "Vergelijk twee lijsten met URL's, zoekwoorden of domeinen om gaten en overlap te vinden." }
+    ],
+    "faqTitle": "Veelgestelde vragen",
+    "faq": [
+      { "q": "Hoe vergelijk ik twee lijsten?", "a": "Plak de eerste lijst in Lijst A en de tweede in Lijst B, één item per regel. DiffDuo toont meteen de items alleen in lijst A, alleen in lijst B, in beide lijsten, en de dubbele waarden in elke lijst." },
+      { "q": "Hoe vind ik dubbele waarden tussen twee lijsten?", "a": "De items die in beide lijsten staan, worden getoond onder In beide lijsten. Je kunt ze met één klik kopiëren of downloaden als .txt-bestand." },
+      { "q": "Hoe verwijder ik dubbele waarden uit een lijst?", "a": "Plak de lijst in Lijst A en laat Lijst B leeg. Alle unieke items toont elk item precies één keer, en Dubbel in lijst A toont de items die herhaald werden." },
+      { "q": "Kan ik twee kolommen uit Excel vergelijken?", "a": "Ja. Kopieer een kolom uit Excel of Google Sheets en plak die in Lijst A, en plak daarna de andere kolom in Lijst B. Elke cel wordt één item." },
+      { "q": "Kan ik komma's of puntkomma's gebruiken in plaats van nieuwe regels?", "a": "Ja. Kies komma, puntkomma of tab bij Splitsen op. Nieuwe regels scheiden items ook altijd." },
+      { "q": "Is de vergelijking hoofdlettergevoelig?", "a": "Standaard wel. Zet Hoofdletters negeren aan om hoofdletters en kleine letters als hetzelfde te behandelen. Spaties trimmen negeert spaties aan het begin en einde van elk item." },
+      { "q": "Worden mijn lijsten ergens geüpload?", "a": "Nee. De vergelijking draait volledig in je browser, dus je lijsten verlaten je apparaat nooit." }
+    ],
+    "navHow": "Zo vergelijk je lijsten",
+    "navFeatures": "Functies",
+    "navUses": "Toepassingen",
+    "navFaq": "FAQ",
+    "footer": "DiffDuo: gratis online tool om twee lijsten te vergelijken, dubbele waarden te vinden en dubbele waarden te verwijderen. Alles draait lokaal in je browser."
+  },
+  "js": {
+    "items": { "one": "{n} item", "other": "{n} items" },
+    "unique": { "one": "{n} uniek", "other": "{n} uniek" },
+    "overlap": "{p} overlap",
+    "copiedItems": { "one": "{n} item gekopieerd", "other": "{n} items gekopieerd" },
+    "truncated": { "one": "Het eerste {n} item wordt getoond. Kopieer of download om alles te krijgen.", "other": "De eerste {n} items worden getoond. Kopieer of download om alles te krijgen." }
+  }
+}

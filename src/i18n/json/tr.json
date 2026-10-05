@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "title": "JSON Karşılaştırma – Online JSON Fark Bulma | DiffDuo",
+    "description": "Ücretsiz online JSON karşılaştırma aracı. İki JSON dosyasını veya API yanıtını karşılaştırın; eklenen, silinen ve değişen her değeri görün. Sıra önemsiz.",
+    "ogTitle": "JSON Karşılaştırma – İki JSON Dosyası Arasındaki Farkları Bulun",
+    "ogDescription": "İki JSON belgesini saniyeler içinde karşılaştırın. Anahtar sırası ve biçimlendirmeden bağımsız olarak değişen her değeri yoluyla görün. Ücretsiz, hızlı ve gizli.",
+    "twitterDescription": "İki JSON belgesini karşılaştırın ve her değişikliği yoluyla birlikte görün. Ücretsiz, hızlı ve gizli.",
+    "ogImageAlt": "DiffDuo'da değişen değerleri vurgulanmış iki JSON belgesinin karşılaştırması",
+    "appName": "DiffDuo – JSON Karşılaştırma ve JSON Fark Bulma",
+    "appDescription": "İki JSON dosyasını veya API yanıtını online karşılaştırın. Eklenen, silinen ve değişen her değeri JSON yoluyla listeler ve anahtar sırası ile biçimlendirmeyi yoksayarak yan yana bir fark görünümü sunar. Tamamen tarayıcınızda çalışır.",
+    "featureList": [
+      "Anahtar sırasını ve biçimlendirmeyi yoksayar",
+      "Her değişikliği JSON yoluyla listeler",
+      "İsteğe bağlı: dizi öğelerinin sırasını yoksayma",
+      "Biçimlendirilmiş JSON'un yan yana ve birleşik fark görünümü",
+      "Geçersiz JSON'u bulur, satırını ve sütununu gösterir",
+      "Gizli: JSON tarayıcıdan asla çıkmaz"
+    ]
+  },
+  "ui": {
+    "eyebrow": "Ücretsiz online JSON fark bulma aracı",
+    "h1": "JSON karşılaştırma: neyin <em>değiştiğini</em> görün",
+    "heroText": "İki JSON dosyasını, API yanıtını veya yapılandırmayı karşılaştırın; eklenen, silinen ve değişen her değeri yoluyla birlikte görün. Anahtar sırası ve biçimlendirme fark etmez. Gizli ve ücretsiz, doğrudan tarayıcınızda.",
+    "original": "Orijinal JSON",
+    "changed": "Değiştirilmiş JSON",
+    "placeholderOriginal": "Orijinal JSON'u buraya yapıştırın veya bir .json dosyası bırakın…",
+    "placeholderChanged": "Değiştirilmiş JSON'u buraya yapıştırın veya bir .json dosyası bırakın…",
+    "format": "Biçimlendir",
+    "formatTitle": "Bu JSON'u biçimlendir ve girintile",
+    "ignoreArrayOrder": "Dizi sırasını yoksay"
+  },
+  "content": {
+    "howTitle": "İki JSON dosyası nasıl karşılaştırılır?",
+    "steps": [
+      { "title": "Orijinal JSON'u yapıştırın veya açın", "text": "İlk JSON belgesini <em>Orijinal JSON</em> kutusuna koyun. Yapıştırabilir ya da bir .json dosyasını açabilir veya sürükleyip bırakabilirsiniz." },
+      { "title": "Değiştirilmiş JSON'u ekleyin", "text": "İkinci belgeyi <em>Değiştirilmiş JSON</em> kutusuna koyun. Siz yazarken ikisi de hatalara karşı denetlenir ve karşılaştırılır." },
+      { "title": "Değişiklikleri inceleyin", "text": "Değişen, eklenen ve silinen her değerin yoluyla birlikte listesini ve anahtarları sıralanmış iki belgenin yan yana fark görünümünü görün." }
+    ],
+    "featuresTitle": "JSON'u anlayan bir JSON fark bulma aracı",
+    "features": [
+      { "title": "Anahtar sırası önemli değil", "text": "Nesneler anahtarlarına göre karşılaştırılır; bu yüzden farklı sırada yazılmış aynı veriler eşit sayılır." },
+      { "title": "Her değişiklik yoluyla birlikte", "text": "Her fark, <code>$.user.roles[2]</code> gibi tam konumu ve eski ile yeni değeriyle birlikte listelenir." },
+      { "title": "Dizi sırasını yoksayın", "text": "Diziler etiketler veya kimlikler gibi birer küme olduğunda ve yalnızca eklemeler ile silmeler önemliyse bu seçeneği açın." },
+      { "title": "Geçersiz JSON'u bulur", "text": "Bir belge ayrıştırılamazsa hatanın satırını ve sütununu görürsünüz; Biçimlendir ise geçerli JSON'u düzenler." },
+      { "title": "Büyük dosyaları kaldırır", "text": "100.000+ satırlık JSON dosyalarını arka planda karşılaştırır, böylece sayfa yanıt vermeye devam eder." },
+      { "title": "%100 gizli", "text": "Hiçbir şey yüklenmez. API yanıtları, yapılandırmalar ve veriler cihazınızdan asla çıkmaz." }
+    ],
+    "usesTitle": "Neleri karşılaştırabilirsiniz?",
+    "uses": [
+      { "title": "API yanıtları", "text": "Değişen bir alanı veya eksik bir değeri bulmak için iki API sürümünün ya da ortamın yanıtını karşılaştırın." },
+      { "title": "Yapılandırma dosyaları", "text": "İki package.json, tsconfig, appsettings veya başka bir JSON yapılandırma dosyası arasındaki farkı bulun." },
+      { "title": "Test verileri ve snapshot'lar", "text": "Beklenen ve gerçek JSON sonucunun neden eşleşmediğini tam olarak görün." },
+      { "title": "Veri dışa aktarımları", "text": "Neyin eklendiğini, silindiğini veya düzenlendiğini bulmak için aynı kayıtların iki dışa aktarımını karşılaştırın." }
+    ],
+    "readTitle": "Sonuç nasıl okunur?",
+    "legend": [
+      "<b>Değişen</b> değerler her iki belgede de vardır ama farklıdır. Önce eski değer, ardından yenisi gösterilir.",
+      "<b>Eklenen</b> değerler yalnızca değiştirilmiş JSON'da bulunur.",
+      "<b>Silinen</b> değerler yalnızca orijinal JSON'da bulunur.",
+      "<code>$.settings.theme</code> gibi <b>yollar</b> belgenin kökü olan <code>$</code> ile başlar; <code>[2]</code> bir dizinin üçüncü öğesidir."
+    ],
+    "faqTitle": "Sıkça sorulan sorular",
+    "faq": [
+      { "q": "İki JSON dosyasını online nasıl karşılaştırırım?", "a": "Orijinal JSON'u soldaki kutuya, değiştirilmiş JSON'u sağdaki kutuya yapıştırın ya da dosyaları açın. DiffDuo değişen, eklenen ve silinen her değeri yoluyla listeler ve iki belgenin yan yana fark görünümünü gösterir." },
+      { "q": "Anahtarların sırası önemli mi?", "a": "Hayır. Nesneler anahtarlarına göre karşılaştırılır; bu yüzden aynı verileri farklı anahtar sırasıyla içeren iki belge eşit kabul edilir. Biçimlendirme ve boşluklar da yoksayılır." },
+      { "q": "Dizilerdeki öğelerin sırasını yoksayabilir miyim?", "a": "Evet. Dizileri küme olarak karşılaştırmak için Dizi sırasını yoksay seçeneğini açın. Her iki dizide de bulunan öğeler nerede olurlarsa olsunlar eşleşir ve yalnızca eklenen veya silinen öğeler bildirilir." },
+      { "q": "$.user.roles[2] gibi bir yol ne anlama gelir?", "a": "Değerin belge içindeki konumudur: $ kök, .user user anahtarı, .roles onun roles anahtarı, [2] ise o dizinin üçüncü öğesidir." },
+      { "q": "JSON'um geçersizse ne olur?", "a": "DiffDuo hangi belgede hata olduğunu ve hatanın bulunduğu satır ile sütunu gösterir, böylece düzeltebilirsiniz. Biçimlendir düğmesi, geçerli JSON'u daha kolay okunması için girintiler." },
+      { "q": "JSON'um bir sunucuya yükleniyor mu?", "a": "Hayır. Her şey tarayıcınızda çalışır, bu yüzden JSON'unuz cihazınızdan asla çıkmaz. API anahtarları, müşteri verileri ve şirket içi yapılandırmalar için güvenlidir." },
+      { "q": "Büyük JSON dosyalarını karşılaştırabilir mi?", "a": "Evet. 50 MB'a kadar JSON dosyaları açılabilir ve yan yana fark görünümü arka planda hesaplanır, böylece sayfa yanıt vermeye devam eder." }
+    ],
+    "navHow": "JSON nasıl karşılaştırılır",
+    "navFeatures": "Özellikler",
+    "navUses": "Neleri karşılaştırabilirsiniz",
+    "navFaq": "SSS",
+    "footer": "DiffDuo: ücretsiz online JSON karşılaştırma ve JSON fark bulma aracı. Her şey yerel olarak çalışır, bu yüzden verileriniz tarayıcıdan asla çıkmaz."
+  },
+  "js": {
+    "emptyText": "Her iki kutuya JSON yapıştırın veya .json dosyaları açın. Karşılaştırma siz yazarken güncellenir.",
+    "identicalTitle": "JSON belgeleri eşit",
+    "identicalText": { "one": "Biçimlendirme sonrası {n} satır, hiçbir fark bulunamadı.", "other": "Biçimlendirme sonrası {n} satır, hiçbir fark bulunamadı." },
+    "identicalTextIgnoring": { "one": "Biçimlendirme sonrası {n} satır, dizi sırası yoksayıldığında hiçbir fark bulunamadı.", "other": "Biçimlendirme sonrası {n} satır, dizi sırası yoksayıldığında hiçbir fark bulunamadı." },
+    "invalidTitle": "Geçersiz JSON",
+    "invalid": "{side} geçerli bir JSON değil: {line}. satır, {col}. sütunda bir hata var.",
+    "invalidAt": "{line}. satır, {col}. sütunda geçersiz JSON",
+    "cannotFormat": "Biçimlendirilemiyor: {line}. satır, {col}. sütunda geçersiz JSON",
+    "changesTitle": "Değişiklikler",
+    "changed": { "one": "{n} değişen", "other": "{n} değişen" },
+    "added": { "one": "{n} eklenen", "other": "{n} eklenen" },
+    "removed": { "one": "{n} silinen", "other": "{n} silinen" },
+    "moreChanges": { "one": "…ve {n} değişiklik daha", "other": "…ve {n} değişiklik daha" },
+    "changesSkipped": "Çok büyük belgelerde değişiklik listesi atlanır. Aşağıdaki yan yana fark görünümü her farkı gösterir."
+  }
+}

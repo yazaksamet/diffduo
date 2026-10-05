@@ -1,0 +1,9 @@
+{
+  "toolsLabel": "Tools",
+  "moreTools": "Meer gratis vergelijkingstools",
+  "tools": {
+    "text": { "name": "Tekst vergelijken", "desc": "Vergelijk twee teksten, bestanden of code naast elkaar en zie elke wijziging, in git diff-stijl." },
+    "json": { "name": "JSON vergelijken", "desc": "Vergelijk twee JSON-documenten en zie wat er is gewijzigd, ongeacht de volgorde van keys en de opmaak." },
+    "lists": { "name": "Lijst vergelijken", "desc": "Vergelijk twee lijsten, vind items die in één of beide lijsten staan of dubbel voorkomen, en verwijder dubbele waarden." }
+  }
+}

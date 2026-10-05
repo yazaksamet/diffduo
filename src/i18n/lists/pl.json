@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "title": "Porównaj dwie listy – znajdź duplikaty online | DiffDuo",
+    "description": "Darmowe narzędzie do porównywania list online. Wklej dwie listy i znajdź pozycje tylko w jednej, w obu lub zduplikowane. Usuń duplikaty i scal listy w mig.",
+    "ogTitle": "Porównaj dwie listy – znajdź różnice i duplikaty",
+    "ogDescription": "Wklej dwie listy i od razu zobacz, co jest tylko w jednej, co w obu, a co się powtarza. Za darmo, szybko i prywatnie.",
+    "twitterDescription": "Wklej dwie listy i od razu zobacz, co jest tylko w jednej, w obu lub się powtarza. Za darmo i prywatnie.",
+    "ogImageAlt": "DiffDuo porównujące dwie listy i pokazujące pozycje tylko w liście A, w obu listach i tylko w liście B",
+    "appName": "DiffDuo – porównaj dwie listy",
+    "appDescription": "Porównaj dwie listy online: znajdź pozycje tylko w liście A, tylko w liście B lub w obu, wyświetl duplikaty i scal obie listy bez duplikatów. Działa w całości w przeglądarce.",
+    "featureList": [
+      "Pozycje tylko w liście A, tylko w liście B i w obu",
+      "Scalanie dwóch list bez duplikatów",
+      "Znajdowanie i usuwanie duplikatów",
+      "Podział według nowej linii, przecinka, średnika lub tabulatora",
+      "Ignorowanie wielkości liter i zbędnych spacji",
+      "Prywatnie: listy nigdy nie opuszczają przeglądarki"
+    ]
+  },
+  "ui": {
+    "eyebrow": "Darmowe narzędzie do porównywania list online",
+    "h1": "Porównaj dwie listy i znajdź <em>różnice</em>",
+    "heroText": "Wklej dwie listy, aby zobaczyć, które pozycje są tylko w jednej, które w obu, a które się powtarzają. Usuń duplikaty, scal listy i skopiuj dowolny wynik jednym kliknięciem.",
+    "listA": "Lista A",
+    "listB": "Lista B",
+    "placeholderA": "Wklej tutaj pierwszą listę, jedna pozycja w linii…",
+    "placeholderB": "Wklej tutaj drugą listę, jedna pozycja w linii…",
+    "separator": "Podziel według",
+    "sepNewline": "Nowa linia",
+    "sepComma": "Przecinek",
+    "sepSemicolon": "Średnik",
+    "sepTab": "Tabulator",
+    "order": "Kolejność",
+    "orderOriginal": "Oryginalna kolejność",
+    "orderAz": "Od A do Z",
+    "trim": "Przytnij spacje",
+    "skipEmpty": "Pomiń puste linie",
+    "onlyA": "Tylko w liście A",
+    "onlyB": "Tylko w liście B",
+    "both": "W obu listach",
+    "union": "Wszystkie unikalne pozycje",
+    "dupA": "Duplikaty w liście A",
+    "dupB": "Duplikaty w liście B",
+    "copyList": "Kopiuj",
+    "downloadList": "Pobierz jako .txt",
+    "none": "Brak pozycji"
+  },
+  "content": {
+    "howTitle": "Jak porównać dwie listy",
+    "steps": [
+      { "title": "Wklej pierwszą listę", "text": "Wstaw jedną listę w pole <em>Lista A</em>, jedna pozycja w linii. Możesz też otworzyć plik .txt lub .csv." },
+      { "title": "Wklej drugą listę", "text": "Wstaw drugą listę w pole <em>Lista B</em>. Wyniki aktualizują się w trakcie pisania." },
+      { "title": "Skopiuj potrzebny wynik", "text": "Zobacz, co jest tylko w jednej liście, w obu lub się powtarza, i skopiuj albo pobierz dowolny wynik." }
+    ],
+    "featuresTitle": "Wszystko, czego potrzebujesz, by porównać listy i znaleźć duplikaty",
+    "features": [
+      { "title": "Różnice i części wspólne", "text": "Od razu zobacz pozycje, które są tylko w liście A, tylko w liście B i w obu listach." },
+      { "title": "Znajdź i usuń duplikaty", "text": "Zobacz, które pozycje powtarzają się w każdej liście, i otrzymaj scaloną listę, w której każda pozycja występuje dokładnie raz." },
+      { "title": "Dowolny separator", "text": "Dziel pozycje według nowej linii, przecinka, średnika lub tabulatora, aby wklejać kolumny z Excela lub plików CSV." },
+      { "title": "Ignoruj wielkość liter i spacje", "text": "Traktuj „Apple” i „apple ” jako tę samą pozycję, gdy wielkość liter i zbędne spacje nie mają znaczenia." },
+      { "title": "Szybko nawet z ogromnymi listami", "text": "Porównuje listy zawierające setki tysięcy pozycji w ułamku sekundy." },
+      { "title": "100% prywatności", "text": "Nic nie jest wysyłane. Listy klientów, adresy e-mail i identyfikatory nigdy nie opuszczają twojego urządzenia." }
+    ],
+    "usesTitle": "Do czego się przydaje",
+    "uses": [
+      { "title": "Listy mailingowe i klientów", "text": "Sprawdź, które kontakty są nowe, które się wypisały, a które występują w obu listach." },
+      { "title": "Kolumny z Excela i arkuszy", "text": "Wklej dwie kolumny, aby zobaczyć, których wartości brakuje w drugiej kolumnie, bez formuł." },
+      { "title": "Magazyn i identyfikatory produktów", "text": "Porównaj SKU, numery zamówień lub identyfikatory z dwóch systemów, aby znaleźć to, co się nie zgadza." },
+      { "title": "Usuwanie duplikatów", "text": "Wklej jedną listę w pole Lista A, aby zobaczyć jej duplikaty i skopiować czystą listę z każdą pozycją raz." },
+      { "title": "Nazwiska i obecność", "text": "Sprawdź, kto się zarejestrował, ale nie przyszedł, albo kto jest na jednej liście zespołu, a nie ma go na drugiej." },
+      { "title": "Adresy URL i słowa kluczowe", "text": "Porównaj dwie listy adresów URL, słów kluczowych lub domen, aby znaleźć luki i części wspólne." }
+    ],
+    "faqTitle": "Najczęściej zadawane pytania",
+    "faq": [
+      { "q": "Jak porównać dwie listy?", "a": "Wklej pierwszą listę w pole Lista A, a drugą w pole Lista B, jedna pozycja w linii. DiffDuo od razu pokazuje pozycje tylko w liście A, tylko w liście B, w obu listach oraz duplikaty w każdej z nich." },
+      { "q": "Jak znaleźć duplikaty w dwóch listach?", "a": "Pozycje, które występują w obu listach, są wyświetlane w sekcji W obu listach. Możesz je skopiować jednym kliknięciem lub pobrać jako plik .txt." },
+      { "q": "Jak usunąć duplikaty z listy?", "a": "Wklej listę w pole Lista A, a pole Lista B zostaw puste. Sekcja Wszystkie unikalne pozycje pokazuje każdą pozycję dokładnie raz, a sekcja Duplikaty w liście A pokazuje pozycje, które się powtarzały." },
+      { "q": "Czy mogę porównać dwie kolumny z Excela?", "a": "Tak. Skopiuj kolumnę z Excela lub Google Sheets i wklej ją w pole Lista A, a następnie wklej drugą kolumnę w pole Lista B. Każda komórka staje się jedną pozycją." },
+      { "q": "Czy mogę użyć przecinków lub średników zamiast nowych linii?", "a": "Tak. Wybierz przecinek, średnik lub tabulator w opcji Podziel według. Nowe linie zawsze również rozdzielają pozycje." },
+      { "q": "Czy porównanie uwzględnia wielkość liter?", "a": "Domyślnie tak. Włącz Ignoruj wielkość liter, aby traktować wielkie i małe litery jako takie same. Przytnij spacje ignoruje spacje na początku i końcu każdej pozycji." },
+      { "q": "Czy moje listy są gdzieś wysyłane?", "a": "Nie. Porównanie odbywa się w całości w przeglądarce, więc twoje listy nigdy nie opuszczają urządzenia." }
+    ],
+    "navHow": "Jak porównać listy",
+    "navFeatures": "Funkcje",
+    "navUses": "Zastosowania",
+    "navFaq": "FAQ",
+    "footer": "DiffDuo: darmowe narzędzie online do porównywania dwóch list, znajdowania i usuwania duplikatów. Wszystko działa lokalnie w przeglądarce."
+  },
+  "js": {
+    "items": { "one": "{n} pozycja", "few": "{n} pozycje", "many": "{n} pozycji", "other": "{n} pozycji" },
+    "unique": { "one": "{n} unikalna", "few": "{n} unikalne", "many": "{n} unikalnych", "other": "{n} unikalnej" },
+    "overlap": "{p} pokrycia",
+    "copiedItems": { "one": "Skopiowano {n} pozycję", "few": "Skopiowano {n} pozycje", "many": "Skopiowano {n} pozycji", "other": "Skopiowano {n} pozycji" },
+    "truncated": { "one": "Pokazano pierwszą {n} pozycję. Skopiuj lub pobierz, aby otrzymać wszystkie.", "few": "Pokazano pierwsze {n} pozycje. Skopiuj lub pobierz, aby otrzymać wszystkie.", "many": "Pokazano pierwszych {n} pozycji. Skopiuj lub pobierz, aby otrzymać wszystkie.", "other": "Pokazano pierwsze {n} pozycji. Skopiuj lub pobierz, aby otrzymać wszystkie." }
+  }
+}

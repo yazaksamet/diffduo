@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "title": "Comparer deux listes – Trouver les doublons | DiffDuo",
+    "description": "Comparez deux listes en ligne gratuitement : trouvez les éléments présents dans une seule liste, dans les deux ou en double. Supprimez les doublons en un clic.",
+    "ogTitle": "Comparer deux listes – Trouver les différences et les doublons",
+    "ogDescription": "Collez deux listes et voyez instantanément ce qui n’est que dans l’une, ce qui est dans les deux et ce qui est en double. Gratuit, rapide et privé.",
+    "twitterDescription": "Collez deux listes et voyez instantanément ce qui n’est que dans l’une, dans les deux ou en double. Gratuit et privé.",
+    "ogImageAlt": "DiffDuo comparant deux listes, avec les éléments uniquement dans la liste A, dans les deux listes et uniquement dans la liste B",
+    "appName": "DiffDuo – Comparer deux listes",
+    "appDescription": "Comparez deux listes en ligne : trouvez les éléments uniquement dans la liste A, uniquement dans la liste B ou dans les deux, listez les doublons et fusionnez les deux listes sans doublons. Tout se passe dans votre navigateur.",
+    "featureList": [
+      "Éléments uniquement dans la liste A, uniquement dans la liste B et dans les deux",
+      "Fusion de deux listes sans doublons",
+      "Trouver et supprimer les doublons",
+      "Séparation des éléments par nouvelle ligne, virgule, point-virgule ou tabulation",
+      "Ignorer la casse et les espaces superflus",
+      "Confidentiel : les listes ne quittent jamais le navigateur"
+    ]
+  },
+  "ui": {
+    "eyebrow": "Outil gratuit pour comparer des listes en ligne",
+    "h1": "Comparer deux listes et trouver les <em>différences</em>",
+    "heroText": "Collez deux listes pour voir quels éléments ne sont que dans l’une, lesquels sont dans les deux et lesquels sont en double. Supprimez les doublons, fusionnez des listes et copiez n’importe quel résultat en un clic.",
+    "listA": "Liste A",
+    "listB": "Liste B",
+    "placeholderA": "Collez la première liste ici, un élément par ligne…",
+    "placeholderB": "Collez la seconde liste ici, un élément par ligne…",
+    "separator": "Séparer par",
+    "sepNewline": "Nouvelle ligne",
+    "sepComma": "Virgule",
+    "sepSemicolon": "Point-virgule",
+    "sepTab": "Tabulation",
+    "order": "Ordre",
+    "orderOriginal": "Ordre d’origine",
+    "orderAz": "De A à Z",
+    "trim": "Supprimer les espaces superflus",
+    "skipEmpty": "Ignorer les lignes vides",
+    "onlyA": "Uniquement dans la liste A",
+    "onlyB": "Uniquement dans la liste B",
+    "both": "Dans les deux listes",
+    "union": "Tous les éléments uniques",
+    "dupA": "Doublons dans la liste A",
+    "dupB": "Doublons dans la liste B",
+    "copyList": "Copier",
+    "downloadList": "Télécharger en .txt",
+    "none": "Rien ici"
+  },
+  "content": {
+    "howTitle": "Comment comparer deux listes",
+    "steps": [
+      { "title": "Collez la première liste", "text": "Placez une liste dans le champ <em>Liste A</em>, un élément par ligne. Vous pouvez aussi ouvrir un fichier .txt ou .csv." },
+      { "title": "Collez la seconde liste", "text": "Placez l’autre liste dans le champ <em>Liste B</em>. Les résultats se mettent à jour pendant que vous tapez." },
+      { "title": "Copiez le résultat voulu", "text": "Voyez ce qui n’est que dans une liste, dans les deux ou en double, puis copiez ou téléchargez n’importe quel résultat." }
+    ],
+    "featuresTitle": "Tout pour comparer des listes et trouver les doublons",
+    "features": [
+      { "title": "Différences et correspondances", "text": "Voyez instantanément les éléments uniquement dans la liste A, uniquement dans la liste B et dans les deux listes." },
+      { "title": "Trouver et supprimer les doublons", "text": "Voyez quels éléments se répètent dans chaque liste, et obtenez une liste fusionnée où chaque élément n’apparaît qu’une fois." },
+      { "title": "N’importe quel séparateur", "text": "Séparez les éléments par nouvelle ligne, virgule, point-virgule ou tabulation pour coller des colonnes d’Excel ou de fichiers CSV." },
+      { "title": "Ignorer la casse et les espaces", "text": "Traitez « Pomme » et « pomme  » comme le même élément quand les majuscules et les espaces superflus n’ont pas d’importance." },
+      { "title": "Rapide, même avec d’énormes listes", "text": "Compare des listes de plusieurs centaines de milliers d’éléments en une fraction de seconde." },
+      { "title": "100 % confidentiel", "text": "Rien n’est envoyé. Listes de clients, e-mails et ID ne quittent jamais votre appareil." }
+    ],
+    "usesTitle": "À quoi ça sert",
+    "uses": [
+      { "title": "Listes d’e-mails et de clients", "text": "Trouvez quels contacts sont nouveaux, lesquels se sont désinscrits et lesquels figurent dans les deux listes." },
+      { "title": "Colonnes Excel et tableurs", "text": "Collez deux colonnes pour voir quelles valeurs manquent dans l’autre colonne, sans formule." },
+      { "title": "Inventaire et références produits", "text": "Comparez des SKU, numéros de commande ou ID issus de deux systèmes pour trouver ce qui ne correspond pas." },
+      { "title": "Supprimer les doublons", "text": "Collez une liste dans Liste A pour voir ses doublons et copier une liste propre où chaque élément n’apparaît qu’une fois." },
+      { "title": "Noms et présences", "text": "Vérifiez qui s’est inscrit sans venir, ou qui figure sur une liste d’équipe mais pas sur l’autre." },
+      { "title": "URL et mots-clés", "text": "Comparez deux listes d’URL, de mots-clés ou de domaines pour repérer les manques et les recoupements." }
+    ],
+    "faqTitle": "Questions fréquentes",
+    "faq": [
+      { "q": "Comment comparer deux listes ?", "a": "Collez la première liste dans Liste A et la seconde dans Liste B, un élément par ligne. DiffDuo affiche instantanément les éléments uniquement dans la liste A, uniquement dans la liste B, dans les deux listes, ainsi que les doublons de chacune." },
+      { "q": "Comment trouver les doublons entre deux listes ?", "a": "Les éléments présents dans les deux listes s’affichent sous Dans les deux listes. Vous pouvez les copier en un clic ou les télécharger dans un fichier .txt." },
+      { "q": "Comment supprimer les doublons d’une liste ?", "a": "Collez la liste dans Liste A et laissez Liste B vide. Tous les éléments uniques affiche chaque élément une seule fois, et Doublons dans la liste A affiche les éléments qui étaient répétés." },
+      { "q": "Puis-je comparer deux colonnes Excel ?", "a": "Oui. Copiez une colonne depuis Excel ou Google Sheets et collez-la dans Liste A, puis collez l’autre colonne dans Liste B. Chaque cellule devient un élément." },
+      { "q": "Puis-je utiliser des virgules ou des points-virgules au lieu de retours à la ligne ?", "a": "Oui. Choisissez virgule, point-virgule ou tabulation sous Séparer par. Les retours à la ligne séparent toujours les éléments, eux aussi." },
+      { "q": "La comparaison tient-elle compte de la casse ?", "a": "Par défaut, oui. Activez Ignorer la casse pour traiter les majuscules et les minuscules comme identiques. Supprimer les espaces superflus ignore les espaces au début et à la fin de chaque élément." },
+      { "q": "Mes listes sont-elles envoyées quelque part ?", "a": "Non. La comparaison s’effectue entièrement dans votre navigateur, vos listes ne quittent donc jamais votre appareil." }
+    ],
+    "navHow": "Comment comparer des listes",
+    "navFeatures": "Fonctionnalités",
+    "navUses": "Cas d’usage",
+    "navFaq": "FAQ",
+    "footer": "DiffDuo : outil gratuit en ligne pour comparer deux listes, trouver les doublons et supprimer les doublons. Tout s’exécute en local dans votre navigateur."
+  },
+  "js": {
+    "items": { "one": "{n} élément", "many": "{n} éléments", "other": "{n} éléments" },
+    "unique": { "one": "{n} unique", "many": "{n} uniques", "other": "{n} uniques" },
+    "overlap": "{p} en commun",
+    "copiedItems": { "one": "{n} élément copié", "many": "{n} éléments copiés", "other": "{n} éléments copiés" },
+    "truncated": { "one": "Affichage du premier élément ({n}). Copiez ou téléchargez pour tout obtenir.", "many": "Affichage des {n} premiers éléments. Copiez ou téléchargez pour tout obtenir.", "other": "Affichage des {n} premiers éléments. Copiez ou téléchargez pour tout obtenir." }
+  }
+}

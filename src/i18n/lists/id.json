@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "title": "Bandingkan Dua Daftar – Cari Perbedaan & Duplikat | DiffDuo",
+    "description": "Bandingkan dua daftar online gratis. Tempel dua daftar untuk menemukan item yang hanya ada di satu daftar, di keduanya, atau duplikat. Hapus duplikat seketika.",
+    "ogTitle": "Bandingkan Dua Daftar – Cari Perbedaan dan Duplikat",
+    "ogDescription": "Tempel dua daftar dan langsung lihat apa yang hanya ada di satu daftar, apa yang ada di keduanya, dan apa yang duplikat. Gratis, cepat, dan privat.",
+    "twitterDescription": "Tempel dua daftar dan langsung lihat apa yang hanya ada di satu daftar, di keduanya, atau duplikat. Gratis dan privat.",
+    "ogImageAlt": "DiffDuo membandingkan dua daftar, menampilkan item yang hanya ada di daftar A, di kedua daftar, dan hanya di daftar B",
+    "appName": "DiffDuo – Bandingkan Dua Daftar",
+    "appDescription": "Bandingkan dua daftar secara online: temukan item yang hanya ada di daftar A, hanya di daftar B, atau di keduanya, tampilkan duplikat, dan gabungkan kedua daftar tanpa duplikat. Berjalan sepenuhnya di browser Anda.",
+    "featureList": [
+      "Item yang hanya ada di daftar A, hanya di daftar B, dan di keduanya",
+      "Gabungkan dua daftar tanpa duplikat",
+      "Cari dan hapus duplikat",
+      "Pisahkan item dengan baris baru, koma, titik koma, atau tab",
+      "Abaikan huruf besar/kecil dan spasi berlebih",
+      "Privat: daftar tidak pernah meninggalkan browser"
+    ]
+  },
+  "ui": {
+    "eyebrow": "Alat bandingkan daftar online gratis",
+    "h1": "Bandingkan dua daftar dan temukan <em>perbedaannya</em>",
+    "heroText": "Tempel dua daftar untuk melihat item mana yang hanya ada di satu daftar, mana yang ada di keduanya, dan mana yang duplikat. Cari dan hapus duplikat, gabungkan daftar, dan salin hasil apa pun dengan satu klik.",
+    "listA": "Daftar A",
+    "listB": "Daftar B",
+    "placeholderA": "Tempel daftar pertama di sini, satu item per baris…",
+    "placeholderB": "Tempel daftar kedua di sini, satu item per baris…",
+    "separator": "Pisahkan dengan",
+    "sepNewline": "Baris baru",
+    "sepComma": "Koma",
+    "sepSemicolon": "Titik koma",
+    "sepTab": "Tab",
+    "order": "Urutan",
+    "orderOriginal": "Urutan asli",
+    "orderAz": "A sampai Z",
+    "trim": "Pangkas spasi",
+    "skipEmpty": "Lewati baris kosong",
+    "onlyA": "Hanya di Daftar A",
+    "onlyB": "Hanya di Daftar B",
+    "both": "Di kedua daftar",
+    "union": "Semua item unik",
+    "dupA": "Duplikat di Daftar A",
+    "dupB": "Duplikat di Daftar B",
+    "copyList": "Salin",
+    "downloadList": "Unduh sebagai .txt",
+    "none": "Tidak ada apa-apa"
+  },
+  "content": {
+    "howTitle": "Cara membandingkan dua daftar",
+    "steps": [
+      { "title": "Tempel daftar pertama", "text": "Masukkan satu daftar ke kotak <em>Daftar A</em>, satu item per baris. Anda juga bisa membuka file .txt atau .csv." },
+      { "title": "Tempel daftar kedua", "text": "Masukkan daftar lainnya ke kotak <em>Daftar B</em>. Hasilnya diperbarui saat Anda mengetik." },
+      { "title": "Salin hasil yang Anda butuhkan", "text": "Lihat apa yang hanya ada di satu daftar, di keduanya, atau duplikat, lalu salin atau unduh hasil mana pun." }
+    ],
+    "featuresTitle": "Semua yang Anda butuhkan untuk membandingkan daftar",
+    "features": [
+      { "title": "Perbedaan dan kecocokan", "text": "Langsung lihat item yang hanya ada di daftar A, hanya di daftar B, dan di kedua daftar." },
+      { "title": "Cari dan hapus duplikat", "text": "Lihat item mana yang berulang di setiap daftar, dan dapatkan daftar gabungan dengan setiap item tepat satu kali." },
+      { "title": "Pemisah apa pun", "text": "Pisahkan item dengan baris baru, koma, titik koma, atau tab, sehingga Anda bisa menempelkan kolom dari Excel atau file CSV." },
+      { "title": "Abaikan huruf besar/kecil dan spasi", "text": "Anggap “Apel” dan “apel ” sebagai item yang sama jika kapitalisasi dan spasi berlebih tidak penting." },
+      { "title": "Cepat untuk daftar raksasa", "text": "Membandingkan daftar berisi ratusan ribu item dalam sepersekian detik." },
+      { "title": "100% privat", "text": "Tidak ada yang diunggah. Daftar pelanggan, email, dan ID tidak pernah meninggalkan perangkat Anda." }
+    ],
+    "usesTitle": "Kegunaannya",
+    "uses": [
+      { "title": "Daftar email dan pelanggan", "text": "Temukan kontak mana yang baru, mana yang berhenti berlangganan, dan mana yang ada di kedua daftar." },
+      { "title": "Kolom Excel dan spreadsheet", "text": "Tempel dua kolom untuk melihat nilai mana yang tidak ada di kolom lainnya, tanpa rumus." },
+      { "title": "Inventaris dan ID produk", "text": "Bandingkan SKU, nomor pesanan, atau ID dari dua sistem untuk menemukan yang tidak cocok." },
+      { "title": "Hapus duplikat", "text": "Tempel satu daftar ke Daftar A untuk melihat duplikatnya dan salin daftar bersih dengan setiap item satu kali." },
+      { "title": "Nama dan kehadiran", "text": "Periksa siapa yang mendaftar tetapi tidak hadir, atau siapa yang ada di satu daftar tim tetapi tidak di daftar lainnya." },
+      { "title": "URL dan kata kunci", "text": "Bandingkan dua daftar URL, kata kunci, atau domain untuk menemukan kekurangan dan irisannya." }
+    ],
+    "faqTitle": "Pertanyaan yang sering diajukan",
+    "faq": [
+      { "q": "Bagaimana cara membandingkan dua daftar?", "a": "Tempel daftar pertama ke Daftar A dan daftar kedua ke Daftar B, satu item per baris. DiffDuo langsung menampilkan item yang hanya ada di Daftar A, hanya di Daftar B, di kedua daftar, serta duplikat di masing-masing daftar." },
+      { "q": "Bagaimana cara mencari duplikat di antara dua daftar?", "a": "Item yang muncul di kedua daftar ditampilkan di bagian Di kedua daftar. Anda bisa menyalinnya dengan satu klik atau mengunduhnya sebagai file .txt." },
+      { "q": "Bagaimana cara menghapus duplikat dari daftar?", "a": "Tempel daftar ke Daftar A dan biarkan Daftar B kosong. Semua item unik menampilkan setiap item tepat satu kali, dan Duplikat di Daftar A menampilkan item yang berulang." },
+      { "q": "Bisakah saya membandingkan dua kolom dari Excel?", "a": "Bisa. Salin satu kolom dari Excel atau Google Sheets dan tempel ke Daftar A, lalu tempel kolom lainnya ke Daftar B. Setiap sel menjadi satu item." },
+      { "q": "Bisakah saya memakai koma atau titik koma, bukan baris baru?", "a": "Bisa. Pilih koma, titik koma, atau tab di Pisahkan dengan. Baris baru juga selalu memisahkan item." },
+      { "q": "Apakah perbandingan membedakan huruf besar dan kecil?", "a": "Secara default, ya. Aktifkan Abaikan huruf besar/kecil agar huruf besar dan huruf kecil dianggap sama. Pangkas spasi mengabaikan spasi di awal dan akhir setiap item." },
+      { "q": "Apakah daftar saya diunggah ke suatu tempat?", "a": "Tidak. Perbandingan berjalan sepenuhnya di browser Anda, sehingga daftar Anda tidak pernah meninggalkan perangkat Anda." }
+    ],
+    "navHow": "Cara membandingkan daftar",
+    "navFeatures": "Fitur",
+    "navUses": "Kegunaan",
+    "navFaq": "FAQ",
+    "footer": "DiffDuo: alat online gratis untuk membandingkan dua daftar, mencari duplikat, dan menghapus duplikat. Semuanya berjalan secara lokal di browser Anda."
+  },
+  "js": {
+    "items": { "other": "{n} item" },
+    "unique": { "other": "{n} unik" },
+    "overlap": "{p} tumpang tindih",
+    "copiedItems": { "other": "{n} item disalin" },
+    "truncated": { "other": "Menampilkan {n} item pertama. Salin atau unduh untuk mendapatkan semuanya." }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "title": "JSON Compare – Diff Two JSON Files Online | DiffDuo",
+    "description": "Free online JSON compare and JSON diff tool. Compare two JSON files or API responses and see every added, removed and changed value. Key order is ignored.",
+    "ogTitle": "JSON Compare – Find Differences Between Two JSON Files",
+    "ogDescription": "Compare two JSON documents in seconds. See every changed value by path, ignoring key order and formatting. Free, fast and private.",
+    "twitterDescription": "Compare two JSON documents and see every change by path. Free, fast and private.",
+    "ogImageAlt": "DiffDuo comparing two JSON documents with changed values highlighted",
+    "appName": "DiffDuo – JSON Compare & JSON Diff",
+    "appDescription": "Compare two JSON files or API responses online. Lists every added, removed and changed value by its JSON path and shows a side-by-side diff, ignoring key order and formatting. Runs entirely in your browser.",
+    "featureList": [
+      "Ignores key order and formatting",
+      "Lists every change by JSON path",
+      "Optional: ignore the order of array items",
+      "Side-by-side and unified diff of the formatted JSON",
+      "Finds invalid JSON and shows the line and column",
+      "Private: JSON never leaves the browser"
+    ]
+  },
+  "ui": {
+    "eyebrow": "Free online JSON diff tool",
+    "h1": "JSON Compare: see what <em>changed</em>",
+    "heroText": "Compare two JSON files, API responses or configs and see every added, removed and changed value by its path. Key order and formatting don't matter. Private and free, right in your browser.",
+    "original": "Original JSON",
+    "changed": "Changed JSON",
+    "placeholderOriginal": "Paste the original JSON here, or drop a .json file…",
+    "placeholderChanged": "Paste the changed JSON here, or drop a .json file…",
+    "format": "Format",
+    "formatTitle": "Format and indent this JSON",
+    "ignoreArrayOrder": "Ignore array order"
+  },
+  "content": {
+    "howTitle": "How to compare two JSON files",
+    "steps": [
+      { "title": "Paste or open the original JSON", "text": "Put the first JSON document in the <em>Original JSON</em> box. You can paste it, or open or drag and drop a .json file." },
+      { "title": "Add the changed JSON", "text": "Put the second document in the <em>Changed JSON</em> box. Both are checked for errors and compared as you type." },
+      { "title": "Review the changes", "text": "See a list of every changed, added and removed value by its path, plus a side-by-side diff of both documents with their keys sorted." }
+    ],
+    "featuresTitle": "A JSON diff that understands JSON",
+    "features": [
+      { "title": "Key order doesn't matter", "text": "Objects are compared by their keys, so the same data in a different order counts as equal." },
+      { "title": "Every change by path", "text": "Each difference is listed with its exact location, such as <code>$.user.roles[2]</code>, and the old and new value." },
+      { "title": "Ignore array order", "text": "Turn it on when arrays are sets, like tags or IDs, and only additions and removals matter." },
+      { "title": "Finds invalid JSON", "text": "If a document can't be parsed, you see the line and column of the error, and Format tidies valid JSON." },
+      { "title": "Handles large files", "text": "Compares JSON files with 100,000+ lines in a background thread, so the page stays responsive." },
+      { "title": "100% private", "text": "Nothing is uploaded. API responses, configs and data never leave your device." }
+    ],
+    "usesTitle": "What you can compare",
+    "uses": [
+      { "title": "API responses", "text": "Compare the response of two API versions or environments to find a changed field or a missing value." },
+      { "title": "Configuration files", "text": "Find the difference between two package.json, tsconfig, appsettings or other JSON config files." },
+      { "title": "Test fixtures and snapshots", "text": "See exactly why an expected and an actual JSON result don't match." },
+      { "title": "Data exports", "text": "Compare two exports of the same records to find what was added, removed or edited." }
+    ],
+    "readTitle": "How to read the result",
+    "legend": [
+      "<b>Changed</b> values exist in both documents but are different. The old value is shown first, then the new one.",
+      "<b>Added</b> values exist only in the changed JSON.",
+      "<b>Removed</b> values exist only in the original JSON.",
+      "<b>Paths</b> such as <code>$.settings.theme</code> start at the document root <code>$</code>; <code>[2]</code> is the third item of an array."
+    ],
+    "faqTitle": "Frequently asked questions",
+    "faq": [
+      { "q": "How do I compare two JSON files online?", "a": "Paste the original JSON into the left box and the changed JSON into the right box, or open the files. DiffDuo lists every changed, added and removed value by its path and shows a side-by-side diff of both documents." },
+      { "q": "Does the order of keys matter?", "a": "No. Objects are compared by their keys, so two documents with the same data in a different key order are treated as equal. Formatting and whitespace are ignored too." },
+      { "q": "Can I ignore the order of items in arrays?", "a": "Yes. Turn on Ignore array order to compare arrays as sets. Items that appear in both arrays match wherever they are, and only added or removed items are reported." },
+      { "q": "What does a path like $.user.roles[2] mean?", "a": "It is the location of the value inside the document: $ is the root, .user is the user key, .roles is its roles key and [2] is the third item of that array." },
+      { "q": "What happens if my JSON is invalid?", "a": "DiffDuo shows which document has the error and the line and column where it is, so you can fix it. The Format button indents valid JSON to make it easier to read." },
+      { "q": "Is my JSON uploaded to a server?", "a": "No. Everything runs in your browser, so your JSON never leaves your device. It is safe for API keys, customer data and internal configuration." },
+      { "q": "Can it compare large JSON files?", "a": "Yes. JSON files up to 50 MB can be opened, and the side-by-side diff runs in a background thread so the page stays responsive." }
+    ],
+    "navHow": "How to compare JSON",
+    "navFeatures": "Features",
+    "navUses": "What you can compare",
+    "navFaq": "FAQ",
+    "footer": "DiffDuo: free online JSON compare and JSON diff tool. Everything runs locally, so your data never leaves the browser."
+  },
+  "js": {
+    "emptyText": "Paste JSON into both boxes or open .json files. The comparison updates as you type.",
+    "identicalTitle": "The JSON documents are equal",
+    "identicalText": { "one": "{n} line after formatting, no differences found.", "other": "{n} lines after formatting, no differences found." },
+    "identicalTextIgnoring": { "one": "{n} line after formatting, no differences found with array order ignored.", "other": "{n} lines after formatting, no differences found with array order ignored." },
+    "invalidTitle": "Invalid JSON",
+    "invalid": "{side} is not valid JSON: there is an error at line {line}, column {col}.",
+    "invalidAt": "Invalid JSON at line {line}, column {col}",
+    "cannotFormat": "Can't format: invalid JSON at line {line}, column {col}",
+    "changesTitle": "Changes",
+    "changed": { "one": "{n} changed", "other": "{n} changed" },
+    "added": { "one": "{n} added", "other": "{n} added" },
+    "removed": { "one": "{n} removed", "other": "{n} removed" },
+    "moreChanges": { "one": "…and {n} more change", "other": "…and {n} more changes" },
+    "changesSkipped": "The list of changes is skipped for very large documents. The side-by-side diff below shows every difference."
+  }
+}

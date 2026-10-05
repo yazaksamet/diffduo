@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "title": "Compare Two Lists – Find Differences & Duplicates | DiffDuo",
+    "description": "Free online list compare tool. Paste two lists to find items that are only in one list, in both, or duplicated. Remove duplicates and merge lists instantly.",
+    "ogTitle": "Compare Two Lists – Find Differences and Duplicates",
+    "ogDescription": "Paste two lists and instantly see what is only in one, what is in both and what is duplicated. Free, fast and private.",
+    "twitterDescription": "Paste two lists and instantly see what is only in one, in both, or duplicated. Free and private.",
+    "ogImageAlt": "DiffDuo comparing two lists, showing items only in list A, in both lists and only in list B",
+    "appName": "DiffDuo – Compare Two Lists",
+    "appDescription": "Compare two lists online: find items that are only in list A, only in list B or in both, list duplicates, and merge both lists without duplicates. Runs entirely in your browser.",
+    "featureList": [
+      "Items only in list A, only in list B and in both",
+      "Merge two lists without duplicates",
+      "Find and remove duplicates",
+      "Split items by new line, comma, semicolon or tab",
+      "Ignore case and extra spaces",
+      "Private: lists never leave the browser"
+    ]
+  },
+  "ui": {
+    "eyebrow": "Free online list comparison tool",
+    "h1": "Compare two lists and find the <em>differences</em>",
+    "heroText": "Paste two lists to see which items are only in one list, which are in both and which are duplicated. Remove duplicates, merge lists and copy any result with one click.",
+    "listA": "List A",
+    "listB": "List B",
+    "placeholderA": "Paste the first list here, one item per line…",
+    "placeholderB": "Paste the second list here, one item per line…",
+    "separator": "Split by",
+    "sepNewline": "New line",
+    "sepComma": "Comma",
+    "sepSemicolon": "Semicolon",
+    "sepTab": "Tab",
+    "order": "Order",
+    "orderOriginal": "Original order",
+    "orderAz": "A to Z",
+    "trim": "Trim spaces",
+    "skipEmpty": "Skip empty lines",
+    "onlyA": "Only in List A",
+    "onlyB": "Only in List B",
+    "both": "In both lists",
+    "union": "All unique items",
+    "dupA": "Duplicates in List A",
+    "dupB": "Duplicates in List B",
+    "copyList": "Copy",
+    "downloadList": "Download as .txt",
+    "none": "Nothing here"
+  },
+  "content": {
+    "howTitle": "How to compare two lists",
+    "steps": [
+      { "title": "Paste the first list", "text": "Put one list in the <em>List A</em> box, one item per line. You can also open a .txt or .csv file." },
+      { "title": "Paste the second list", "text": "Put the other list in the <em>List B</em> box. The results update as you type." },
+      { "title": "Copy the result you need", "text": "See what is only in one list, in both, or duplicated, and copy or download any result." }
+    ],
+    "featuresTitle": "Everything you need to compare lists",
+    "features": [
+      { "title": "Differences and matches", "text": "Instantly see the items that are only in list A, only in list B and in both lists." },
+      { "title": "Find and remove duplicates", "text": "See which items repeat in each list, and get a merged list with every item exactly once." },
+      { "title": "Any separator", "text": "Split items by new line, comma, semicolon or tab, so you can paste columns from Excel or CSV files." },
+      { "title": "Ignore case and spaces", "text": "Treat “Apple” and “apple ” as the same item when capitalization and extra spaces don't matter." },
+      { "title": "Fast with huge lists", "text": "Compares lists with hundreds of thousands of items in a fraction of a second." },
+      { "title": "100% private", "text": "Nothing is uploaded. Customer lists, emails and IDs never leave your device." }
+    ],
+    "usesTitle": "What people use it for",
+    "uses": [
+      { "title": "Email and customer lists", "text": "Find which contacts are new, which unsubscribed and which appear in both lists." },
+      { "title": "Excel and spreadsheet columns", "text": "Paste two columns to see which values are missing from the other column, without formulas." },
+      { "title": "Inventory and product IDs", "text": "Compare SKUs, order numbers or IDs from two systems to find what doesn't match." },
+      { "title": "Remove duplicates", "text": "Paste one list into List A to see its duplicates and copy a clean list with each item once." },
+      { "title": "Names and attendance", "text": "Check who registered but didn't attend, or who is on one team list but not the other." },
+      { "title": "URLs and keywords", "text": "Compare two lists of URLs, keywords or domains to find gaps and overlaps." }
+    ],
+    "faqTitle": "Frequently asked questions",
+    "faq": [
+      { "q": "How do I compare two lists?", "a": "Paste the first list into List A and the second into List B, one item per line. DiffDuo instantly shows the items only in List A, only in List B, in both lists, and the duplicates in each." },
+      { "q": "How do I find duplicates between two lists?", "a": "The items that appear in both lists are shown under In both lists. You can copy them with one click or download them as a .txt file." },
+      { "q": "How do I remove duplicates from a list?", "a": "Paste the list into List A and leave List B empty. All unique items shows every item exactly once, and Duplicates in List A shows the items that were repeated." },
+      { "q": "Can I compare two columns from Excel?", "a": "Yes. Copy a column from Excel or Google Sheets and paste it into List A, then paste the other column into List B. Each cell becomes one item." },
+      { "q": "Can I use commas or semicolons instead of new lines?", "a": "Yes. Choose comma, semicolon or tab under Split by. New lines always separate items too." },
+      { "q": "Is the comparison case-sensitive?", "a": "By default, yes. Turn on Ignore case to treat uppercase and lowercase letters as the same. Trim spaces ignores spaces at the start and end of each item." },
+      { "q": "Are my lists uploaded anywhere?", "a": "No. The comparison runs entirely in your browser, so your lists never leave your device." }
+    ],
+    "navHow": "How to compare lists",
+    "navFeatures": "Features",
+    "navUses": "Use cases",
+    "navFaq": "FAQ",
+    "footer": "DiffDuo: free online tool to compare two lists, find duplicates and remove duplicates. Everything runs locally in your browser."
+  },
+  "js": {
+    "items": { "one": "{n} item", "other": "{n} items" },
+    "unique": { "one": "{n} unique", "other": "{n} unique" },
+    "overlap": "{p} overlap",
+    "copiedItems": { "one": "Copied {n} item", "other": "Copied {n} items" },
+    "truncated": { "one": "Showing the first {n} item. Copy or download to get all of them.", "other": "Showing the first {n} items. Copy or download to get all of them." }
+  }
+}

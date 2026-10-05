@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "title": "So sánh JSON online – So sánh hai file JSON | DiffDuo",
+    "description": "Công cụ so sánh JSON và JSON diff online miễn phí. So sánh hai file JSON hoặc phản hồi API và xem mọi giá trị được thêm, xóa, sửa. Bỏ qua thứ tự key.",
+    "ogTitle": "So sánh JSON – Tìm điểm khác nhau giữa hai file JSON",
+    "ogDescription": "So sánh hai tài liệu JSON chỉ trong vài giây. Xem mọi giá trị đã thay đổi theo đường dẫn, bỏ qua thứ tự key và định dạng. Miễn phí, nhanh và riêng tư.",
+    "twitterDescription": "So sánh hai tài liệu JSON và xem mọi thay đổi theo đường dẫn. Miễn phí, nhanh và riêng tư.",
+    "ogImageAlt": "DiffDuo so sánh hai tài liệu JSON, các giá trị thay đổi được tô sáng",
+    "appName": "DiffDuo – So sánh JSON & JSON Diff",
+    "appDescription": "So sánh hai file JSON hoặc phản hồi API online. Liệt kê mọi giá trị được thêm, xóa và sửa theo đường dẫn JSON và hiển thị diff song song, bỏ qua thứ tự key và định dạng. Chạy hoàn toàn trên trình duyệt của bạn.",
+    "featureList": [
+      "Bỏ qua thứ tự key và định dạng",
+      "Liệt kê mọi thay đổi theo đường dẫn JSON",
+      "Tùy chọn: bỏ qua thứ tự phần tử trong mảng",
+      "Diff song song và hợp nhất của JSON đã định dạng",
+      "Phát hiện JSON không hợp lệ và chỉ ra dòng, cột bị lỗi",
+      "Riêng tư: JSON không bao giờ rời khỏi trình duyệt"
+    ]
+  },
+  "ui": {
+    "eyebrow": "Công cụ JSON diff online miễn phí",
+    "h1": "So sánh JSON: xem những gì đã <em>thay đổi</em>",
+    "heroText": "So sánh hai file JSON, phản hồi API hoặc file cấu hình và xem mọi giá trị được thêm, xóa và sửa theo đường dẫn. Thứ tự key và định dạng không ảnh hưởng. Riêng tư, miễn phí, ngay trên trình duyệt của bạn.",
+    "original": "JSON gốc",
+    "changed": "JSON đã sửa",
+    "placeholderOriginal": "Dán JSON gốc vào đây hoặc thả file .json…",
+    "placeholderChanged": "Dán JSON đã sửa vào đây hoặc thả file .json…",
+    "format": "Định dạng",
+    "formatTitle": "Định dạng và thụt lề JSON này",
+    "ignoreArrayOrder": "Bỏ qua thứ tự mảng"
+  },
+  "content": {
+    "howTitle": "Cách so sánh hai file JSON",
+    "steps": [
+      { "title": "Dán hoặc mở JSON gốc", "text": "Đặt tài liệu JSON thứ nhất vào ô <em>JSON gốc</em>. Bạn có thể dán vào, hoặc mở hay kéo thả file .json." },
+      { "title": "Thêm JSON đã sửa", "text": "Đặt tài liệu thứ hai vào ô <em>JSON đã sửa</em>. Cả hai được kiểm tra lỗi và so sánh ngay khi bạn gõ." },
+      { "title": "Xem lại các thay đổi", "text": "Xem danh sách mọi giá trị đã sửa, được thêm và bị xóa theo đường dẫn, cùng diff song song của hai tài liệu với các key đã được sắp xếp." }
+    ],
+    "featuresTitle": "Công cụ JSON diff thực sự hiểu JSON",
+    "features": [
+      { "title": "Thứ tự key không quan trọng", "text": "Các object được so sánh theo key, nên cùng dữ liệu nhưng khác thứ tự vẫn được coi là giống nhau." },
+      { "title": "Mọi thay đổi theo đường dẫn", "text": "Mỗi điểm khác nhau được liệt kê kèm vị trí chính xác, chẳng hạn <code>$.user.roles[2]</code>, cùng giá trị cũ và giá trị mới." },
+      { "title": "Bỏ qua thứ tự mảng", "text": "Bật tùy chọn này khi mảng là tập hợp, như tag hoặc ID, và bạn chỉ quan tâm phần được thêm hoặc bị xóa." },
+      { "title": "Phát hiện JSON không hợp lệ", "text": "Nếu một tài liệu không phân tích được, bạn sẽ thấy dòng và cột bị lỗi, còn nút Định dạng giúp sắp xếp gọn gàng JSON hợp lệ." },
+      { "title": "Xử lý file lớn", "text": "So sánh file JSON hơn 100.000 dòng trong một luồng nền, nên trang vẫn phản hồi mượt mà." },
+      { "title": "Riêng tư 100%", "text": "Không có gì được tải lên. Phản hồi API, file cấu hình và dữ liệu không bao giờ rời khỏi thiết bị của bạn." }
+    ],
+    "usesTitle": "Bạn có thể so sánh những gì",
+    "uses": [
+      { "title": "Phản hồi API", "text": "So sánh phản hồi của hai phiên bản hoặc hai môi trường API để tìm trường bị thay đổi hoặc giá trị bị thiếu." },
+      { "title": "File cấu hình", "text": "Tìm điểm khác nhau giữa hai file package.json, tsconfig, appsettings hoặc các file cấu hình JSON khác." },
+      { "title": "Test fixture và snapshot", "text": "Xem chính xác vì sao kết quả JSON mong đợi và kết quả thực tế không khớp." },
+      { "title": "Dữ liệu xuất ra", "text": "So sánh hai lần xuất của cùng một tập bản ghi để tìm những gì đã được thêm, bị xóa hoặc được chỉnh sửa." }
+    ],
+    "readTitle": "Cách đọc kết quả",
+    "legend": [
+      "Giá trị <b>đã sửa</b> có trong cả hai tài liệu nhưng khác nhau. Giá trị cũ hiển thị trước, sau đó là giá trị mới.",
+      "Giá trị <b>được thêm</b> chỉ có trong JSON đã sửa.",
+      "Giá trị <b>bị xóa</b> chỉ có trong JSON gốc.",
+      "<b>Đường dẫn</b> như <code>$.settings.theme</code> bắt đầu từ gốc tài liệu <code>$</code>; <code>[2]</code> là phần tử thứ ba của một mảng."
+    ],
+    "faqTitle": "Câu hỏi thường gặp",
+    "faq": [
+      { "q": "Làm thế nào để so sánh hai file JSON online?", "a": "Dán JSON gốc vào ô bên trái và JSON đã sửa vào ô bên phải, hoặc mở file. DiffDuo liệt kê mọi giá trị đã sửa, được thêm và bị xóa theo đường dẫn, đồng thời hiển thị diff song song của hai tài liệu." },
+      { "q": "Thứ tự key có quan trọng không?", "a": "Không. Các object được so sánh theo key, nên hai tài liệu có cùng dữ liệu nhưng khác thứ tự key được coi là giống nhau. Định dạng và khoảng trắng cũng được bỏ qua." },
+      { "q": "Có thể bỏ qua thứ tự phần tử trong mảng không?", "a": "Có. Bật Bỏ qua thứ tự mảng để so sánh mảng như tập hợp. Các phần tử có trong cả hai mảng được coi là khớp dù nằm ở vị trí nào, và chỉ những phần tử được thêm hoặc bị xóa mới được báo cáo." },
+      { "q": "Đường dẫn như $.user.roles[2] có nghĩa là gì?", "a": "Đó là vị trí của giá trị bên trong tài liệu: $ là gốc, .user là key user, .roles là key roles bên trong nó và [2] là phần tử thứ ba của mảng đó." },
+      { "q": "Điều gì xảy ra nếu JSON của tôi không hợp lệ?", "a": "DiffDuo cho biết tài liệu nào bị lỗi cùng dòng và cột chứa lỗi để bạn sửa. Nút Định dạng thụt lề JSON hợp lệ để dễ đọc hơn." },
+      { "q": "JSON của tôi có bị tải lên máy chủ không?", "a": "Không. Mọi thứ chạy trên trình duyệt, nên JSON của bạn không bao giờ rời khỏi thiết bị. Công cụ an toàn cho API key, dữ liệu khách hàng và cấu hình nội bộ." },
+      { "q": "Có so sánh được file JSON lớn không?", "a": "Có. Có thể mở file JSON tối đa 50 MB, và diff song song chạy trong một luồng nền nên trang vẫn phản hồi mượt mà." }
+    ],
+    "navHow": "Cách so sánh JSON",
+    "navFeatures": "Tính năng",
+    "navUses": "Có thể so sánh gì",
+    "navFaq": "Hỏi đáp",
+    "footer": "DiffDuo: công cụ so sánh JSON và JSON diff online miễn phí. Mọi thứ chạy cục bộ, nên dữ liệu của bạn không bao giờ rời khỏi trình duyệt."
+  },
+  "js": {
+    "emptyText": "Dán JSON vào cả hai ô hoặc mở file .json. Kết quả cập nhật ngay khi bạn gõ.",
+    "identicalTitle": "Hai tài liệu JSON giống nhau",
+    "identicalText": { "other": "{n} dòng sau khi định dạng, không tìm thấy điểm khác nhau." },
+    "identicalTextIgnoring": { "other": "{n} dòng sau khi định dạng, không tìm thấy điểm khác nhau khi bỏ qua thứ tự mảng." },
+    "invalidTitle": "JSON không hợp lệ",
+    "invalid": "{side} không phải JSON hợp lệ: có lỗi ở dòng {line}, cột {col}.",
+    "invalidAt": "JSON không hợp lệ ở dòng {line}, cột {col}",
+    "cannotFormat": "Không thể định dạng: JSON không hợp lệ ở dòng {line}, cột {col}",
+    "changesTitle": "Thay đổi",
+    "changed": { "other": "{n} đã sửa" },
+    "added": { "other": "{n} được thêm" },
+    "removed": { "other": "{n} bị xóa" },
+    "moreChanges": { "other": "…và {n} thay đổi khác" },
+    "changesSkipped": "Danh sách thay đổi được bỏ qua với tài liệu quá lớn. Diff song song bên dưới hiển thị mọi điểm khác nhau."
+  }
+}

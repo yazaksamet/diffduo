@@ -1,0 +1,270 @@
+{{>head.html}}
+<body class="mode-lists">
+<div class="wrap">
+{{>header.html}}
+
+  <main>
+  <section class="hero">
+    <p class="eyebrow">{{ui.eyebrow}}</p>
+    <h1>{{ui.h1}}</h1>
+    <p>{{ui.heroText}}</p>
+  </section>
+
+  <section class="inputs">
+    <div class="pane" id="pane-a">
+      <div class="pane-head">
+        <label class="pane-title" for="a"><span class="dot old"></span>{{ui.listA}}</label>
+        <div class="pane-actions">
+          <button class="mini" data-open="a" title="{{attr:ui.openTitle}}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>{{ui.open}}</button>
+          <button class="mini" data-clear="a">{{ui.clear}}</button>
+        </div>
+      </div>
+      <textarea id="a" spellcheck="false" placeholder="{{attr:ui.placeholderA}}"></textarea>
+      <div class="filecard" id="a-card" hidden></div>
+      <div class="pane-foot" id="a-info">&nbsp;</div>
+    </div>
+
+    <button class="swap" id="swap" title="{{attr:ui.swap}}" aria-label="{{attr:ui.swap}}">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3l4 4-4 4"/><path d="M21 7H9"/><path d="M7 21l-4-4 4-4"/><path d="M3 17h12"/></svg>
+    </button>
+
+    <div class="pane" id="pane-b">
+      <div class="pane-head">
+        <label class="pane-title" for="b"><span class="dot new"></span>{{ui.listB}}</label>
+        <div class="pane-actions">
+          <button class="mini" data-open="b" title="{{attr:ui.openTitle}}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>{{ui.open}}</button>
+          <button class="mini" data-clear="b">{{ui.clear}}</button>
+        </div>
+      </div>
+      <textarea id="b" spellcheck="false" placeholder="{{attr:ui.placeholderB}}"></textarea>
+      <div class="filecard" id="b-card" hidden></div>
+      <div class="pane-foot" id="b-info">&nbsp;</div>
+    </div>
+  </section>
+  <input type="file" id="file" accept=".txt,.csv,.tsv,.list,text/*" hidden>
+
+  <section class="toolbar">
+    <div class="tools">
+      <label class="ctx">{{ui.separator}}
+        <select id="sep">
+          <option value="line" selected>{{ui.sepNewline}}</option>
+          <option value="comma">{{ui.sepComma}}</option>
+          <option value="semicolon">{{ui.sepSemicolon}}</option>
+          <option value="tab">{{ui.sepTab}}</option>
+        </select>
+      </label>
+      <label class="ctx">{{ui.order}}
+        <select id="order">
+          <option value="original" selected>{{ui.orderOriginal}}</option>
+          <option value="az">{{ui.orderAz}}</option>
+        </select>
+      </label>
+      <label class="chk"><input type="checkbox" id="opt-case"> {{ui.ignoreCase}}</label>
+      <label class="chk"><input type="checkbox" id="opt-trim" checked> {{ui.trim}}</label>
+      <label class="chk"><input type="checkbox" id="opt-empty" checked> {{ui.skipEmpty}}</label>
+      <button class="mini" id="sample">{{ui.sample}}</button>
+    </div>
+    <button class="primary" id="compare">{{ui.compare}} <kbd>Ctrl ↵</kbd></button>
+  </section>
+
+  <section class="result lists-result" id="result">
+    <div class="result-head">
+      <div class="head-left">
+        <div class="stats" id="stats"></div>
+        <span class="note warn" id="paused" hidden>{{ui.paused}}</span>
+      </div>
+    </div>
+    <div class="venn">
+      <div class="v-a"><b id="v-onlyA">0</b><span>{{ui.onlyA}}</span></div>
+      <div class="v-both"><b id="v-both">0</b><span>{{ui.both}}</span></div>
+      <div class="v-b"><b id="v-onlyB">0</b><span>{{ui.onlyB}}</span></div>
+    </div>
+    <div class="lgrid">
+      {{@listCards}}
+    </div>
+  </section>
+
+  <div class="content">
+    <section id="how-to">
+      <h2>{{content.howTitle}}</h2>
+      <ol class="steps">
+        {{@steps}}
+      </ol>
+    </section>
+
+    <section id="features">
+      <h2>{{content.featuresTitle}}</h2>
+      <div class="cards">
+        {{@features}}
+      </div>
+    </section>
+
+    <section id="use-cases">
+      <h2>{{content.usesTitle}}</h2>
+      <div class="uses">
+        {{@uses}}
+      </div>
+    </section>
+
+    <section id="faq">
+      <h2>{{content.faqTitle}}</h2>
+      {{@faq}}
+    </section>
+  </div>
+  </main>
+
+{{>footer.html}}
+
+<script>
+{{>common.js}}
+</script>
+<script>
+(() => {
+const KEY = 'dd.lists.';
+const LIVE_LIMIT = 2e6;              // chars (both lists) above which typing doesn't auto-compare
+const STORE_LIMIT = 2e6;             // chars (both lists) above which lists aren't remembered
+const RESULTS = ['onlyA', 'both', 'onlyB', 'union', 'dupA', 'dupB'];
+const FILE_NAMES = { onlyA: 'only-in-list-a.txt', onlyB: 'only-in-list-b.txt', both: 'in-both-lists.txt',
+  union: 'all-unique-items.txt', dupA: 'duplicates-in-list-a.txt', dupB: 'duplicates-in-list-b.txt' };
+const BIG_FILE = 1e6;                // chars: opened files larger than this are shown as a file card
+const ta = $('#a'), tb = $('#b'), box = { a: ta, b: tb };
+let R = Object.fromEntries(RESULTS.map(k => [k, []]));
+
+// Large opened files stay out of the text box: browsers need seconds to lay out hundreds of thousands of lines.
+const files = { a: null, b: null };
+const getText = k => files[k] ? files[k].text : box[k].value;
+function setSide(k, text, file){
+  if (file && text.length > BIG_FILE){ files[k] = { name: file.name, size: file.size, text }; box[k].value = ''; }
+  else { files[k] = null; box[k].value = text; }
+  const f = files[k], card = $(`#${k}-card`);
+  box[k].hidden = !!f; card.hidden = !f;
+  card.innerHTML = f ? `<div class="fc-icon">${ICON_FILE}</div><div class="fc-name">${esc(f.name)}</div>` +
+    `<div class="fc-meta"><bdi>${fmtSize(f.size)}</bdi> · ${t('fileNote')}</div>` +
+    `<div class="fc-actions"><button class="mini" data-edit="${k}">${t('editAsText')}</button><button class="mini" data-clear="${k}">${t('remove')}</button></div>` : '';
+}
+
+function parse(text, sep, trim, skipEmpty){
+  if (!text) return [];
+  const re = { comma: /,|\r\n|\r|\n/, semicolon: /;|\r\n|\r|\n/, tab: /\t|\r\n|\r|\n/ }[sep] || /\r\n|\r|\n/;
+  let items = text.split(re);
+  if (trim) items = items.map(s => s.trim());
+  if (skipEmpty) items = items.filter(s => s !== '');
+  return items;
+}
+
+// One pass over each list: first occurrence of every item (by key) plus how often it appears.
+function tally(list, keyOf){
+  const m = new Map();
+  for (const s of list){
+    const k = keyOf(s), e = m.get(k);
+    if (e) e.n++; else m.set(k, { v: s, n: 1 });
+  }
+  return m;
+}
+
+function compare(){
+  const t0 = performance.now();
+  const sep = $('#sep').value, trim = $('#opt-trim').checked, skip = $('#opt-empty').checked;
+  const keyOf = $('#opt-case').checked ? s => s.toLocaleLowerCase(LOCALE) : s => s;
+  const A = parse(getText('a'), sep, trim, skip), B = parse(getText('b'), sep, trim, skip);
+  const ma = tally(A, keyOf), mb = tally(B, keyOf);
+  const onlyA = [], both = [], onlyB = [], dupA = [], dupB = [], union = [];
+  for (const [k, e] of ma){ (mb.has(k) ? both : onlyA).push(e.v); if (e.n > 1) dupA.push(e.v); union.push(e.v); }
+  for (const [k, e] of mb){ if (!ma.has(k)){ onlyB.push(e.v); union.push(e.v); } if (e.n > 1) dupB.push(e.v); }
+  R = { onlyA, both, onlyB, union, dupA, dupB };
+  if ($('#order').value === 'az'){
+    const coll = new Intl.Collator(LOCALE, { numeric: true, sensitivity: 'base' });
+    for (const k of RESULTS) R[k].sort(coll.compare);
+  }
+  render(A.length, B.length, ma.size, mb.size, performance.now() - t0);
+  $('#paused').hidden = true;
+}
+
+// Result boxes show at most SHOW_MAX items: browsers are slow to lay out megabytes of text in a textarea.
+// Copy and Download always use the full result.
+const SHOW_MAX = 2000;
+function render(na, nb, ua, ub, ms){
+  for (const k of RESULTS){
+    const list = R[k], cut = list.length > SHOW_MAX;
+    $(`#r-${k}`).value = (cut ? list.slice(0, SHOW_MAX) : list).join('\n');
+    $(`#c-${k}`).textContent = num(list.length);
+    const note = $(`#t-${k}`);
+    note.hidden = !cut;
+    if (cut) note.textContent = t('truncated', { n: SHOW_MAX });
+  }
+  $('#a-info').textContent = `${t('items', { n: na })} · ${t('unique', { n: ua })}`;
+  $('#b-info').textContent = `${t('items', { n: nb })} · ${t('unique', { n: ub })}`;
+  const total = R.onlyA.length + R.both.length + R.onlyB.length;
+  for (const [cls, k] of [['v-a', 'onlyA'], ['v-both', 'both'], ['v-b', 'onlyB']]){
+    $(`.venn .${cls}`).style.flexGrow = total ? Math.max(R[k].length / total, 0.12) : 1;
+    $(`#v-${k}`).textContent = num(R[k].length);
+  }
+  const overlap = R.union.length ? R.both.length / R.union.length : 0;
+  const time = ms < 1000 ? `${Math.max(1, Math.round(ms))} ms` : `${(ms / 1000).toFixed(1)} s`;
+  $('#stats').innerHTML = `<span>${t('overlap', { p: `<b>${overlap.toLocaleString(LOCALE, { style: 'percent' })}</b>` })}</span><span dir="ltr">${time}</span>`;
+}
+
+function remember(){
+  if (!files.a && !files.b && ta.value.length + tb.value.length <= STORE_LIMIT){ store.set(KEY + 'a', ta.value); store.set(KEY + 'b', tb.value); }
+  else { store.del(KEY + 'a'); store.del(KEY + 'b'); }
+}
+let timer;
+function onInput(live = true){
+  clearTimeout(timer);
+  if (live && getText('a').length + getText('b').length > LIVE_LIMIT){ $('#paused').hidden = false; timer = setTimeout(remember, 500); return; }
+  timer = setTimeout(() => { remember(); compare(); }, live ? 150 : 0);
+}
+ta.addEventListener('input', () => onInput());
+tb.addEventListener('input', () => onInput());
+for (const id of ['#sep', '#order', '#opt-case', '#opt-trim', '#opt-empty']) $(id).onchange = () => onInput(false);
+
+$('#compare').onclick = () => { onInput(false); $('#result').scrollIntoView({ behavior: 'smooth', block: 'start' }); };
+document.addEventListener('keydown', e => {
+  if ((e.ctrlKey || e.metaKey) && e.key === 'Enter'){ e.preventDefault(); $('#compare').click(); }
+});
+$('#swap').onclick = () => {
+  const a = { text: getText('a'), file: files.a }, b = { text: getText('b'), file: files.b };
+  setSide('a', b.text, b.file); setSide('b', a.text, a.file); onInput(false);
+};
+
+const fileIn = $('#file'); let target = 'a';
+async function readFile(f, k){
+  const text = await readTextFile(f);
+  if (text === null) return;
+  setSide(k, text, f);
+  onInput(false);
+  toast(t('loaded', { name: f.name }));
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-open],[data-clear],[data-edit],[data-copy],[data-dl]'); if (!b) return;
+  const d = b.dataset;
+  if (d.open){ target = d.open; fileIn.value = ''; fileIn.click(); }
+  else if (d.clear){ setSide(d.clear, ''); onInput(false); box[d.clear].focus(); }
+  else if (d.edit){ setSide(d.edit, files[d.edit].text); box[d.edit].focus(); toast(t('slowEdit')); }
+  else if (d.copy) copyText(R[d.copy].join('\n'), t('copiedItems', { n: R[d.copy].length }));
+  else downloadText(R[d.dl].join('\n') + '\n', FILE_NAMES[d.dl]);
+});
+fileIn.onchange = () => fileIn.files[0] && readFile(fileIn.files[0], target);
+for (const k of ['a', 'b']){
+  const p = $(`#pane-${k}`);
+  p.addEventListener('dragover', e => { e.preventDefault(); p.classList.add('drag'); });
+  p.addEventListener('dragleave', () => p.classList.remove('drag'));
+  p.addEventListener('drop', e => {
+    e.preventDefault(); p.classList.remove('drag');
+    const f = e.dataTransfer.files[0]; if (f) readFile(f, k);
+  });
+}
+
+$('#sample').onclick = () => {
+  setSide('a', ''); setSide('b', '');
+  ta.value = 'Alice\nBob\nCharlie\nDiana\nEdward\nBob\nFiona';
+  tb.value = 'Charlie\nDiana\nGeorge\nHannah\nAlice\nIvan\nGeorge';
+  onInput(false);
+};
+
+ta.value = store.get(KEY + 'a') || ''; tb.value = store.get(KEY + 'b') || '';
+compare();
+})();
+</script>
+</body>
+</html>

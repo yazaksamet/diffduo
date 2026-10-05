@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "title": "So sánh hai danh sách – Tìm, xóa trùng lặp | DiffDuo",
+    "description": "Công cụ so sánh hai danh sách online miễn phí. Dán hai danh sách để tìm mục chỉ có ở một bên, có ở cả hai hoặc trùng lặp. Xóa trùng lặp và gộp danh sách ngay.",
+    "ogTitle": "So sánh hai danh sách – Tìm điểm khác nhau và trùng lặp",
+    "ogDescription": "Dán hai danh sách và thấy ngay mục nào chỉ có ở một bên, mục nào có ở cả hai và mục nào bị trùng lặp. Miễn phí, nhanh và riêng tư.",
+    "twitterDescription": "Dán hai danh sách và thấy ngay mục nào chỉ có ở một bên, có ở cả hai hoặc bị trùng lặp. Miễn phí và riêng tư.",
+    "ogImageAlt": "DiffDuo so sánh hai danh sách, hiển thị mục chỉ có trong danh sách A, có trong cả hai và chỉ có trong danh sách B",
+    "appName": "DiffDuo – So sánh hai danh sách",
+    "appDescription": "So sánh hai danh sách online: tìm mục chỉ có trong danh sách A, chỉ có trong danh sách B hoặc có trong cả hai, liệt kê mục trùng lặp và gộp hai danh sách mà không bị trùng. Chạy hoàn toàn trên trình duyệt của bạn.",
+    "featureList": [
+      "Mục chỉ có trong danh sách A, chỉ có trong danh sách B và có trong cả hai",
+      "Gộp hai danh sách không trùng lặp",
+      "Tìm và xóa trùng lặp",
+      "Tách mục theo dòng mới, dấu phẩy, dấu chấm phẩy hoặc tab",
+      "Bỏ qua chữ hoa/thường và khoảng trắng thừa",
+      "Riêng tư: danh sách không bao giờ rời khỏi trình duyệt"
+    ]
+  },
+  "ui": {
+    "eyebrow": "Công cụ so sánh danh sách online miễn phí",
+    "h1": "So sánh hai danh sách và tìm <em>điểm khác nhau</em>",
+    "heroText": "Dán hai danh sách để xem mục nào chỉ có ở một bên, mục nào có ở cả hai và mục nào bị trùng lặp. Tìm và xóa trùng lặp, gộp danh sách và sao chép mọi kết quả chỉ với một cú nhấp.",
+    "listA": "Danh sách A",
+    "listB": "Danh sách B",
+    "placeholderA": "Dán danh sách thứ nhất vào đây, mỗi mục một dòng…",
+    "placeholderB": "Dán danh sách thứ hai vào đây, mỗi mục một dòng…",
+    "separator": "Tách theo",
+    "sepNewline": "Dòng mới",
+    "sepComma": "Dấu phẩy",
+    "sepSemicolon": "Dấu chấm phẩy",
+    "sepTab": "Tab",
+    "order": "Thứ tự",
+    "orderOriginal": "Thứ tự gốc",
+    "orderAz": "A đến Z",
+    "trim": "Cắt khoảng trắng",
+    "skipEmpty": "Bỏ qua dòng trống",
+    "onlyA": "Chỉ có trong Danh sách A",
+    "onlyB": "Chỉ có trong Danh sách B",
+    "both": "Có trong cả hai",
+    "union": "Tất cả mục duy nhất",
+    "dupA": "Trùng lặp trong Danh sách A",
+    "dupB": "Trùng lặp trong Danh sách B",
+    "copyList": "Sao chép",
+    "downloadList": "Tải xuống dạng .txt",
+    "none": "Không có gì"
+  },
+  "content": {
+    "howTitle": "Cách so sánh hai danh sách",
+    "steps": [
+      { "title": "Dán danh sách thứ nhất", "text": "Đặt một danh sách vào ô <em>Danh sách A</em>, mỗi mục một dòng. Bạn cũng có thể mở file .txt hoặc .csv." },
+      { "title": "Dán danh sách thứ hai", "text": "Đặt danh sách còn lại vào ô <em>Danh sách B</em>. Kết quả cập nhật ngay khi bạn gõ." },
+      { "title": "Sao chép kết quả bạn cần", "text": "Xem mục nào chỉ có ở một bên, có ở cả hai hoặc bị trùng lặp, rồi sao chép hoặc tải xuống bất kỳ kết quả nào." }
+    ],
+    "featuresTitle": "Mọi thứ bạn cần để so sánh danh sách",
+    "features": [
+      { "title": "Điểm khác nhau và điểm trùng khớp", "text": "Thấy ngay các mục chỉ có trong danh sách A, chỉ có trong danh sách B và có trong cả hai danh sách." },
+      { "title": "Tìm và xóa trùng lặp", "text": "Xem mục nào lặp lại trong từng danh sách và nhận một danh sách gộp với mỗi mục xuất hiện đúng một lần." },
+      { "title": "Mọi loại dấu phân cách", "text": "Tách mục theo dòng mới, dấu phẩy, dấu chấm phẩy hoặc tab, để bạn có thể dán cột từ Excel hoặc file CSV." },
+      { "title": "Bỏ qua chữ hoa/thường và khoảng trắng", "text": "Coi “Apple” và “apple ” là cùng một mục khi chữ hoa và khoảng trắng thừa không quan trọng." },
+      { "title": "Nhanh với danh sách cực lớn", "text": "So sánh danh sách hàng trăm nghìn mục chỉ trong tích tắc." },
+      { "title": "Riêng tư 100%", "text": "Không có gì được tải lên. Danh sách khách hàng, email và ID không bao giờ rời khỏi thiết bị của bạn." }
+    ],
+    "usesTitle": "Mọi người dùng công cụ này để làm gì",
+    "uses": [
+      { "title": "Danh sách email và khách hàng", "text": "Tìm liên hệ nào là mới, ai đã hủy đăng ký và ai có mặt trong cả hai danh sách." },
+      { "title": "Cột Excel và bảng tính", "text": "Dán hai cột để xem giá trị nào không có trong cột còn lại, không cần công thức." },
+      { "title": "Tồn kho và mã sản phẩm", "text": "So sánh SKU, mã đơn hàng hoặc ID từ hai hệ thống để tìm những gì không khớp." },
+      { "title": "Xóa trùng lặp", "text": "Dán một danh sách vào Danh sách A để xem các mục trùng lặp và sao chép danh sách sạch với mỗi mục một lần." },
+      { "title": "Tên và điểm danh", "text": "Kiểm tra ai đã đăng ký nhưng không tham dự, hoặc ai có trong danh sách nhóm này nhưng không có trong nhóm kia." },
+      { "title": "URL và từ khóa", "text": "So sánh hai danh sách URL, từ khóa hoặc tên miền để tìm phần còn thiếu và phần trùng nhau." }
+    ],
+    "faqTitle": "Câu hỏi thường gặp",
+    "faq": [
+      { "q": "Làm thế nào để so sánh hai danh sách?", "a": "Dán danh sách thứ nhất vào Danh sách A và danh sách thứ hai vào Danh sách B, mỗi mục một dòng. DiffDuo hiển thị ngay các mục chỉ có trong Danh sách A, chỉ có trong Danh sách B, có trong cả hai, và các mục trùng lặp trong từng danh sách." },
+      { "q": "Làm sao để tìm trùng lặp giữa hai danh sách?", "a": "Các mục xuất hiện ở cả hai danh sách được hiển thị trong phần Có trong cả hai. Bạn có thể sao chép chúng chỉ với một cú nhấp hoặc tải xuống dưới dạng file .txt." },
+      { "q": "Làm sao để xóa trùng lặp trong một danh sách?", "a": "Dán danh sách vào Danh sách A và để trống Danh sách B. Tất cả mục duy nhất hiển thị mỗi mục đúng một lần, còn Trùng lặp trong Danh sách A hiển thị các mục bị lặp lại." },
+      { "q": "Có thể so sánh hai cột trong Excel không?", "a": "Có. Sao chép một cột từ Excel hoặc Google Sheets và dán vào Danh sách A, sau đó dán cột còn lại vào Danh sách B. Mỗi ô trở thành một mục." },
+      { "q": "Có thể dùng dấu phẩy hoặc dấu chấm phẩy thay cho dòng mới không?", "a": "Có. Chọn dấu phẩy, dấu chấm phẩy hoặc tab ở mục Tách theo. Dòng mới luôn được dùng để tách mục." },
+      { "q": "Việc so sánh có phân biệt chữ hoa/thường không?", "a": "Mặc định là có. Bật Bỏ qua chữ hoa/thường để coi chữ hoa và chữ thường là như nhau. Cắt khoảng trắng bỏ qua khoảng trắng ở đầu và cuối mỗi mục." },
+      { "q": "Danh sách của tôi có bị tải lên đâu không?", "a": "Không. Việc so sánh chạy hoàn toàn trên trình duyệt, nên danh sách của bạn không bao giờ rời khỏi thiết bị." }
+    ],
+    "navHow": "Cách so sánh danh sách",
+    "navFeatures": "Tính năng",
+    "navUses": "Ứng dụng",
+    "navFaq": "Hỏi đáp",
+    "footer": "DiffDuo: công cụ online miễn phí để so sánh hai danh sách, tìm trùng lặp và xóa trùng lặp. Mọi thứ chạy cục bộ trên trình duyệt của bạn."
+  },
+  "js": {
+    "items": { "other": "{n} mục" },
+    "unique": { "other": "{n} duy nhất" },
+    "overlap": "Trùng {p}",
+    "copiedItems": { "other": "Đã sao chép {n} mục" },
+    "truncated": { "other": "Đang hiển thị {n} mục đầu tiên. Sao chép hoặc tải xuống để lấy toàn bộ." }
+  }
+}

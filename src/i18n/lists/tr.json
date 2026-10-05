@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "title": "İki Listeyi Karşılaştırma – Tekrar Edenleri Bulun | DiffDuo",
+    "description": "Ücretsiz online liste karşılaştırma aracı. İki listeyi yapıştırın; yalnızca birinde, her ikisinde olan veya tekrar eden öğeleri bulun. Tekrarları anında silin.",
+    "ogTitle": "İki Listeyi Karşılaştırma – Farkları ve Tekrarları Bulun",
+    "ogDescription": "İki listeyi yapıştırın ve neyin yalnızca birinde, neyin her ikisinde olduğunu ve neyin tekrar ettiğini anında görün. Ücretsiz, hızlı ve gizli.",
+    "twitterDescription": "İki listeyi yapıştırın; yalnızca birinde, her ikisinde olan veya tekrar eden öğeleri anında görün. Ücretsiz ve gizli.",
+    "ogImageAlt": "DiffDuo'da iki listenin karşılaştırması: yalnızca Liste A'da, her iki listede ve yalnızca Liste B'de olan öğeler",
+    "appName": "DiffDuo – İki Listeyi Karşılaştırma",
+    "appDescription": "İki listeyi online karşılaştırın: yalnızca Liste A'da, yalnızca Liste B'de veya her ikisinde olan öğeleri bulun, tekrar edenleri listeleyin ve iki listeyi tekrarsız birleştirin. Tamamen tarayıcınızda çalışır.",
+    "featureList": [
+      "Yalnızca Liste A'da, yalnızca Liste B'de ve her ikisinde olan öğeler",
+      "İki listeyi tekrarsız birleştirme",
+      "Tekrar edenleri bulma ve silme",
+      "Öğeleri yeni satır, virgül, noktalı virgül veya sekmeyle ayırma",
+      "Büyük/küçük harfi ve fazla boşlukları yoksayma",
+      "Gizli: listeler tarayıcıdan asla çıkmaz"
+    ]
+  },
+  "ui": {
+    "eyebrow": "Ücretsiz online liste karşılaştırma aracı",
+    "h1": "İki listeyi karşılaştırın ve <em>farkları</em> bulun",
+    "heroText": "İki listeyi yapıştırın; hangi öğelerin yalnızca bir listede, hangilerinin her ikisinde olduğunu ve hangilerinin tekrar ettiğini görün. Tekrarları silin, listeleri birleştirin ve istediğiniz sonucu tek tıkla kopyalayın.",
+    "listA": "Liste A",
+    "listB": "Liste B",
+    "placeholderA": "İlk listeyi buraya yapıştırın, her satıra bir öğe…",
+    "placeholderB": "İkinci listeyi buraya yapıştırın, her satıra bir öğe…",
+    "separator": "Ayırıcı",
+    "sepNewline": "Yeni satır",
+    "sepComma": "Virgül",
+    "sepSemicolon": "Noktalı virgül",
+    "sepTab": "Sekme",
+    "order": "Sıralama",
+    "orderOriginal": "Orijinal sıra",
+    "orderAz": "A'dan Z'ye",
+    "trim": "Boşlukları kırp",
+    "skipEmpty": "Boş satırları atla",
+    "onlyA": "Yalnızca Liste A'da",
+    "onlyB": "Yalnızca Liste B'de",
+    "both": "Her iki listede",
+    "union": "Tüm benzersiz öğeler",
+    "dupA": "Liste A'daki tekrarlar",
+    "dupB": "Liste B'deki tekrarlar",
+    "copyList": "Kopyala",
+    "downloadList": ".txt olarak indir",
+    "none": "Burada bir şey yok"
+  },
+  "content": {
+    "howTitle": "İki liste nasıl karşılaştırılır?",
+    "steps": [
+      { "title": "İlk listeyi yapıştırın", "text": "Bir listeyi, her satıra bir öğe gelecek şekilde <em>Liste A</em> kutusuna koyun. Bir .txt veya .csv dosyası da açabilirsiniz." },
+      { "title": "İkinci listeyi yapıştırın", "text": "Diğer listeyi <em>Liste B</em> kutusuna koyun. Sonuçlar siz yazarken güncellenir." },
+      { "title": "İhtiyacınız olan sonucu kopyalayın", "text": "Neyin yalnızca bir listede, her ikisinde olduğunu veya tekrar ettiğini görün; istediğiniz sonucu kopyalayın ya da indirin." }
+    ],
+    "featuresTitle": "Liste karşılaştırma için ihtiyacınız olan her şey",
+    "features": [
+      { "title": "Farklar ve eşleşmeler", "text": "Yalnızca Liste A'da, yalnızca Liste B'de ve her iki listede olan öğeleri anında görün." },
+      { "title": "Tekrar edenleri bulun ve silin", "text": "Her listede hangi öğelerin tekrar ettiğini görün ve her öğenin yalnızca bir kez yer aldığı birleştirilmiş bir liste alın." },
+      { "title": "Her türlü ayırıcı", "text": "Öğeleri yeni satır, virgül, noktalı virgül veya sekmeyle ayırın; böylece Excel'den ya da CSV dosyalarından sütun yapıştırabilirsiniz." },
+      { "title": "Büyük/küçük harfi ve boşlukları yoksayın", "text": "Büyük harf kullanımı ve fazla boşluklar önemli olmadığında “Elma” ile “elma ” aynı öğe sayılır." },
+      { "title": "Dev listelerde bile hızlı", "text": "Yüz binlerce öğe içeren listeleri saniyenin küçük bir kesrinde karşılaştırır." },
+      { "title": "%100 gizli", "text": "Hiçbir şey yüklenmez. Müşteri listeleri, e-postalar ve kimlikler cihazınızdan asla çıkmaz." }
+    ],
+    "usesTitle": "Ne için kullanılır?",
+    "uses": [
+      { "title": "E-posta ve müşteri listeleri", "text": "Hangi kişilerin yeni olduğunu, hangilerinin abonelikten çıktığını ve hangilerinin her iki listede yer aldığını bulun." },
+      { "title": "Excel ve tablo sütunları", "text": "Hangi değerlerin diğer sütunda eksik olduğunu formül kullanmadan görmek için iki sütunu yapıştırın." },
+      { "title": "Stok ve ürün kodları", "text": "Neyin eşleşmediğini bulmak için iki sistemden gelen SKU'ları, sipariş numaralarını veya kimlikleri karşılaştırın." },
+      { "title": "Tekrarları silme", "text": "Tekrar edenleri görmek için bir listeyi Liste A'ya yapıştırın ve her öğenin bir kez geçtiği temiz bir liste kopyalayın." },
+      { "title": "İsimler ve katılım", "text": "Kimin kayıt olup katılmadığını ya da kimin bir ekip listesinde olup diğerinde olmadığını kontrol edin." },
+      { "title": "URL'ler ve anahtar kelimeler", "text": "Eksikleri ve örtüşmeleri bulmak için iki URL, anahtar kelime veya alan adı listesini karşılaştırın." }
+    ],
+    "faqTitle": "Sıkça sorulan sorular",
+    "faq": [
+      { "q": "İki listeyi nasıl karşılaştırırım?", "a": "İlk listeyi Liste A'ya, ikincisini Liste B'ye her satıra bir öğe gelecek şekilde yapıştırın. DiffDuo yalnızca Liste A'da, yalnızca Liste B'de ve her iki listede olan öğeleri ve her listedeki tekrarları anında gösterir." },
+      { "q": "İki liste arasında tekrar edenleri nasıl bulurum?", "a": "Her iki listede de geçen öğeler Her iki listede başlığı altında gösterilir. Bunları tek tıkla kopyalayabilir veya .txt dosyası olarak indirebilirsiniz." },
+      { "q": "Bir listedeki tekrarları nasıl silerim?", "a": "Listeyi Liste A'ya yapıştırın ve Liste B'yi boş bırakın. Tüm benzersiz öğeler her öğeyi tam olarak bir kez gösterir, Liste A'daki tekrarlar ise tekrar eden öğeleri gösterir." },
+      { "q": "Excel'deki iki sütunu karşılaştırabilir miyim?", "a": "Evet. Excel veya Google Sheets'ten bir sütunu kopyalayıp Liste A'ya, diğer sütunu da Liste B'ye yapıştırın. Her hücre bir öğe olur." },
+      { "q": "Yeni satır yerine virgül veya noktalı virgül kullanabilir miyim?", "a": "Evet. Ayırıcı bölümünden virgül, noktalı virgül veya sekmeyi seçin. Yeni satırlar da her zaman öğeleri ayırır." },
+      { "q": "Karşılaştırma büyük/küçük harfe duyarlı mı?", "a": "Varsayılan olarak evet. Büyük ve küçük harfleri aynı saymak için Büyük/küçük harfi yoksay seçeneğini açın. Boşlukları kırp ise her öğenin başındaki ve sonundaki boşlukları yoksayar." },
+      { "q": "Listelerim bir yere yükleniyor mu?", "a": "Hayır. Karşılaştırma tamamen tarayıcınızda yapılır, bu yüzden listeleriniz cihazınızdan asla çıkmaz." }
+    ],
+    "navHow": "Listeler nasıl karşılaştırılır",
+    "navFeatures": "Özellikler",
+    "navUses": "Kullanım alanları",
+    "navFaq": "SSS",
+    "footer": "DiffDuo: iki listeyi karşılaştırmak, tekrar edenleri bulmak ve tekrarları silmek için ücretsiz online araç. Her şey yerel olarak tarayıcınızda çalışır."
+  },
+  "js": {
+    "items": { "one": "{n} öğe", "other": "{n} öğe" },
+    "unique": { "one": "{n} benzersiz", "other": "{n} benzersiz" },
+    "overlap": "{p} örtüşme",
+    "copiedItems": { "one": "{n} öğe kopyalandı", "other": "{n} öğe kopyalandı" },
+    "truncated": { "one": "İlk {n} öğe gösteriliyor. Tümünü almak için kopyalayın veya indirin.", "other": "İlk {n} öğe gösteriliyor. Tümünü almak için kopyalayın veya indirin." }
+  }
+}

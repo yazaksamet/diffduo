@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "title": "Comparar JSON – Comparar Dos Archivos JSON Online | DiffDuo",
+    "description": "Compara JSON online gratis. Compara dos archivos JSON o respuestas de API y ve cada valor añadido, eliminado o cambiado. El orden de las claves se ignora.",
+    "ogTitle": "Comparar JSON – Encuentra las diferencias entre dos archivos JSON",
+    "ogDescription": "Compara dos documentos JSON en segundos. Ve cada valor cambiado por su ruta, sin importar el orden de las claves ni el formato. Gratis, rápido y privado.",
+    "twitterDescription": "Compara dos documentos JSON y ve cada cambio por su ruta. Gratis, rápido y privado.",
+    "ogImageAlt": "DiffDuo comparando dos documentos JSON con los valores cambiados resaltados",
+    "appName": "DiffDuo – Comparar JSON y JSON diff",
+    "appDescription": "Compara dos archivos JSON o respuestas de API online. Muestra cada valor añadido, eliminado o cambiado con su ruta JSON y un diff lado a lado, sin importar el orden de las claves ni el formato. Funciona por completo en tu navegador.",
+    "featureList": [
+      "Ignora el orden de las claves y el formato",
+      "Muestra cada cambio con su ruta JSON",
+      "Opcional: ignorar el orden de los elementos de los arrays",
+      "Diff lado a lado y unificado del JSON formateado",
+      "Detecta JSON no válido y muestra la línea y la columna",
+      "Privado: el JSON nunca sale del navegador"
+    ]
+  },
+  "ui": {
+    "eyebrow": "Herramienta JSON diff online y gratis",
+    "h1": "Comparar JSON: mira qué <em>cambió</em>",
+    "heroText": "Compara dos archivos JSON, respuestas de API o configuraciones y ve cada valor añadido, eliminado o cambiado con su ruta. El orden de las claves y el formato no importan. Privado y gratis, directamente en tu navegador.",
+    "original": "JSON original",
+    "changed": "JSON modificado",
+    "placeholderOriginal": "Pega aquí el JSON original o suelta un archivo .json…",
+    "placeholderChanged": "Pega aquí el JSON modificado o suelta un archivo .json…",
+    "format": "Formatear",
+    "formatTitle": "Formatear y aplicar sangría a este JSON",
+    "ignoreArrayOrder": "Ignorar orden de arrays"
+  },
+  "content": {
+    "howTitle": "Cómo comparar dos archivos JSON",
+    "steps": [
+      { "title": "Pega o abre el JSON original", "text": "Pon el primer documento JSON en el cuadro <em>JSON original</em>. Puedes pegarlo, o abrir o arrastrar y soltar un archivo .json." },
+      { "title": "Añade el JSON modificado", "text": "Pon el segundo documento en el cuadro <em>JSON modificado</em>. Ambos se revisan en busca de errores y se comparan mientras escribes." },
+      { "title": "Revisa los cambios", "text": "Ve una lista de cada valor cambiado, añadido y eliminado con su ruta, además de un diff lado a lado de ambos documentos con las claves ordenadas." }
+    ],
+    "featuresTitle": "Un JSON diff que entiende JSON",
+    "features": [
+      { "title": "El orden de las claves no importa", "text": "Los objetos se comparan por sus claves, así que los mismos datos en otro orden cuentan como iguales." },
+      { "title": "Cada cambio con su ruta", "text": "Cada diferencia aparece con su ubicación exacta, como <code>$.user.roles[2]</code>, junto con el valor anterior y el nuevo." },
+      { "title": "Ignorar orden de arrays", "text": "Actívalo cuando los arrays sean conjuntos, como etiquetas o IDs, y solo importen los elementos añadidos y eliminados." },
+      { "title": "Detecta JSON no válido", "text": "Si un documento no se puede analizar, ves la línea y la columna del error, y Formatear ordena el JSON válido." },
+      { "title": "Archivos grandes sin problema", "text": "Compara archivos JSON de más de 100.000 líneas en segundo plano, así la página sigue respondiendo." },
+      { "title": "100 % privado", "text": "No se sube nada. Las respuestas de API, las configuraciones y los datos nunca salen de tu dispositivo." }
+    ],
+    "usesTitle": "Qué puedes comparar",
+    "uses": [
+      { "title": "Respuestas de API", "text": "Compara la respuesta de dos versiones o entornos de una API para encontrar un campo cambiado o un valor que falta." },
+      { "title": "Archivos de configuración", "text": "Encuentra las diferencias entre dos package.json, tsconfig, appsettings u otros archivos de configuración JSON." },
+      { "title": "Fixtures y snapshots de pruebas", "text": "Ve exactamente por qué no coinciden el resultado JSON esperado y el real." },
+      { "title": "Exportaciones de datos", "text": "Compara dos exportaciones de los mismos registros para ver qué se añadió, eliminó o editó." }
+    ],
+    "readTitle": "Cómo leer el resultado",
+    "legend": [
+      "Los valores <b>cambiados</b> existen en ambos documentos, pero son distintos. Primero se muestra el valor anterior y luego el nuevo.",
+      "Los valores <b>añadidos</b> solo existen en el JSON modificado.",
+      "Los valores <b>eliminados</b> solo existen en el JSON original.",
+      "Las <b>rutas</b> como <code>$.settings.theme</code> empiezan en la raíz del documento, <code>$</code>; <code>[2]</code> es el tercer elemento de un array."
+    ],
+    "faqTitle": "Preguntas frecuentes",
+    "faq": [
+      { "q": "¿Cómo comparo dos archivos JSON online?", "a": "Pega el JSON original en el cuadro de la izquierda y el JSON modificado en el de la derecha, o abre los archivos. DiffDuo muestra cada valor cambiado, añadido y eliminado con su ruta, y un diff lado a lado de ambos documentos." },
+      { "q": "¿Importa el orden de las claves?", "a": "No. Los objetos se comparan por sus claves, así que dos documentos con los mismos datos y las claves en distinto orden se consideran iguales. También se ignoran el formato y los espacios." },
+      { "q": "¿Puedo ignorar el orden de los elementos de los arrays?", "a": "Sí. Activa Ignorar orden de arrays para comparar los arrays como conjuntos. Los elementos que aparecen en ambos arrays coinciden estén donde estén, y solo se indican los elementos añadidos o eliminados." },
+      { "q": "¿Qué significa una ruta como $.user.roles[2]?", "a": "Es la ubicación del valor dentro del documento: $ es la raíz, .user es la clave user, .roles es su clave roles y [2] es el tercer elemento de ese array." },
+      { "q": "¿Qué pasa si mi JSON no es válido?", "a": "DiffDuo muestra qué documento tiene el error y la línea y la columna donde está, para que puedas corregirlo. El botón Formatear aplica sangría al JSON válido para que sea más fácil de leer." },
+      { "q": "¿Mi JSON se sube a un servidor?", "a": "No. Todo se ejecuta en tu navegador, así que tu JSON nunca sale de tu dispositivo. Es seguro para claves de API, datos de clientes y configuración interna." },
+      { "q": "¿Puede comparar archivos JSON grandes?", "a": "Sí. Se pueden abrir archivos JSON de hasta 50 MB, y el diff lado a lado se calcula en segundo plano para que la página siga respondiendo." }
+    ],
+    "navHow": "Cómo comparar JSON",
+    "navFeatures": "Funciones",
+    "navUses": "Qué puedes comparar",
+    "navFaq": "Preguntas frecuentes",
+    "footer": "DiffDuo: herramienta gratis para comparar JSON online (JSON diff). Todo se ejecuta en local, así que tus datos nunca salen del navegador."
+  },
+  "js": {
+    "emptyText": "Pega JSON en ambos cuadros o abre archivos .json. La comparación se actualiza mientras escribes.",
+    "identicalTitle": "Los documentos JSON son iguales",
+    "identicalText": { "one": "{n} línea tras formatear, no se encontraron diferencias.", "many": "{n} líneas tras formatear, no se encontraron diferencias.", "other": "{n} líneas tras formatear, no se encontraron diferencias." },
+    "identicalTextIgnoring": { "one": "{n} línea tras formatear, no se encontraron diferencias ignorando el orden de los arrays.", "many": "{n} líneas tras formatear, no se encontraron diferencias ignorando el orden de los arrays.", "other": "{n} líneas tras formatear, no se encontraron diferencias ignorando el orden de los arrays." },
+    "invalidTitle": "JSON no válido",
+    "invalid": "{side} no es un JSON válido: hay un error en la línea {line}, columna {col}.",
+    "invalidAt": "JSON no válido en la línea {line}, columna {col}",
+    "cannotFormat": "No se puede formatear: JSON no válido en la línea {line}, columna {col}",
+    "changesTitle": "Cambios",
+    "changed": { "one": "{n} cambiado", "many": "{n} cambiados", "other": "{n} cambiados" },
+    "added": { "one": "{n} añadido", "many": "{n} añadidos", "other": "{n} añadidos" },
+    "removed": { "one": "{n} eliminado", "many": "{n} eliminados", "other": "{n} eliminados" },
+    "moreChanges": { "one": "…y {n} cambio más", "many": "…y {n} cambios más", "other": "…y {n} cambios más" },
+    "changesSkipped": "La lista de cambios se omite en documentos muy grandes. El diff lado a lado de abajo muestra todas las diferencias."
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "toolsLabel": "Ferramentas",
+  "moreTools": "Mais ferramentas de comparação grátis",
+  "tools": {
+    "text": { "name": "Comparar textos", "desc": "Compare dois textos, arquivos ou códigos lado a lado e veja cada alteração no estilo git diff." },
+    "json": { "name": "Comparar JSON", "desc": "Compare dois documentos JSON e veja o que mudou, ignorando a ordem das chaves e a formatação." },
+    "lists": { "name": "Comparar listas", "desc": "Compare duas listas para ver o que está só em uma, nas duas ou duplicado, e remova duplicados." }
+  }
+}

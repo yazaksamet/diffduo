@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "title": "JSON vergleichen – Zwei JSON-Dateien vergleichen | DiffDuo",
+    "description": "Kostenloser JSON Diff online: Zwei JSON-Dateien oder API-Antworten vergleichen und jeden neuen, entfernten und geänderten Wert sehen. Schlüsselreihenfolge egal.",
+    "ogTitle": "JSON vergleichen – Unterschiede zwischen zwei JSON-Dateien finden",
+    "ogDescription": "Vergleiche zwei JSON-Dokumente in Sekunden. Sieh jeden geänderten Wert mit Pfad, unabhängig von Schlüsselreihenfolge und Formatierung. Kostenlos, schnell und privat.",
+    "twitterDescription": "Vergleiche zwei JSON-Dokumente und sieh jede Änderung mit Pfad. Kostenlos, schnell und privat.",
+    "ogImageAlt": "DiffDuo vergleicht zwei JSON-Dokumente und hebt geänderte Werte hervor",
+    "appName": "DiffDuo – JSON vergleichen & JSON Diff",
+    "appDescription": "Vergleiche zwei JSON-Dateien oder API-Antworten online. Listet jeden hinzugefügten, entfernten und geänderten Wert mit seinem JSON-Pfad auf und zeigt einen Diff nebeneinander, unabhängig von Schlüsselreihenfolge und Formatierung. Läuft komplett in deinem Browser.",
+    "featureList": [
+      "Ignoriert Schlüsselreihenfolge und Formatierung",
+      "Listet jede Änderung mit JSON-Pfad auf",
+      "Optional: Reihenfolge von Array-Elementen ignorieren",
+      "Diff nebeneinander und einheitlicher Diff des formatierten JSON",
+      "Findet ungültiges JSON und zeigt Zeile und Spalte",
+      "Privat: Das JSON verlässt nie den Browser"
+    ]
+  },
+  "ui": {
+    "eyebrow": "Kostenloses JSON Diff-Tool online",
+    "h1": "JSON vergleichen: sieh, was sich <em>geändert</em> hat",
+    "heroText": "Vergleiche zwei JSON-Dateien, API-Antworten oder Konfigurationen und sieh jeden hinzugefügten, entfernten und geänderten Wert mit seinem Pfad. Schlüsselreihenfolge und Formatierung spielen keine Rolle. Kostenlos und privat, direkt in deinem Browser.",
+    "original": "Original-JSON",
+    "changed": "Geändertes JSON",
+    "placeholderOriginal": "Original-JSON hier einfügen oder .json-Datei hineinziehen…",
+    "placeholderChanged": "Geändertes JSON hier einfügen oder .json-Datei hineinziehen…",
+    "format": "Formatieren",
+    "formatTitle": "Dieses JSON formatieren und einrücken",
+    "ignoreArrayOrder": "Array-Reihenfolge ignorieren"
+  },
+  "content": {
+    "howTitle": "So vergleichst du zwei JSON-Dateien",
+    "steps": [
+      { "title": "Original-JSON einfügen oder öffnen", "text": "Gib das erste JSON-Dokument in das Feld <em>Original-JSON</em> ein. Du kannst es einfügen oder eine .json-Datei öffnen bzw. per Drag & Drop hineinziehen." },
+      { "title": "Geändertes JSON hinzufügen", "text": "Gib das zweite Dokument in das Feld <em>Geändertes JSON</em> ein. Beide werden während des Tippens auf Fehler geprüft und verglichen." },
+      { "title": "Änderungen prüfen", "text": "Sieh eine Liste aller geänderten, hinzugefügten und entfernten Werte mit Pfad sowie einen Diff beider Dokumente nebeneinander mit sortierten Schlüsseln." }
+    ],
+    "featuresTitle": "Ein JSON Diff, der JSON versteht",
+    "features": [
+      { "title": "Schlüsselreihenfolge egal", "text": "Objekte werden anhand ihrer Schlüssel verglichen, daher gelten dieselben Daten in anderer Reihenfolge als gleich." },
+      { "title": "Jede Änderung mit Pfad", "text": "Jeder Unterschied wird mit seiner genauen Position wie <code>$.user.roles[2]</code> sowie dem alten und neuen Wert aufgelistet." },
+      { "title": "Array-Reihenfolge ignorieren", "text": "Schalte die Option ein, wenn Arrays Mengen sind, etwa Tags oder IDs, und nur Ergänzungen und Löschungen zählen." },
+      { "title": "Findet ungültiges JSON", "text": "Lässt sich ein Dokument nicht parsen, siehst du Zeile und Spalte des Fehlers, und Formatieren bringt gültiges JSON in Form." },
+      { "title": "Schafft große Dateien", "text": "Vergleicht JSON-Dateien mit über 100.000 Zeilen in einem Hintergrund-Thread, sodass die Seite reaktionsschnell bleibt." },
+      { "title": "100 % privat", "text": "Es wird nichts hochgeladen. API-Antworten, Konfigurationen und Daten verlassen nie dein Gerät." }
+    ],
+    "usesTitle": "Was du vergleichen kannst",
+    "uses": [
+      { "title": "API-Antworten", "text": "Vergleiche die Antworten zweier API-Versionen oder Umgebungen, um ein geändertes Feld oder einen fehlenden Wert zu finden." },
+      { "title": "Konfigurationsdateien", "text": "Finde den Unterschied zwischen zwei package.json-, tsconfig-, appsettings- oder anderen JSON-Konfigurationsdateien." },
+      { "title": "Test-Fixtures und Snapshots", "text": "Sieh genau, warum ein erwartetes und ein tatsächliches JSON-Ergebnis nicht übereinstimmen." },
+      { "title": "Datenexporte", "text": "Vergleiche zwei Exporte derselben Datensätze, um zu sehen, was hinzugefügt, entfernt oder bearbeitet wurde." }
+    ],
+    "readTitle": "So liest du das Ergebnis",
+    "legend": [
+      "<b>Geänderte</b> Werte gibt es in beiden Dokumenten, aber sie unterscheiden sich. Zuerst wird der alte Wert angezeigt, dann der neue.",
+      "<b>Hinzugefügte</b> Werte gibt es nur im geänderten JSON.",
+      "<b>Entfernte</b> Werte gibt es nur im Original-JSON.",
+      "<b>Pfade</b> wie <code>$.settings.theme</code> beginnen bei der Wurzel des Dokuments <code>$</code>; <code>[2]</code> ist das dritte Element eines Arrays."
+    ],
+    "faqTitle": "Häufig gestellte Fragen",
+    "faq": [
+      { "q": "Wie kann ich zwei JSON-Dateien online vergleichen?", "a": "Füge das Original-JSON in das linke Feld und das geänderte JSON in das rechte Feld ein oder öffne die Dateien. DiffDuo listet jeden geänderten, hinzugefügten und entfernten Wert mit Pfad auf und zeigt einen Diff beider Dokumente nebeneinander." },
+      { "q": "Spielt die Reihenfolge der Schlüssel eine Rolle?", "a": "Nein. Objekte werden anhand ihrer Schlüssel verglichen, daher gelten zwei Dokumente mit denselben Daten in anderer Schlüsselreihenfolge als gleich. Formatierung und Leerzeichen werden ebenfalls ignoriert." },
+      { "q": "Kann ich die Reihenfolge der Elemente in Arrays ignorieren?", "a": "Ja. Schalte Array-Reihenfolge ignorieren ein, um Arrays als Mengen zu vergleichen. Elemente, die in beiden Arrays vorkommen, werden unabhängig von ihrer Position zugeordnet, und nur hinzugefügte oder entfernte Elemente werden gemeldet." },
+      { "q": "Was bedeutet ein Pfad wie $.user.roles[2]?", "a": "Er gibt die Position des Werts im Dokument an: $ ist die Wurzel, .user ist der Schlüssel user, .roles ist dessen Schlüssel roles und [2] ist das dritte Element dieses Arrays." },
+      { "q": "Was passiert, wenn mein JSON ungültig ist?", "a": "DiffDuo zeigt dir, welches Dokument den Fehler enthält und in welcher Zeile und Spalte er steht, damit du ihn beheben kannst. Der Button Formatieren rückt gültiges JSON ein, damit es leichter lesbar ist." },
+      { "q": "Wird mein JSON auf einen Server hochgeladen?", "a": "Nein. Alles läuft in deinem Browser, dein JSON verlässt also nie dein Gerät. Damit ist es auch für API-Schlüssel, Kundendaten und interne Konfigurationen sicher." },
+      { "q": "Kann es große JSON-Dateien vergleichen?", "a": "Ja. Du kannst JSON-Dateien bis 50 MB öffnen, und der Diff nebeneinander läuft in einem Hintergrund-Thread, sodass die Seite reaktionsschnell bleibt." }
+    ],
+    "navHow": "So vergleichst du JSON",
+    "navFeatures": "Funktionen",
+    "navUses": "Was du vergleichen kannst",
+    "navFaq": "FAQ",
+    "footer": "DiffDuo: kostenloses Online-Tool zum JSON vergleichen und JSON Diff. Alles läuft lokal, deine Daten verlassen nie den Browser."
+  },
+  "js": {
+    "emptyText": "Füge JSON in beide Felder ein oder öffne .json-Dateien. Der Vergleich aktualisiert sich, während du tippst.",
+    "identicalTitle": "Die JSON-Dokumente sind gleich",
+    "identicalText": { "one": "{n} Zeile nach dem Formatieren, keine Unterschiede gefunden.", "other": "{n} Zeilen nach dem Formatieren, keine Unterschiede gefunden." },
+    "identicalTextIgnoring": { "one": "{n} Zeile nach dem Formatieren, keine Unterschiede gefunden, Array-Reihenfolge ignoriert.", "other": "{n} Zeilen nach dem Formatieren, keine Unterschiede gefunden, Array-Reihenfolge ignoriert." },
+    "invalidTitle": "Ungültiges JSON",
+    "invalid": "{side} ist kein gültiges JSON: Fehler in Zeile {line}, Spalte {col}.",
+    "invalidAt": "Ungültiges JSON in Zeile {line}, Spalte {col}",
+    "cannotFormat": "Formatieren nicht möglich: ungültiges JSON in Zeile {line}, Spalte {col}",
+    "changesTitle": "Änderungen",
+    "changed": { "one": "{n} geändert", "other": "{n} geändert" },
+    "added": { "one": "{n} hinzugefügt", "other": "{n} hinzugefügt" },
+    "removed": { "one": "{n} entfernt", "other": "{n} entfernt" },
+    "moreChanges": { "one": "…und {n} weitere Änderung", "other": "…und {n} weitere Änderungen" },
+    "changesSkipped": "Bei sehr großen Dokumenten wird die Liste der Änderungen übersprungen. Der Diff nebeneinander unten zeigt jeden Unterschied."
+  }
+}

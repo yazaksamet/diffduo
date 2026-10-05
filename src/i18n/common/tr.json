@@ -1,0 +1,9 @@
+{
+  "toolsLabel": "Araçlar",
+  "moreTools": "Diğer ücretsiz karşılaştırma araçları",
+  "tools": {
+    "text": { "name": "Metin karşılaştır", "desc": "İki metni, dosyayı veya kodu yan yana karşılaştırın ve her değişikliği git diff tarzında görün." },
+    "json": { "name": "JSON karşılaştır", "desc": "İki JSON belgesini karşılaştırın ve anahtar sırası ile biçimlendirmeyi yoksayarak neyin değiştiğini görün." },
+    "lists": { "name": "Liste karşılaştır", "desc": "İki listeyi karşılaştırın; yalnızca birinde, her ikisinde olan veya tekrar eden öğeleri bulun ve tekrarları silin." }
+  }
+}

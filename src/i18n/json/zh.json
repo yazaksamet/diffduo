@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "title": "JSON 对比 · 在线 JSON 比较 | DiffDuo",
+    "description": "免费在线 JSON 对比工具，快速比较两个 JSON 文件或 API 响应，查看每一处新增、删除和修改的值。自动忽略键顺序，数据不会上传。",
+    "ogTitle": "在线 JSON 对比 – 找出两个 JSON 文件的差异",
+    "ogDescription": "几秒钟对比两个 JSON 文档。按路径列出每一处修改的值，忽略键顺序和格式。免费、快速、安全私密。",
+    "twitterDescription": "对比两个 JSON 文档，按路径查看每一处改动。免费、快速、安全私密。",
+    "ogImageAlt": "DiffDuo 对比两个 JSON 文档，并高亮显示修改的值",
+    "appName": "DiffDuo – 在线 JSON 对比与 JSON diff 工具",
+    "appDescription": "在线对比两个 JSON 文件或 API 响应。按 JSON 路径列出每一处新增、删除和修改的值，并以并排 diff 显示，忽略键顺序和格式。全部在浏览器本地运行。",
+    "featureList": [
+      "忽略键顺序和格式",
+      "按 JSON 路径列出每一处改动",
+      "可选：忽略数组元素顺序",
+      "格式化后 JSON 的并排和统一 diff",
+      "检测无效 JSON 并显示所在行和列",
+      "安全私密：JSON 不会离开浏览器"
+    ]
+  },
+  "ui": {
+    "eyebrow": "免费在线 JSON 对比工具",
+    "h1": "JSON 对比：找出每一处<em>改动</em>",
+    "heroText": "在线比较两个 JSON 文件、API 响应或配置，按路径查看每一处新增、删除和修改的值。键顺序和格式不影响结果。直接在浏览器中使用，免费又安全。",
+    "original": "原始 JSON",
+    "changed": "修改后 JSON",
+    "placeholderOriginal": "在此粘贴原始 JSON，或拖入 .json 文件…",
+    "placeholderChanged": "在此粘贴修改后 JSON，或拖入 .json 文件…",
+    "format": "格式化",
+    "formatTitle": "格式化并缩进此 JSON",
+    "ignoreArrayOrder": "忽略数组顺序"
+  },
+  "content": {
+    "howTitle": "如何在线对比两个 JSON 文件",
+    "steps": [
+      { "title": "粘贴或打开原始 JSON", "text": "将第一个 JSON 文档放入<em>原始 JSON</em>框。可以直接粘贴，也可以打开或拖放 .json 文件。" },
+      { "title": "添加修改后的 JSON", "text": "将第二个文档放入<em>修改后 JSON</em>框。输入时会自动检查两个文档的错误并进行对比。" },
+      { "title": "查看改动", "text": "按路径列出每一处修改、新增和删除的值，同时并排显示两个按键排序后的文档 diff。" }
+    ],
+    "featuresTitle": "真正理解 JSON 的 JSON 比较工具",
+    "features": [
+      { "title": "键顺序不影响结果", "text": "对象按键进行比较，因此顺序不同但数据相同的内容会被视为相等。" },
+      { "title": "按路径列出每一处改动", "text": "每处差异都会列出其确切位置（如 <code>$.user.roles[2]</code>）以及旧值和新值。" },
+      { "title": "忽略数组顺序", "text": "当数组是集合（如标签或 ID），只关心新增和删除时，开启此选项即可。" },
+      { "title": "检测无效 JSON", "text": "如果文档无法解析，会显示错误所在的行和列；“格式化”可将有效的 JSON 整理得清晰易读。" },
+      { "title": "轻松处理大文件", "text": "在后台线程中对比 100,000+ 行的 JSON 文件，页面始终不会卡顿。" },
+      { "title": "100% 隐私安全", "text": "不上传任何内容。API 响应、配置和数据永远不会离开您的设备。" }
+    ],
+    "usesTitle": "可以对比哪些内容",
+    "uses": [
+      { "title": "API 响应", "text": "对比两个 API 版本或环境的响应，找出修改的字段或缺失的值。" },
+      { "title": "配置文件", "text": "找出两个 package.json、tsconfig、appsettings 或其他 JSON 配置文件之间的差异。" },
+      { "title": "测试数据与快照", "text": "准确看出预期的 JSON 结果与实际结果为什么不一致。" },
+      { "title": "数据导出", "text": "对比同一批记录的两次导出，找出新增、删除或编辑了哪些内容。" }
+    ],
+    "readTitle": "如何阅读对比结果",
+    "legend": [
+      "<b>修改</b>的值在两个文档中都存在，但内容不同。先显示旧值，再显示新值。",
+      "<b>新增</b>的值只存在于修改后 JSON 中。",
+      "<b>删除</b>的值只存在于原始 JSON 中。",
+      "<b>路径</b>（如 <code>$.settings.theme</code>）从文档根节点 <code>$</code> 开始；<code>[2]</code> 表示数组的第三个元素。"
+    ],
+    "faqTitle": "常见问题",
+    "faq": [
+      { "q": "如何在线对比两个 JSON 文件？", "a": "将原始 JSON 粘贴到左侧框，将修改后 JSON 粘贴到右侧框，或直接打开文件。DiffDuo 会按路径列出每一处修改、新增和删除的值，并并排显示两个文档的 diff。" },
+      { "q": "JSON 比较时键的顺序有影响吗？", "a": "没有。对象按键进行比较，因此数据相同、仅键顺序不同的两个文档会被视为相等。格式和空白也会被忽略。" },
+      { "q": "可以忽略数组中元素的顺序吗？", "a": "可以。开启“忽略数组顺序”后，数组会按集合进行比较。两个数组中都有的元素无论位置如何都会匹配，只报告新增或删除的元素。" },
+      { "q": "$.user.roles[2] 这样的路径是什么意思？", "a": "它表示值在文档中的位置：$ 是根节点，.user 是 user 键，.roles 是其下的 roles 键，[2] 是该数组的第三个元素。" },
+      { "q": "如果我的 JSON 格式不正确会怎样？", "a": "DiffDuo 会显示哪个文档有错误，以及错误所在的行和列，方便您修正。“格式化”按钮可以缩进有效的 JSON，使其更易阅读。" },
+      { "q": "我的 JSON 会上传到服务器吗？", "a": "不会。所有操作都在您的浏览器中进行，JSON 永远不会离开您的设备。可放心用于 API 密钥、客户数据和内部配置。" },
+      { "q": "可以对比大型 JSON 文件吗？", "a": "可以。支持打开最大 50 MB 的 JSON 文件，并排 diff 在后台线程中运行，页面始终保持流畅。" }
+    ],
+    "navHow": "使用方法",
+    "navFeatures": "功能",
+    "navUses": "对比内容",
+    "navFaq": "常见问题",
+    "footer": "DiffDuo：免费在线 JSON 对比和 JSON diff 工具。所有操作均在本地运行，数据不会离开浏览器。"
+  },
+  "js": {
+    "emptyText": "在两个框中粘贴 JSON 或打开 .json 文件。输入时对比结果会实时更新。",
+    "identicalTitle": "两个 JSON 文档完全相同",
+    "identicalText": { "other": "格式化后共 {n} 行，未发现差异。" },
+    "identicalTextIgnoring": { "other": "格式化后共 {n} 行，在忽略数组顺序的情况下未发现差异。" },
+    "invalidTitle": "无效的 JSON",
+    "invalid": "{side}不是有效的 JSON：第 {line} 行第 {col} 列有错误。",
+    "invalidAt": "第 {line} 行第 {col} 列 JSON 无效",
+    "cannotFormat": "无法格式化：第 {line} 行第 {col} 列 JSON 无效",
+    "changesTitle": "改动",
+    "changed": { "other": "{n} 处修改" },
+    "added": { "other": "{n} 处新增" },
+    "removed": { "other": "{n} 处删除" },
+    "moreChanges": { "other": "…还有 {n} 处改动" },
+    "changesSkipped": "文档过大，已跳过改动列表。下方的并排 diff 会显示每一处差异。"
+  }
+}

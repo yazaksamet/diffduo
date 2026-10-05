@@ -414,4 +414,832 @@
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/"/>
   </url>
+  <url>
+    <loc>https://diffduo.com/json-compare/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/json-compare/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/tr/json-compare/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/json-compare/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/es/json-compare/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/json-compare/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/pt/json-compare/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/json-compare/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/fr/json-compare/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/json-compare/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/de/json-compare/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/json-compare/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/it/json-compare/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/json-compare/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/nl/json-compare/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/json-compare/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/pl/json-compare/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/json-compare/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/ru/json-compare/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/json-compare/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/uk/json-compare/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/json-compare/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/ar/json-compare/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/json-compare/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/hi/json-compare/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/json-compare/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/id/json-compare/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/json-compare/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/vi/json-compare/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/json-compare/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/ja/json-compare/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/json-compare/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/ko/json-compare/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/json-compare/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/zh/json-compare/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/json-compare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/json-compare/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/compare-lists/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/compare-lists/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/tr/compare-lists/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/compare-lists/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/es/compare-lists/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/compare-lists/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/pt/compare-lists/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/compare-lists/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/fr/compare-lists/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/compare-lists/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/de/compare-lists/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/compare-lists/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/it/compare-lists/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/compare-lists/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/nl/compare-lists/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/compare-lists/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/pl/compare-lists/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/compare-lists/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/ru/compare-lists/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/compare-lists/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/uk/compare-lists/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/compare-lists/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/ar/compare-lists/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/compare-lists/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/hi/compare-lists/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/compare-lists/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/id/compare-lists/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/compare-lists/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/vi/compare-lists/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/compare-lists/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/ja/compare-lists/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/compare-lists/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/ko/compare-lists/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/compare-lists/"/>
+  </url>
+  <url>
+    <loc>https://diffduo.com/zh/compare-lists/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diffduo.com/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://diffduo.com/tr/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://diffduo.com/es/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://diffduo.com/pt/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://diffduo.com/fr/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diffduo.com/de/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://diffduo.com/it/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://diffduo.com/nl/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://diffduo.com/pl/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://diffduo.com/ru/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://diffduo.com/uk/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diffduo.com/ar/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://diffduo.com/hi/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://diffduo.com/id/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://diffduo.com/vi/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://diffduo.com/ja/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://diffduo.com/ko/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://diffduo.com/zh/compare-lists/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diffduo.com/compare-lists/"/>
+  </url>
 </urlset>

@@ -1,0 +1,9 @@
+{
+  "toolsLabel": "Công cụ",
+  "moreTools": "Các công cụ so sánh miễn phí khác",
+  "tools": {
+    "text": { "name": "So sánh văn bản", "desc": "So sánh hai văn bản, file hoặc code song song và xem mọi thay đổi, theo kiểu git diff." },
+    "json": { "name": "So sánh JSON", "desc": "So sánh hai tài liệu JSON và xem những gì đã thay đổi, bỏ qua thứ tự key và định dạng." },
+    "lists": { "name": "So sánh danh sách", "desc": "So sánh hai danh sách để tìm mục chỉ có ở một bên, có ở cả hai hoặc bị trùng lặp, và xóa trùng lặp." }
+  }
+}
