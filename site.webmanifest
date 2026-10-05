@@ -1,0 +1,14 @@
+{
+  "name": "DiffDuo – Text Compare & Diff Checker",
+  "short_name": "DiffDuo",
+  "description": "Compare two texts, files or code and see the differences instantly.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0c0e14",
+  "theme_color": "#6366f1",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
