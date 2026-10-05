@@ -1,0 +1,857 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DiffDuo — Text Compare</title>
+<meta name="description" content="Compare two texts side by side with git-style diffs: additions, removals and word-level changes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='2' y='6' width='18' height='20' rx='5' fill='%23f0506e'/%3E%3Crect x='12' y='6' width='18' height='20' rx='5' fill='%2322c55e' fill-opacity='.9'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#f6f7fb; --bg-glow1:#c7d2fe; --bg-glow2:#bbf7d0;
+  --surface:#ffffff; --surface-2:#f3f4f8; --border:#e3e5ee; --border-strong:#cfd3e0;
+  --text:#161a26; --muted:#5f667a; --faint:#8b91a3;
+  --accent:#6366f1; --accent-2:#8b5cf6; --accent-text:#ffffff; --accent-soft:#eef0ff;
+  --add-bg:#e9fbef; --add-ln:#d2f6dd; --add-word:#a6efbd; --add-fg:#137a3a;
+  --del-bg:#fff0f0; --del-ln:#ffdcdc; --del-word:#ffb3b3; --del-fg:#c22a3a;
+  --hunk-bg:#eef4ff; --hunk-fg:#3856b8;
+  --shadow:0 1px 2px rgba(20,24,40,.04),0 8px 24px rgba(20,24,40,.06);
+  --radius:16px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0c0e14; --bg-glow1:#2a2f6b; --bg-glow2:#12432c;
+    --surface:#141720; --surface-2:#1a1e29; --border:#262b38; --border-strong:#353b4b;
+    --text:#e8eaf2; --muted:#9aa1b5; --faint:#6c7387;
+    --accent:#818cf8; --accent-2:#a78bfa; --accent-text:#0c0e14; --accent-soft:#1e2140;
+    --add-bg:rgba(46,160,67,.13); --add-ln:rgba(46,160,67,.22); --add-word:rgba(46,160,67,.45); --add-fg:#5ee08a;
+    --del-bg:rgba(248,81,73,.12); --del-ln:rgba(248,81,73,.22); --del-word:rgba(248,81,73,.45); --del-fg:#ff8a8a;
+    --hunk-bg:rgba(56,139,253,.1); --hunk-fg:#8fb4ff;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 30px rgba(0,0,0,.35);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0c0e14; --bg-glow1:#2a2f6b; --bg-glow2:#12432c;
+  --surface:#141720; --surface-2:#1a1e29; --border:#262b38; --border-strong:#353b4b;
+  --text:#e8eaf2; --muted:#9aa1b5; --faint:#6c7387;
+  --accent:#818cf8; --accent-2:#a78bfa; --accent-text:#0c0e14; --accent-soft:#1e2140;
+  --add-bg:rgba(46,160,67,.13); --add-ln:rgba(46,160,67,.22); --add-word:rgba(46,160,67,.45); --add-fg:#5ee08a;
+  --del-bg:rgba(248,81,73,.12); --del-ln:rgba(248,81,73,.22); --del-word:rgba(248,81,73,.45); --del-fg:#ff8a8a;
+  --hunk-bg:rgba(56,139,253,.1); --hunk-fg:#8fb4ff;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 30px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{
+  background:var(--bg); color:var(--text);
+  font:15px/1.5 Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  -webkit-font-smoothing:antialiased; min-height:100vh; overflow-x:hidden;
+}
+body::before{
+  content:""; position:fixed; inset:-20vh -10vw auto; height:70vh; z-index:-1; pointer-events:none;
+  background:radial-gradient(40% 60% at 25% 30%,var(--bg-glow1),transparent 70%),
+             radial-gradient(35% 55% at 78% 25%,var(--bg-glow2),transparent 70%);
+  opacity:.55; filter:blur(20px);
+}
+button,select,input{font:inherit;color:inherit}
+.wrap{max-width:1320px;margin:0 auto;padding:0 24px}
+
+/* header */
+header{display:flex;align-items:center;justify-content:space-between;padding:22px 0 8px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--text)}
+.logo{position:relative;width:36px;height:30px}
+.logo i{position:absolute;top:0;width:22px;height:30px;border-radius:7px}
+.logo i:first-child{left:0;background:#f0506e}
+.logo i:last-child{right:0;background:#22c55e;opacity:.92;mix-blend-mode:multiply}
+:root[data-theme="dark"] .logo i:last-child{mix-blend-mode:screen}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .logo i:last-child{mix-blend-mode:screen}}
+.brand b{font-size:21px;font-weight:800;letter-spacing:-.02em}
+.brand b span{background:linear-gradient(90deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.icon-btn{width:40px;height:40px;display:grid;place-items:center;border-radius:12px;border:1px solid var(--border);background:var(--surface);cursor:pointer;transition:.15s}
+.icon-btn:hover{border-color:var(--border-strong);transform:translateY(-1px)}
+.icon-btn svg{width:18px;height:18px}
+
+.hero{text-align:center;padding:34px 0 30px}
+.hero h1{font-size:clamp(30px,5vw,50px);line-height:1.08;letter-spacing:-.035em;margin:0 0 12px;font-weight:800}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,#f0506e,var(--accent) 50%,#22c55e);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--muted);margin:0 auto;max-width:560px;font-size:16.5px}
+
+/* inputs */
+.inputs{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:stretch}
+.pane{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);display:flex;flex-direction:column;overflow:hidden;transition:border-color .15s,box-shadow .15s}
+.pane:focus-within{border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft),var(--shadow)}
+.pane.drag{border-color:var(--accent);border-style:dashed}
+.pane-head{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:10px 12px 10px 16px;border-bottom:1px solid var(--border)}
+.pane-title{display:flex;align-items:center;gap:8px;font-weight:600;font-size:14px}
+.dot{width:9px;height:9px;border-radius:50%}
+.dot.old{background:#f0506e}.dot.new{background:#22c55e}
+.pane-actions{display:flex;gap:4px}
+.mini{border:0;background:transparent;color:var(--muted);font-size:13px;padding:5px 9px;border-radius:8px;cursor:pointer;display:inline-flex;align-items:center;gap:5px}
+.mini:hover{background:var(--surface-2);color:var(--text)}
+.mini svg{width:14px;height:14px}
+textarea{
+  flex:1;width:100%;min-height:280px;resize:vertical;border:0;outline:0;background:transparent;color:var(--text);
+  font:13.5px/1.6 "JetBrains Mono",ui-monospace,Consolas,monospace;padding:14px 16px;tab-size:4;
+}
+textarea::placeholder{color:var(--faint)}
+.filecard{flex:1;min-height:280px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:24px;text-align:center}
+.fc-icon{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent);margin-bottom:6px}
+.fc-icon svg{width:24px;height:24px}
+.fc-name{font-weight:600;overflow-wrap:anywhere}
+.fc-meta{font-size:13px;color:var(--muted)}
+.fc-actions{display:flex;gap:6px;margin-top:8px}
+.fc-actions .mini{border:1px solid var(--border)}
+.pane-foot{padding:7px 16px;font-size:12px;color:var(--faint);border-top:1px solid var(--border);background:var(--surface-2)}
+.swap{align-self:center;width:44px;height:44px;border-radius:50%;border:1px solid var(--border);background:var(--surface);box-shadow:var(--shadow);cursor:pointer;display:grid;place-items:center;transition:.2s}
+.swap:hover{transform:rotate(180deg);border-color:var(--accent);color:var(--accent)}
+.swap svg{width:18px;height:18px}
+
+/* toolbar */
+.toolbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin:22px 0 14px}
+.tools{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.seg{display:inline-flex;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:3px}
+.seg button{border:0;background:transparent;padding:6px 13px;border-radius:9px;cursor:pointer;font-size:13.5px;font-weight:500;color:var(--muted)}
+.seg button.on{background:var(--accent-soft);color:var(--accent)}
+.chk{display:inline-flex;align-items:center;gap:7px;font-size:13.5px;color:var(--muted);cursor:pointer;user-select:none;padding:6px 10px;border:1px solid var(--border);border-radius:12px;background:var(--surface)}
+.chk input{accent-color:var(--accent);margin:0}
+.ctx{display:inline-flex;align-items:center;gap:7px;font-size:13.5px;color:var(--muted);padding:3px 4px 3px 11px;border:1px solid var(--border);border-radius:12px;background:var(--surface)}
+.ctx select{border:0;background:var(--surface-2);border-radius:8px;padding:4px 6px;cursor:pointer}
+.primary{border:0;cursor:pointer;padding:10px 20px;border-radius:12px;font-weight:600;color:var(--accent-text);background:linear-gradient(135deg,var(--accent),var(--accent-2));box-shadow:0 6px 20px -6px var(--accent);transition:.15s;display:inline-flex;align-items:center;gap:8px}
+.primary:hover{transform:translateY(-1px);filter:brightness(1.05)}
+kbd{font:11px "JetBrains Mono",monospace;opacity:.75;border:1px solid currentColor;border-radius:5px;padding:0 4px}
+
+/* result */
+.result{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;margin-bottom:40px}
+.result-head{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;padding:12px 16px;border-bottom:1px solid var(--border);background:var(--surface-2)}
+.stats{display:flex;flex-wrap:wrap;align-items:center;gap:14px;font-size:13.5px;color:var(--muted)}
+.stats b{font-weight:700}
+.s-add{color:var(--add-fg)}.s-del{color:var(--del-fg)}
+.bar{display:inline-flex;gap:2px}
+.bar i{width:9px;height:9px;border-radius:2px;background:var(--border-strong)}
+.bar i.a{background:#22c55e}.bar i.d{background:#f0506e}
+.diff-scroll{overflow:auto;max-height:75vh}
+.diff{font:12.8px/1.65 "JetBrains Mono",ui-monospace,Consolas,monospace}
+.chunk{content-visibility:auto;contain-intrinsic-size:auto 5000px}
+.row{display:grid}
+.unified .row{grid-template-columns:52px 52px 22px minmax(0,1fr)}
+.split .row{grid-template-columns:52px minmax(0,1fr) 52px minmax(0,1fr)}
+.row>span{padding:0 10px}
+.diff .ln{text-align:right;color:var(--faint);user-select:none;padding:0 8px;font-size:11.5px;line-height:21.1px}
+.diff .sg{text-align:center;user-select:none;padding:0;color:var(--faint)}
+.diff .code{white-space:pre-wrap;overflow-wrap:anywhere;min-width:0}
+.r-add .code,.r-add .sg,.c-add{background:var(--add-bg)}
+.r-add .ln,.ln.c-add{background:var(--add-ln);color:var(--add-fg)}
+.r-add .sg{color:var(--add-fg)}
+.r-del .code,.r-del .sg,.c-del{background:var(--del-bg)}
+.r-del .ln,.ln.c-del{background:var(--del-ln);color:var(--del-fg)}
+.r-del .sg{color:var(--del-fg)}
+.c-empty{background:repeating-linear-gradient(135deg,transparent 0 6px,var(--surface-2) 6px 12px)}
+.split .code+.ln{border-left:1px solid var(--border)}
+ins,del{text-decoration:none;border-radius:3px;padding:1px 0}
+ins{background:var(--add-word)}
+del{background:var(--del-word)}
+.row.r-hunk{display:block;background:var(--hunk-bg);color:var(--hunk-fg);padding:5px 10px;font-size:12px;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.chunk:first-child>.r-hunk:first-child{border-top:0}
+.expand{border:1px solid transparent;background:transparent;color:var(--hunk-fg);cursor:pointer;font:inherit;padding:2px 8px;border-radius:7px;margin-right:10px;display:inline-flex;align-items:center;gap:6px}
+.expand:hover{background:var(--surface);border-color:var(--border)}
+.expand svg{width:13px;height:13px}
+.empty-state{padding:60px 20px;text-align:center;color:var(--muted)}
+.empty-state .big{font-size:36px;margin-bottom:6px}
+.empty-state h3{margin:0 0 4px;color:var(--text);font-size:17px}
+[hidden]{display:none!important}
+.head-left{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px}
+.note{font-size:12px;font-weight:500;padding:3px 10px;border-radius:999px;background:var(--accent-soft);color:var(--accent)}
+.note.warn{background:var(--hunk-bg);color:var(--hunk-fg)}
+.busy{display:none;align-items:center;justify-content:center;gap:14px;padding:56px 20px;color:var(--muted);font-size:14px}
+.result.loading .busy{display:flex}
+.result.loading .diff-scroll{display:none}
+.spin{width:20px;height:20px;border-radius:50%;border:3px solid var(--border-strong);border-top-color:var(--accent);animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.busy .mini{border:1px solid var(--border)}
+
+.toast{position:fixed;left:50%;bottom:26px;transform:translate(-50%,20px);opacity:0;background:var(--text);color:var(--bg);padding:9px 16px;border-radius:10px;font-size:13.5px;font-weight:500;transition:.25s;pointer-events:none;z-index:10}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+footer{text-align:center;color:var(--faint);font-size:13px;padding:0 0 34px}
+
+@media (max-width:760px){
+  .wrap{padding:0 16px}
+  .inputs{grid-template-columns:1fr}
+  .swap{transform:rotate(90deg)}
+  .swap:hover{transform:rotate(270deg)}
+  textarea,.filecard{min-height:180px}
+  .diff .ln{padding:0 5px}
+  .unified .row{grid-template-columns:36px 36px 18px minmax(0,1fr)}
+  .split .row{grid-template-columns:36px minmax(0,1fr) 36px minmax(0,1fr)}
+  .toolbar .primary{width:100%;justify-content:center}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="brand" href="#">
+      <div class="logo"><i></i><i></i></div>
+      <b>Diff<span>Duo</span></b>
+    </a>
+    <button class="icon-btn" id="theme" title="Toggle theme" aria-label="Toggle theme">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+  </header>
+
+  <section class="hero">
+    <h1>Spot every <em>difference</em>,<br>line by line.</h1>
+    <p>Paste two versions of any text and get a git-style diff — additions, removals and word-level changes, right in your browser.</p>
+  </section>
+
+  <section class="inputs">
+    <div class="pane" id="pane-a">
+      <div class="pane-head">
+        <div class="pane-title"><span class="dot old"></span>Original</div>
+        <div class="pane-actions">
+          <button class="mini" data-open="a" title="Open a file"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>Open</button>
+          <button class="mini" data-clear="a" title="Clear">Clear</button>
+        </div>
+      </div>
+      <textarea id="a" spellcheck="false" placeholder="Paste the original text here, or drop a file…"></textarea>
+      <div class="filecard" id="a-card" hidden></div>
+      <div class="pane-foot" id="a-info">0 lines · 0 chars</div>
+    </div>
+
+    <button class="swap" id="swap" title="Swap texts" aria-label="Swap texts">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3l4 4-4 4"/><path d="M21 7H9"/><path d="M7 21l-4-4 4-4"/><path d="M3 17h12"/></svg>
+    </button>
+
+    <div class="pane" id="pane-b">
+      <div class="pane-head">
+        <div class="pane-title"><span class="dot new"></span>Modified</div>
+        <div class="pane-actions">
+          <button class="mini" data-open="b" title="Open a file"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>Open</button>
+          <button class="mini" data-clear="b" title="Clear">Clear</button>
+        </div>
+      </div>
+      <textarea id="b" spellcheck="false" placeholder="Paste the modified text here, or drop a file…"></textarea>
+      <div class="filecard" id="b-card" hidden></div>
+      <div class="pane-foot" id="b-info">0 lines · 0 chars</div>
+    </div>
+  </section>
+  <input type="file" id="file" hidden>
+
+  <section class="toolbar">
+    <div class="tools">
+      <div class="seg" id="view">
+        <button data-v="split" class="on">Split</button>
+        <button data-v="unified">Unified</button>
+      </div>
+      <label class="ctx">Context
+        <select id="context">
+          <option value="3" selected>3 lines</option>
+          <option value="10">10 lines</option>
+          <option value="all">Full file</option>
+        </select>
+      </label>
+      <label class="chk"><input type="checkbox" id="opt-ws"> Ignore whitespace</label>
+      <label class="chk"><input type="checkbox" id="opt-case"> Ignore case</label>
+      <label class="chk"><input type="checkbox" id="opt-words" checked> Word highlights</label>
+      <button class="mini" id="sample">Try a sample</button>
+    </div>
+    <button class="primary" id="compare">Compare <kbd>Ctrl ↵</kbd></button>
+  </section>
+
+  <section class="result" id="result">
+    <div class="result-head">
+      <div class="head-left">
+        <div class="stats" id="stats"></div>
+        <span class="note" id="approx" hidden title="The texts differ in so many places that a faster method was used. The result is correct but may show a few more changes than strictly necessary.">Fast mode</span>
+        <span class="note warn" id="paused" hidden>Large text: automatic comparison paused, press Compare</span>
+      </div>
+      <div class="pane-actions">
+        <button class="mini" id="copy" title="Copy as unified .diff patch"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>Copy patch</button>
+        <button class="mini" id="download" title="Download .diff file"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>.diff</button>
+      </div>
+    </div>
+    <div class="busy"><div class="spin"></div><span id="busy-text">Comparing…</span><button class="mini" id="cancel">Cancel</button></div>
+    <div class="diff-scroll" id="diff"></div>
+  </section>
+
+  <footer>DiffDuo · everything runs locally — your text never leaves the browser.</footer>
+</div>
+<div class="toast" id="toast"></div>
+
+<script id="engine">
+/* Diff engine: shared by the page and the background worker.
+   Linear-space Myers diff (middle snake) with xdiff-style speedups:
+   lines with no counterpart are marked changed up front, and when a region
+   exceeds the cost limit it is split at the furthest point reached. */
+function splitLines(t){
+  if (t === '') return [];
+  const l = t.split(/\r\n|\r|\n/);
+  if (l.length > 1 && l[l.length-1] === '') l.pop();
+  return l;
+}
+
+function diffTexts(a, b, opt){
+  const ws = s => s.replace(/\s+/g, ' ').trim();
+  const norm = opt.ws ? (opt.case ? s => ws(s).toLowerCase() : ws) : opt.case ? s => s.toLowerCase() : s => s;
+  const ids = new Map();
+  const toIds = lines => {
+    const r = new Int32Array(lines.length);
+    for (let i = 0; i < lines.length; i++){
+      const s = norm(lines[i]); let v = ids.get(s);
+      if (v === undefined){ v = ids.size; ids.set(s, v); }
+      r[i] = v;
+    }
+    return r;
+  };
+  const A = toIds(splitLines(a)), B = toIds(splitLines(b));
+  return diffIds(A, B, ids.size);
+}
+
+// Generic diff of two arrays; returns ops as [type, aIndex, bIndex] (0 equal, -1 delete, 1 insert).
+function diffArrays(a, b){
+  const ids = new Map();
+  const toIds = arr => Int32Array.from(arr, s => { let v = ids.get(s); if (v === undefined){ v = ids.size; ids.set(s, v); } return v; });
+  const A = toIds(a), B = toIds(b), r = diffIds(A, B, ids.size), ops = [];
+  let i = 0, j = 0;
+  while (i < A.length || j < B.length){
+    if (i < A.length && r.chA[i]) ops.push([-1, i++, -1]);
+    else if (j < B.length && r.chB[j]) ops.push([1, -1, j++]);
+    else ops.push([0, i++, j++]);
+  }
+  return ops;
+}
+
+// A, B: Int32Array of ids in [0, K). Returns change flags per element.
+function diffIds(A, B, K){
+  const n = A.length, m = B.length, chA = new Uint8Array(n), chB = new Uint8Array(m);
+  const inA = new Uint8Array(K), inB = new Uint8Array(K);
+  for (let i = 0; i < n; i++) inA[A[i]] = 1;
+  for (let j = 0; j < m; j++) inB[B[j]] = 1;
+  const ia = [], ib = [];
+  for (let i = 0; i < n; i++) if (inB[A[i]]) ia.push(i); else chA[i] = 1;
+  for (let j = 0; j < m; j++) if (inA[B[j]]) ib.push(j); else chB[j] = 1;
+  const ra = Int32Array.from(ia, i => A[i]), rb = Int32Array.from(ib, j => B[j]);
+  const ca = new Uint8Array(ra.length), cb = new Uint8Array(rb.length);
+  const approx = compareSeq(ra, rb, ca, cb);
+  for (let k = 0; k < ia.length; k++) if (ca[k]) chA[ia[k]] = 1;
+  for (let k = 0; k < ib.length; k++) if (cb[k]) chB[ib[k]] = 1;
+  return { chA, chB, approx };
+}
+
+function compareSeq(a, b, ca, cb){
+  const maxCost = Math.max(256, Math.ceil(Math.sqrt(a.length + b.length)));
+  const stack = [0, a.length, 0, b.length];
+  let approx = false;
+  while (stack.length){
+    let bH = stack.pop(), bL = stack.pop(), aH = stack.pop(), aL = stack.pop();
+    while (aL < aH && bL < bH && a[aL] === b[bL]){ aL++; bL++; }
+    while (aL < aH && bL < bH && a[aH-1] === b[bH-1]){ aH--; bH--; }
+    if (aL === aH){ cb.fill(1, bL, bH); continue; }
+    if (bL === bH){ ca.fill(1, aL, aH); continue; }
+    const s = bisect(a, aL, aH, b, bL, bH, maxCost);
+    if (!s || (s[0] === aL && s[1] === bL) || (s[0] === aH && s[1] === bH)){
+      ca.fill(1, aL, aH); cb.fill(1, bL, bH); continue;
+    }
+    if (s[2]) approx = true;
+    stack.push(s[0], aH, s[1], bH, aL, s[0], bL, s[1]);
+  }
+  return approx;
+}
+
+// Finds the middle snake of a[aL,aH) vs b[bL,bH). Returns [x, y, approximate] or null if nothing matches.
+function bisect(a, aL, aH, b, bL, bH, maxCost){
+  const N = aH - aL, M = bH - bL, maxD = Math.ceil((N + M) / 2), D = Math.min(maxD, maxCost);
+  const off = D + 1, len = 2*D + 3;
+  const v1 = new Int32Array(len).fill(-1), v2 = new Int32Array(len).fill(-1);
+  v1[off+1] = 0; v2[off+1] = 0;
+  const delta = N - M, front = (delta & 1) !== 0;
+  let k1s = 0, k1e = 0, k2s = 0, k2e = 0;
+  let bf = -1, bfx = 0, bfy = 0, bb = -1, bbx = 0, bby = 0;
+  for (let d = 0; d < D; d++){
+    for (let k1 = -d + k1s; k1 <= d - k1e; k1 += 2){
+      const o = off + k1;
+      let x1 = (k1 === -d || (k1 !== d && v1[o-1] < v1[o+1])) ? v1[o+1] : v1[o-1] + 1;
+      let y1 = x1 - k1;
+      while (x1 < N && y1 < M && a[aL+x1] === b[bL+y1]){ x1++; y1++; }
+      v1[o] = x1;
+      if (x1 > N) k1e += 2;
+      else if (y1 > M) k1s += 2;
+      else {
+        if (x1 + y1 > bf){ bf = x1 + y1; bfx = x1; bfy = y1; }
+        if (front){
+          const o2 = off + delta - k1;
+          if (o2 >= 0 && o2 < len && v2[o2] !== -1 && x1 >= N - v2[o2]) return [aL+x1, bL+y1, false];
+        }
+      }
+    }
+    for (let k2 = -d + k2s; k2 <= d - k2e; k2 += 2){
+      const o = off + k2;
+      let x2 = (k2 === -d || (k2 !== d && v2[o-1] < v2[o+1])) ? v2[o+1] : v2[o-1] + 1;
+      let y2 = x2 - k2;
+      while (x2 < N && y2 < M && a[aH-1-x2] === b[bH-1-y2]){ x2++; y2++; }
+      v2[o] = x2;
+      if (x2 > N) k2e += 2;
+      else if (y2 > M) k2s += 2;
+      else {
+        if (x2 + y2 > bb){ bb = x2 + y2; bbx = x2; bby = y2; }
+        if (!front){
+          const o1 = off + delta - k2;
+          if (o1 >= 0 && o1 < len && v1[o1] !== -1){
+            const x1 = v1[o1], y1 = off + x1 - o1;
+            if (x1 >= N - x2) return [aL+x1, bL+y1, false];
+          }
+        }
+      }
+    }
+  }
+  if (D === maxD) return null;
+  // Cost limit reached: split at the furthest point reached from either end.
+  return bf >= bb ? [aL+bfx, bL+bfy, true] : [aH-bbx, bH-bby, true];
+}
+</script>
+<script>
+(() => {
+const $ = s => document.querySelector(s);
+const store = {
+  get(k){ try { return localStorage.getItem(k); } catch { return null; } },
+  set(k,v){ try { localStorage.setItem(k,v); } catch {} },
+  del(k){ try { localStorage.removeItem(k); } catch {} }
+};
+const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+const LIVE_LIMIT = 1e6;              // chars (both texts) above which typing doesn't auto-compare
+const STORE_LIMIT = 2e6;             // chars (both texts) above which text isn't remembered
+const MAX_FILE = 50 * 1024 * 1024;   // bytes
+const CHUNK = 250;                   // rows rendered per batch
+const BIG_FILE = 1e6;                // chars: opened files larger than this are shown as a file card
+
+/* ---------- background worker ---------- */
+let worker = null, workerUrl = null, job = null, jobSeq = 0, busyTimer = 0, busyTick = 0;
+
+function makeWorker(){
+  try {
+    if (!workerUrl){
+      const src = document.getElementById('engine').textContent +
+        '\nonmessage = e => { const d = e.data, r = diffTexts(d.a, d.b, d.opt);' +
+        ' postMessage({ id: d.id, chA: r.chA, chB: r.chB, approx: r.approx }, [r.chA.buffer, r.chB.buffer]); };';
+      workerUrl = URL.createObjectURL(new Blob([src], { type: 'text/javascript' }));
+    }
+    const w = new Worker(workerUrl);
+    w.onmessage = e => finish(e.data);
+    w.onerror = e => { e.preventDefault(); fail('The comparison failed, most likely because the texts are too large for this browser.'); };
+    return w;
+  } catch { return null; }
+}
+function stopWorker(){ if (worker){ worker.terminate(); worker = null; } }
+
+function compare(){
+  const a = getText('a'), b = getText('b'), opt = { ws: $('#opt-ws').checked, case: $('#opt-case').checked };
+  if (job) stopWorker();
+  const id = ++jobSeq;
+  job = { id, a, b, t0: performance.now() };
+  $('#paused').hidden = true;
+  clearTimeout(busyTimer);
+  busyTimer = setTimeout(showBusy, 150);
+  if (!worker) worker = makeWorker();
+  if (worker) worker.postMessage({ id, a, b, opt });
+  else setTimeout(() => { if (job && job.id === id) finish({ id, ...diffTexts(a, b, opt) }); }, 0);
+}
+
+function showBusy(){
+  if (!job) return;
+  const lines = countLines(job.a) + countLines(job.b);
+  const tick = () => {
+    if (!job) return;
+    $('#busy-text').textContent = `Comparing ${lines.toLocaleString()} lines… ${((performance.now() - job.t0) / 1000).toFixed(1)}s`;
+  };
+  tick(); clearInterval(busyTick); busyTick = setInterval(tick, 100);
+  $('#result').classList.add('loading');
+}
+function hideBusy(){
+  clearTimeout(busyTimer); clearInterval(busyTick);
+  $('#result').classList.remove('loading');
+}
+
+function finish(d){
+  if (!job || d.id !== job.id) return;
+  const { a, b, t0 } = job; job = null;
+  S.A = splitLines(a); S.B = splitLines(b);
+  S.items = buildItems(d.chA, d.chB);
+  S.approx = d.approx; S.ms = performance.now() - t0;
+  S.expanded.clear();
+  hideBusy(); render();
+}
+function fail(msg){
+  stopWorker(); job = null; hideBusy();
+  S.items = []; S.A = []; S.B = [];
+  $('#stats').innerHTML = ''; $('#approx').hidden = true;
+  $('#diff').innerHTML = `<div class="empty-state"><div class="big">!</div><h3>${esc(msg)}</h3>Press Compare to try again.</div>`;
+}
+$('#cancel').onclick = () => fail('Comparison cancelled.');
+
+/* ---------- line model ---------- */
+function countLines(t){
+  if (!t) return 0;
+  let c = 1, i = -1;
+  while ((i = t.indexOf('\n', i + 1)) !== -1) c++;
+  return t.endsWith('\n') ? c - 1 : c;
+}
+
+function buildItems(chA, chB){
+  const n = chA.length, m = chB.length, items = [];
+  let i = 0, j = 0, op = 0, np = 0;
+  while (i < n || j < m){
+    if ((i < n && chA[i]) || (j < m && chB[j])){
+      const dels = [], ins = [];
+      while (i < n && chA[i]) dels.push({ t:'del', a:i++, op:op++, np });
+      while (j < m && chB[j]) ins.push({ t:'ins', b:j++, op, np:np++ });
+      for (let k = 0; k < Math.min(dels.length, ins.length); k++){ dels[k].pair = ins[k]; ins[k].pair = dels[k]; }
+      for (const x of dels) items.push(x);
+      for (const x of ins) items.push(x);
+    } else items.push({ t:'eq', a:i++, b:j++, op:op++, np:np++ });
+  }
+  return items;
+}
+
+/* ---------- word-level diff ---------- */
+const tokenize = s => s.match(/\s+|[\p{L}\p{N}_]+|[^\s\p{L}\p{N}_]/gu) || [];
+function wordDiff(o, n){
+  const a = tokenize(o), b = tokenize(n);
+  if (a.length + b.length > 20000) return null;
+  const ops = diffArrays(a, b);
+  let same = 0;
+  for (const [t, x] of ops) if (t === 0) same += a[x].length;
+  if (2*same / ((o.length + n.length) || 1) < 0.3) return null;
+  const emit = (side, tag) => {
+    let out = '', cur = false, buf = '';
+    const flush = () => { if (buf) out += cur ? `<${tag}>${esc(buf)}</${tag}>` : esc(buf); buf = ''; };
+    for (const [t, x, y] of ops){
+      if (t === 0){ if (cur){ flush(); cur = false; } buf += a[x]; }
+      else if (t === side){ if (!cur){ flush(); cur = true; } buf += side < 0 ? a[x] : b[y]; }
+    }
+    flush(); return out;
+  };
+  return { o: emit(-1, 'del'), n: emit(1, 'ins') };
+}
+
+/* ---------- state ---------- */
+const S = { view: store.get('dd.view') || 'split', items: [], A: [], B: [], expanded: new Set(), approx: false, ms: 0 };
+const ta = $('#a'), tb = $('#b');
+
+function text(it){ return it.t === 'del' ? S.A[it.a] : S.B[it.b]; }
+function html(it){
+  if (it.t !== 'eq' && it.pair && $('#opt-words').checked){
+    if (it.wd === undefined){
+      const d = it.t === 'del' ? it : it.pair, n = it.t === 'del' ? it.pair : it;
+      d.wd = n.wd = wordDiff(S.A[d.a], S.B[n.b]);
+    }
+    if (it.wd) return it.t === 'del' ? it.wd.o : it.wd.n;
+  }
+  return esc(text(it));
+}
+
+/* split items into visible runs and collapsed gaps */
+function segments(ctx, expanded){
+  const it = S.items, N = it.length, vis = new Uint8Array(N);
+  let last = -Infinity;
+  for (let i = 0; i < N; i++){ if (it[i].t !== 'eq') last = i; if (i - last <= ctx) vis[i] = 1; }
+  let next = Infinity;
+  for (let i = N-1; i >= 0; i--){ if (it[i].t !== 'eq') next = i; if (next - i <= ctx) vis[i] = 1; }
+  const out = []; let i = 0;
+  while (i < N){
+    const v = vis[i]; let j = i;
+    while (j < N && vis[j] === v) j++;
+    const g = { vis: !!v || expanded.has(i), s: i, e: j };
+    const p = out[out.length-1];
+    if (p && p.vis && g.vis) p.e = j; else out.push(g);
+    i = j;
+  }
+  return out;
+}
+const contextSize = () => { const v = $('#context').value; return v === 'all' ? Infinity : +v; };
+
+function hunkHeader(s, e){
+  const it = S.items; let oc = 0, nc = 0;
+  for (let i = s; i < e; i++){ if (it[i].t !== 'ins') oc++; if (it[i].t !== 'del') nc++; }
+  const f = it[s];
+  return `@@ -${oc ? f.op + 1 : f.op},${oc} +${nc ? f.np + 1 : f.np},${nc} @@`;
+}
+
+/* ---------- rendering (rows are built lazily, in batches, as you scroll) ---------- */
+const ICON_EXPAND = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 15l5 5 5-5"/><path d="M7 9l5-5 5 5"/></svg>';
+let rows = [], shown = 0;
+const io = new IntersectionObserver(entries => {
+  if (!entries.some(e => e.isIntersecting) || shown >= rows.length) return;
+  appendChunk();
+  const s = $('#sentinel'); io.unobserve(s); io.observe(s);  // re-check: still visible → load more
+}, { root: $('#diff'), rootMargin: '0px 0px 1500px 0px' });
+
+function buildRows(){
+  const segs = segments(contextSize(), S.expanded), split = S.view === 'split', out = [];
+  segs.forEach((g, idx) => {
+    if (!g.vis){
+      if (idx === segs.length - 1) out.push({ k:'h', gap:g });
+      return;
+    }
+    const prev = segs[idx-1];
+    out.push({ k:'h', gap: prev && !prev.vis ? prev : null, hdr: hunkHeader(g.s, g.e) });
+    let i = g.s;
+    while (i < g.e){
+      const x = S.items[i];
+      if (!split || x.t === 'eq'){ out.push(split ? { k:'s', l:x, r:x } : { k:'u', x }); i++; continue; }
+      const dels = [], ins = [];
+      while (i < g.e && S.items[i].t !== 'eq'){ (S.items[i].t === 'del' ? dels : ins).push(S.items[i]); i++; }
+      for (let k = 0; k < Math.max(dels.length, ins.length); k++) out.push({ k:'s', l:dels[k], r:ins[k] });
+    }
+  });
+  return out;
+}
+
+function rowHtml(r){
+  if (r.k === 'h'){
+    const g = r.gap, n = g ? g.e - g.s : 0;
+    const btn = g ? `<button class="expand" data-gap="${g.s}">${ICON_EXPAND}Expand ${n.toLocaleString()} unchanged line${n === 1 ? '' : 's'}</button>` : '';
+    return `<div class="row r-hunk">${btn}${r.hdr || ''}</div>`;
+  }
+  if (r.k === 'u'){
+    const x = r.x;
+    if (x.t === 'eq') return `<div class="row"><span class="ln">${x.a+1}</span><span class="ln">${x.b+1}</span><span class="sg"></span><span class="code">${html(x)}</span></div>`;
+    if (x.t === 'del') return `<div class="row r-del"><span class="ln">${x.a+1}</span><span class="ln"></span><span class="sg">−</span><span class="code">${html(x)}</span></div>`;
+    return `<div class="row r-add"><span class="ln"></span><span class="ln">${x.b+1}</span><span class="sg">+</span><span class="code">${html(x)}</span></div>`;
+  }
+  const { l, r: n } = r;
+  if (l && l === n){
+    const h = html(l);
+    return `<div class="row"><span class="ln">${l.a+1}</span><span class="code">${h}</span><span class="ln">${l.b+1}</span><span class="code">${h}</span></div>`;
+  }
+  const L = l ? `<span class="ln c-del">${l.a+1}</span><span class="code c-del">${html(l)}</span>` : '<span class="ln c-empty"></span><span class="code c-empty"></span>';
+  const R = n ? `<span class="ln c-add">${n.b+1}</span><span class="code c-add">${html(n)}</span>` : '<span class="ln c-empty"></span><span class="code c-empty"></span>';
+  return `<div class="row">${L}${R}</div>`;
+}
+
+function appendChunk(){
+  const end = Math.min(rows.length, shown + CHUNK);
+  let h = '';
+  for (let i = shown; i < end; i++) h += rowHtml(rows[i]);
+  $('#rows').insertAdjacentHTML('beforeend', `<div class="chunk">${h}</div>`);
+  shown = end;
+}
+
+function render(keepScroll){
+  const out = $('#diff'), it = S.items;
+  let add = 0, del = 0, eq = 0;
+  for (const x of it) x.t === 'ins' ? add++ : x.t === 'del' ? del++ : eq++;
+  renderStats(add, del, eq);
+  $('#approx').hidden = !S.approx;
+  io.disconnect(); rows = [];
+
+  if (!S.A.length && !S.B.length){
+    out.innerHTML = `<div class="empty-state"><div class="big">⇆</div><h3>Nothing to compare yet</h3>Paste text into both boxes or open files. The comparison updates as you type.</div>`;
+    return;
+  }
+  if (!add && !del){
+    out.innerHTML = `<div class="empty-state"><div class="big">✓</div><h3>The texts are identical</h3>${S.A.length.toLocaleString()} line${S.A.length === 1 ? '' : 's'}, no differences found${$('#opt-ws').checked || $('#opt-case').checked ? ' (with the current ignore options)' : ''}.</div>`;
+    return;
+  }
+
+  rows = buildRows();
+  const prevShown = keepScroll ? shown : 0, top = out.scrollTop;
+  out.innerHTML = `<div class="diff ${S.view}" id="rows"></div><div id="sentinel" style="height:1px"></div>`;
+  shown = 0;
+  do appendChunk(); while (shown < prevShown && shown < rows.length);
+  out.scrollTop = keepScroll ? top : 0;
+  io.observe($('#sentinel'));
+}
+
+function renderStats(add, del, eq){
+  const total = add + del || 1, blocks = 5;
+  let ab = Math.round(add / total * blocks), db = Math.round(del / total * blocks);
+  if (add && !ab) ab = 1; if (del && !db) db = 1;
+  while (ab + db > blocks) ab > db ? ab-- : db--;
+  const bar = '<span class="bar">' + '<i class="a"></i>'.repeat(ab) + '<i class="d"></i>'.repeat(db) + '<i></i>'.repeat(blocks - ab - db) + '</span>';
+  const sim = (S.A.length + S.B.length) ? Math.round(200 * eq / (S.A.length + S.B.length)) : 100;
+  const ms = S.ms < 1000 ? `${Math.max(1, Math.round(S.ms))} ms` : `${(S.ms / 1000).toFixed(1)} s`;
+  $('#stats').innerHTML =
+    `<span><b class="s-add">+${add.toLocaleString()}</b> addition${add === 1 ? '' : 's'}</span>` +
+    `<span><b class="s-del">−${del.toLocaleString()}</b> deletion${del === 1 ? '' : 's'}</span>${bar}` +
+    `<span><b>${sim}%</b> similar</span><span>${ms}</span>`;
+}
+
+/* ---------- patch export ---------- */
+function patch(){
+  let out = '--- a/original.txt\n+++ b/modified.txt\n';
+  if (!S.items.some(x => x.t !== 'eq')) return out;
+  const parts = [out];
+  for (const g of segments(contextSize(), new Set())){
+    if (!g.vis) continue;
+    parts.push(hunkHeader(g.s, g.e) + '\n');
+    for (let i = g.s; i < g.e; i++){
+      const x = S.items[i];
+      parts.push((x.t === 'eq' ? ' ' : x.t === 'del' ? '-' : '+') + text(x) + '\n');
+    }
+  }
+  return parts.join('');
+}
+
+function toast(msg){
+  const t = $('#toast'); t.textContent = msg; t.classList.add('show');
+  clearTimeout(toast.h); toast.h = setTimeout(() => t.classList.remove('show'), 2200);
+}
+
+/* ---------- inputs ---------- */
+// Opened files over BIG_FILE chars stay out of the text box: browsers need ~1 s per 4 MB to lay out a textarea.
+const files = { a: null, b: null };          // { name, size, text } while shown as a file card
+const box = { a: ta, b: tb };
+const getText = k => files[k] ? files[k].text : box[k].value;
+const ICON_FILE = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h5"/></svg>';
+const fmtSize = n => n < 1048576 ? `${Math.max(1, Math.round(n / 1024))} KB` : `${(n / 1048576).toFixed(1)} MB`;
+
+function setSide(k, text, file){
+  if (file && text.length > BIG_FILE){ files[k] = { name: file.name, size: file.size, text }; box[k].value = ''; }
+  else { files[k] = null; box[k].value = text; }
+  showSide(k);
+}
+function showSide(k){
+  const f = files[k], card = $(`#${k}-card`);
+  box[k].hidden = !!f; card.hidden = !f;
+  card.innerHTML = f ? `<div class="fc-icon">${ICON_FILE}</div><div class="fc-name">${esc(f.name)}</div>` +
+    `<div class="fc-meta">${fmtSize(f.size)} · shown as a file to keep the page fast</div>` +
+    `<div class="fc-actions"><button class="mini" data-edit="${k}">Edit as text</button><button class="mini" data-clear="${k}">Remove</button></div>` : '';
+}
+
+function info(){
+  for (const k of ['a', 'b']){
+    const t = getText(k), l = countLines(t);
+    $(`#${k}-info`).textContent = `${l.toLocaleString()} line${l === 1 ? '' : 's'} · ${t.length.toLocaleString()} chars`;
+  }
+}
+function remember(){
+  if (!files.a && !files.b && ta.value.length + tb.value.length <= STORE_LIMIT){ store.set('dd.a', ta.value); store.set('dd.b', tb.value); }
+  else { store.del('dd.a'); store.del('dd.b'); }
+}
+let timer;
+// live: typing compares automatically unless the text is large; explicit actions always compare
+function onInput(live = true){
+  info();
+  clearTimeout(timer);
+  const big = getText('a').length + getText('b').length > LIVE_LIMIT;
+  if (live && big){ $('#paused').hidden = false; timer = setTimeout(remember, 500); return; }
+  timer = setTimeout(() => { remember(); compare(); }, live ? 250 : 0);
+}
+ta.addEventListener('input', () => onInput());
+tb.addEventListener('input', () => onInput());
+
+$('#compare').onclick = () => { onInput(false); $('#result').scrollIntoView({ behavior: 'smooth', block: 'start' }); };
+document.addEventListener('keydown', e => {
+  if ((e.ctrlKey || e.metaKey) && e.key === 'Enter'){ e.preventDefault(); $('#compare').click(); }
+});
+$('#swap').onclick = () => {
+  [files.a, files.b] = [files.b, files.a];
+  [ta.value, tb.value] = [tb.value, ta.value];
+  showSide('a'); showSide('b'); onInput(false);
+};
+for (const id of ['#opt-ws', '#opt-case']) $(id).onchange = () => onInput(false);
+$('#opt-words').onchange = () => { for (const x of S.items) delete x.wd; render(true); };
+$('#context').onchange = () => { S.expanded.clear(); render(); };
+
+$('#view').addEventListener('click', e => {
+  const b = e.target.closest('button'); if (!b) return;
+  S.view = b.dataset.v; store.set('dd.view', S.view);
+  for (const x of $('#view').children) x.classList.toggle('on', x === b);
+  render();
+});
+for (const x of $('#view').children) x.classList.toggle('on', x.dataset.v === S.view);
+
+$('#diff').addEventListener('click', e => {
+  const b = e.target.closest('[data-gap]'); if (!b) return;
+  S.expanded.add(+b.dataset.gap); render(true);
+});
+
+const fileIn = $('#file'); let target = 'a';
+async function readFile(f, k){
+  if (f.size > MAX_FILE) return toast(`${f.name} is too large (limit is 50 MB)`);
+  const head = new Uint8Array(await f.slice(0, 8000).arrayBuffer());
+  if (head.includes(0)) return toast(`${f.name} looks like a binary file, not text`);
+  setSide(k, await f.text(), f);
+  onInput(false);
+  toast(`Loaded ${f.name}`);
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-open],[data-clear],[data-edit]'); if (!b) return;
+  if (b.dataset.open){ target = b.dataset.open; fileIn.value = ''; fileIn.click(); }
+  else if (b.dataset.clear){ const k = b.dataset.clear; setSide(k, ''); onInput(false); box[k].focus(); }
+  else {
+    const k = b.dataset.edit; setSide(k, files[k].text); box[k].focus();
+    toast('Editing very large text can feel slow');
+  }
+});
+fileIn.onchange = () => fileIn.files[0] && readFile(fileIn.files[0], target);
+for (const k of ['a', 'b']){
+  const p = $(`#pane-${k}`);
+  p.addEventListener('dragover', e => { e.preventDefault(); p.classList.add('drag'); });
+  p.addEventListener('dragleave', () => p.classList.remove('drag'));
+  p.addEventListener('drop', e => {
+    e.preventDefault(); p.classList.remove('drag');
+    const f = e.dataTransfer.files[0]; if (f) readFile(f, k);
+  });
+}
+
+$('#copy').onclick = async () => {
+  try { await navigator.clipboard.writeText(patch()); toast('Patch copied to clipboard'); }
+  catch { toast('Clipboard unavailable'); }
+};
+$('#download').onclick = () => {
+  const url = URL.createObjectURL(new Blob([patch()], { type: 'text/x-diff' }));
+  const a = document.createElement('a'); a.href = url; a.download = 'diffduo.diff'; a.click();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+};
+
+$('#sample').onclick = () => {
+  ta.value = `function greet(name) {
+  // Say hello to the user
+  const message = "Hello, " + name + "!";
+  console.log(message);
+  return message;
+}
+
+const users = ["Ada", "Linus", "Grace"];
+for (let i = 0; i < users.length; i++) {
+  greet(users[i]);
+}
+
+export default greet;`;
+  tb.value = `function greet(name, greeting = "Hello") {
+  // Greet the user with a custom greeting
+  const message = \`\${greeting}, \${name}!\`;
+  console.log(message);
+  return message;
+}
+
+const users = ["Ada", "Linus", "Grace", "Margaret"];
+for (const user of users) {
+  greet(user, "Welcome");
+}
+
+export default greet;`;
+  setSide('a', ta.value); setSide('b', tb.value);
+  onInput(false);
+};
+
+/* theme */
+const root = document.documentElement;
+const savedTheme = store.get('dd.theme');
+if (savedTheme) root.dataset.theme = savedTheme;
+$('#theme').onclick = () => {
+  const dark = root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+  root.dataset.theme = dark ? 'light' : 'dark';
+  store.set('dd.theme', root.dataset.theme);
+};
+
+ta.value = store.get('dd.a') || ''; tb.value = store.get('dd.b') || '';
+info(); compare();
+})();
+</script>
+</body>
+</html>
